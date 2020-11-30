@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
+      <div>WEBSITE THUÊ PHÒNG TRỌ</div>
     </div>
   );
 }
