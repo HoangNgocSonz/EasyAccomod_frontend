@@ -18,12 +18,12 @@
   }
   
   .login input[type="email"] {
-    background: url("../images/email-logo.png") no-repeat 0px 4px;
+    /*background: url("..../images/email.png") no-repeat 0px 4px;*/
     background-size: 25px;
   }
   
   .login input[type="password"] {
-    background: url("../images/pass.png") no-repeat 0px 3.5px;
+    /*background: url("..../images/cf_pass.png") no-repeat 0px 3.5px;*/
     background-size: 20px;
   }
   
