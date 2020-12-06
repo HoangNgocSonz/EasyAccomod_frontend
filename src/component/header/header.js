@@ -3,6 +3,7 @@ import './header.css'
 import img_icon_login from '../header/image_header/icon_login.png'
 import LoginRegister from '../login__register/login__register';
 import SlideHeader from './slide_header/slide_header';
+import Filter from './filter/filter';
 
 
 class Header extends Component {
@@ -22,6 +23,12 @@ class Header extends Component {
                     <div className="row header_slide">
                        <SlideHeader/>
                     </div>
+                </div>
+                <div className="row">
+                    <div className="container form_filter">
+                        <Filter></Filter>
+                    </div>
+                    
                 </div>
             </div>
         );
