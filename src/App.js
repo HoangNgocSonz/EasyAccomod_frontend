@@ -12,7 +12,7 @@ class App extends Component {
             <div className="App">
                 <Router>
                     <div>
-                      <LoginRegister/>
+                        <Header/>
                     </div>
                 </Router>
             </div>  

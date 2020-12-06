@@ -12,6 +12,15 @@ class Header extends Component {
                 <div className="row header1">
                     <div className="col-md-6 col-sm-6 col-xs-6 header1_info_right">
                         <LoginRegister/>
+                        <div className="header1_info_right__div-img">
+                             <img  src={img_icon_login} alt="icon_login"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="row header2">
+                
+                    <div className="row header_slide">
+                       <SlideHeader/>
                     </div>
                 </div>
             </div>
