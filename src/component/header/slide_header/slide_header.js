@@ -1,41 +1,39 @@
-import React, {Component} from "react";
-import banner1 from '../image_header/1.jpg'
-import banner2 from '../image_header/2.jpg'
-import banner3 from '../image_header/3.jpg'
+import React, { Component } from 'react';
+import img_slide1 from '../image_header/hero1.jpg'
+import img_slide2 from '../image_header/hero2.jpg'
+import img_slide3 from '../image_header/hero3.jpg'
 
-
-class SlideHeader extends Component{
-    render(){
-        return(
-            <div id = "demo" className = "carousel silde" data-ride = "carousel">
-                {/*The slideshow*/}
-                <div class = "carousel-inner">
-                    <div className = "carousel-item active">
-                        <img src = {banner1} alt = "Title" className = "carousel-item_img"/>
-                    </div>
-                    <div className = "carousel-item">
-                        <img src = {banner2} alt = "Penhouse" className = "carousel-item_img"/>
-                    </div>
-                    <div className = "carousel-item">
-                        <img src = {banner3} alt = "VietNam" className = "carousel-item_img"/>
-                    </div>
-                </div>
-                {/*Left and right control */}
-                <a className = "carousel-control-prev" href = '#demo' data-silde = "prev">
-                    <div className="prev_backgroups">
-                        <span className="carousel-control-prev-icon" />
-                        <span class="sr-only">Previous</span>
-                    </div>
-                </a>
-                <a className="carousel-control-next" href="#demo" data-slide="next">
-                    <div className="next_backgroups">
-                        <span className="carousel-control-next-icon"/>
-                        <span class="sr-only">Next</span>
-                    </div>
-                </a>
+class SlideHeader extends Component {
+    render() {
+        return (
+            <div id="demo" className="carousel slide" data-ride="carousel">
+            {/* Indicators */}
+                                {/* The slideshow */}
+                            <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img src={img_slide1} alt="Los Angeles" className="carousel-item_img"/>
+                            </div>
+                            <div className="carousel-item">
+                                <img  src={img_slide2} alt="Chicago" className="carousel-item_img"/>
+                            </div>
+                            <div className="carousel-item">
+                                <img  src={img_slide3} alt="New York" className="carousel-item_img"/>
+                            </div>
+                            </div>
+                                {/* Left and right controls */}
+                            <a className="carousel-control-prev" href="#demo" data-slide="prev">
+                                <div className="prev_backgroups">
+                                    <span className="carousel-control-prev-icon" />
+                                </div>
+                            </a> 
+                                <a className="carousel-control-next" href="#demo" data-slide="next">
+                                <div className="next_backgroups">
+                                    <span className="carousel-control-next-icon"/>
+                                </div>
+                            </a>
             </div>
-            
-        )
+        );
     }
 }
+
 export default SlideHeader;
