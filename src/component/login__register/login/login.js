@@ -23,7 +23,7 @@ class Login extends Component {
                     }*/}
                     <div className="md-form mb-4 row">
                         <div className="col-md-2 col-sm-2 col-xs-3 icon_username">
-                        {/*<img src={img_icon_login} alt="icon"/>*/}
+                            <img src={img_icon_login} alt="icon"/>
                         </div>
                         <div className="col-md-10 col-sm-8 col-xs-9 inputusername">
                                 <input type="text" 
@@ -36,7 +36,7 @@ class Login extends Component {
                     </div>
                     <div className="md-form mb-3 row">
                         <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
-                        {/*<img src={img_icon_password} alt="icon"/>*/}
+                            <img src={img_icon_password} alt="icon"/>
                         </div>
                         <div className="col-md-10 col-sm-8 col-xs-9 inputpassword">
                                 <input type="password" 
@@ -47,7 +47,7 @@ class Login extends Component {
                                 /*onChange={this.handleChangeField}
                                 value={this.state.password}*//>
                         </div>
-                        {/*<div className="col-md-4 col-sm-4 col-xs-4 span_registerinlogin">
+                        <div className="col-md-4 col-sm-4 col-xs-4 span_registerinlogin">
                                 <Link to='/nguoi-dung/dang-ky' data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalRegisterForm">
                                 Quên mật khẩu
                                 </Link>
@@ -56,13 +56,13 @@ class Login extends Component {
                                 <span>Bạn chưa có tài khoản?<Link to='/nguoi-dung/dang-ky' data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalRegisterForm">
                                 Đăng ký
                                 </Link></span>
-                </div>*/}
+                        </div>
                         
                     </div>
                     </div>
-                    {/*<div className="modal-footer d-flex justify-content-center bntdangnhap">
+                    <div className="modal-footer d-flex justify-content-center bntdangnhap">
                         <input type="button" className="btn btn-default" value="Đăng nhập" onClick={this.handleSubmit}/>
-            </div>*/}
+                    </div>
                 </div>
             </div>
         </div>

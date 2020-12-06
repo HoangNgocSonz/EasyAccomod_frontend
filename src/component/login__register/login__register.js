@@ -21,7 +21,9 @@ class LoginRegister extends Component {
                 <div>
                     <Login/>
                 </div>
-        
+                <div className="modal fade" id="modalRegisterForm" tabIndex={-1} role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <Register/>
+                </div>
             </div>
         );
     }

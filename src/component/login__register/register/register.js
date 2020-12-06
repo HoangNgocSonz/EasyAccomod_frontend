@@ -34,6 +34,9 @@ class Register extends Component {
                         </div>
                     </div>
                     <div className="md-form mb-5 row">
+                        <div className="col-md-2 col-sm-2 col-xs-3 icon_username">
+                            <img src={img_icon_login} alt="icon"/>
+                        </div>
                         <div className="col-md-10 col-sm-8 col-xs-9 inputusername">
                                 <input type="text" 
                                 className="form-control " 
@@ -43,7 +46,9 @@ class Register extends Component {
                         </div>
                     </div>
                     <div className="md-form mb-5 row">
-                    
+                        <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
+                                <img src={img_icon_password} alt="icon"/>
+                        </div>
                         <div className="col-md-10 col-sm-8 col-xs-9 inputpassword">
                             <input type="password"                                               
                             className="form-control " 
@@ -53,7 +58,9 @@ class Register extends Component {
                         </div>
                     </div>
                     <div className="md-form mb-5 row">
-                       
+                        <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
+                            <img src={img_icon_password} alt="icon"/>
+                        </div>
                         <div className="col-md-10 col-sm-8 col-xs-9 inputpassword">
                             <input type="password"                                                 
                             className="form-control " 
@@ -63,7 +70,9 @@ class Register extends Component {
                         </div>
                     </div>
                     <div className="md-form mb-4 row">
-                        
+                        <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
+                            <img src={img_icon_email} alt="icon"/>
+                        </div>
                         <div className="col-md-10 col-sm-8 col-xs-9 inputpassword">
                             <input type="email"
                             className="form-control " 
