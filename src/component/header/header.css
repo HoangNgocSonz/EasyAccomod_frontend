@@ -10,7 +10,7 @@
     font-size: 1rem;
     font-weight: 400;
     text-align: left;
-    background-color: #000000;
+    background-color: #0a0a0a;
     height: 45px;
     max-height: 45px;
    
@@ -66,10 +66,10 @@
     z-index: 100;
 }
 .header2-menu-nav{
-    min-height: 90px;
-    background-color: rgba(0,0,0,.4) !important; 
+    min-height: 20px;
+    background-color: rgba(0, 0, 0, 0.4) !important; 
     height: auto;
-    padding: .5em 60px;
+    padding: 0.5px 60px;
 }
 .header2-menu-nav-fixed{
     position: fixed;
@@ -83,7 +83,7 @@
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .navbar-brand{
-    color: white !important;
+    color: rgb(214, 58, 11) !important;
     font-size: 24px;
     font-weight: 900;
 }
@@ -106,7 +106,7 @@
 }
 .carousel-item_img{
     width: 100%;
-    height: 700px;
+    height: 200px;
     object-fit: cover;
     object-position: center center;
 }

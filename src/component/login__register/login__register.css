@@ -15,15 +15,7 @@
     border: none;
     border-radius:0px ;
     border-bottom:1.5px solid #ccc ;
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
-}
-.inputpassword>input{
-    border: none;
-    border-radius:0px ;
-    border-bottom: 1.5px solid #ccc;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 500;
 }

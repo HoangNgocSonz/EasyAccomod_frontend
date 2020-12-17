@@ -7,14 +7,14 @@ class Login extends Component {
     render() {
        
         return (
-        <div className="modal fade" id="modalLoginForm" /*tabIndex={-1} role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"*/>
+        <div className="modal fade" id="modalLoginForm">
             <div className="modal-dialog" role="document">
                 <div className="modal-content">
                     <div className="modal-header text-center">
-                    <h4 className="modal-title w-100 font-weight-bold">Đăng nhập</h4>
-                    <button type="button" className="close" id="closelogin" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" /*onClick={this.handleClickClose}*/>×</span>
-                    </button>
+                        <h4 className="modal-title w-100 font-weight-bold">Đăng nhập</h4>
+                        <button type="button" className="close" id="closelogin" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
                     </div>
                     <div className="modal-body mx-3">
                     {/*{!KTL && 

@@ -17,6 +17,7 @@ class LoginRegister extends Component {
                                 <li className="nav-item">
                                     <NavLink  to='/nguoi-dung/dang-ky' className="nav-link" data-toggle="modal" data-target="#modalRegisterForm">Đăng ký</NavLink>
                                 </li>
+                                
                     </ul>
                 <div>
                     <Login/>
