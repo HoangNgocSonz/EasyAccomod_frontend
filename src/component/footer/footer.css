@@ -1,0 +1,33 @@
+h3{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+h6{
+    padding-left: 100px;
+}
+p{
+    color: white;
+    padding-left: 100px;
+}
+.left{
+    float: left;
+    width: 500px;
+}
+.center{
+    color: white;
+    float: left;
+    width: 30%;
+}
+.right p{
+    text-align: center;
+}
+.footer{
+    background-color: rgb(7, 10, 48);
+    margin-top: 100px;
+}
+.footer-bottom{
+    background-repeat: no-repeat;
+    height: 190px;
+    background-image: url('./image_footer/footer-bg.png');
+}

@@ -48,7 +48,7 @@
     
 }
 .nav-link:hover{
-    color: black;
+    color: rgb(0, 0, 0);
     border-bottom:4px solid black ;
 }
 .header2-slide-menu{
@@ -67,9 +67,11 @@
 }
 .header2-menu-nav{
     min-height: 20px;
-    background-color: rgba(0, 0, 0, 0.4) !important; 
+    background-color:black; 
     height: auto;
     padding: 0.5px 60px;
+    position: fixed;
+    top: 0px;
 }
 .header2-menu-nav-fixed{
     position: fixed;
@@ -156,10 +158,17 @@
     .header2-menu-nav{
         padding: 0px 20px;
     }
+    .header2-menu-nav-item{
+        padding: 0px 20px;
+        background-color: rgb(0, 0, 0);
+    }
     .carousel-item_img{
         height: 600px;
     }
     .form_filter{
         padding: 30px 0px !important;
+    }
+    .nav-link{
+        background-color: rgb(0, 0, 0);
     }
 }
