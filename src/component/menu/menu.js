@@ -29,7 +29,7 @@ class Menu extends Component {
                         </span>
                     </button> 
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="nav navbar-nav ml-auto">
+                        <ul className="nav navbar-nav ml-auto bg">
                             <li className="nav-item active">
                                 <p className="nav-link header2-menu-nav-item" >Trang chủ</p>
                             </li>
