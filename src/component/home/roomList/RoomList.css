@@ -1,0 +1,90 @@
+.content {
+  border: 1px solid rgb(236, 236, 236);
+  height: 172;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.content:hover {
+  box-shadow: 0px 0px 10px 2px rgb(216, 216, 216);
+}
+
+.image {
+  margin-top: -1px;
+  width: 224px;
+  height: 172px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 6px;
+  margin-left: -16px;
+}
+.detail {
+  margin-left: 50px;
+}
+.aiFillHome {
+  margin-left: -12px;
+}
+.title {
+  margin-top: 6px;
+  font-size: 19px;
+  color: #c12f25;
+}
+.cost {
+  font-size: 15px;
+  font-weight: 700;
+}
+.description {
+  font-weight: 500;
+  color: #707070;
+  font-size: 15px;
+}
+.date {
+  margin-left: -30px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #3f3f3f;
+}
+.acreage {
+  margin-left: 10px;
+}
+.two {
+  font-size: 12px;
+}
+.quan_huyen,
+.province {
+  font-weight: 500;
+  color: #3f3f3f;
+  margin-left: 2px;
+}
+.quan_huyen {
+  margin-left: 10px;
+}
+.limitHeight {
+  margin-left: -30px;
+  height: 130px;
+  overflow: hidden;
+}
+.filterCost {
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 6px;
+  height: 440px;
+}
+.filterAceage {
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 6px;
+  height: 480px;
+  margin-top: 20px;
+}
+.filterCostTitle {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: -5px;
+  margin-left: 24px;
+}
+.selectCost {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 24px;
+}
+.selectCost:hover {
+  color: #c12f25;
+}

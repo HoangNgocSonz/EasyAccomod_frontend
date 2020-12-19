@@ -1,33 +1,33 @@
-h3{
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
+h3 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
 }
-h6{
-    padding-left: 100px;
+h6 {
+  padding-left: 100px;
 }
-p{
-    color: white;
-    padding-left: 100px;
+.p_tag {
+  color: white;
+  padding-left: 100px;
 }
-.left{
-    float: left;
-    width: 500px;
+.left {
+  float: left;
+  width: 500px;
 }
-.center{
-    color: white;
-    float: left;
-    width: 30%;
+.center {
+  color: white;
+  float: left;
+  width: 30%;
 }
-.right p{
-    text-align: center;
+.right p {
+  text-align: center;
 }
-.footer{
-    background-color: rgb(7, 10, 48);
-    margin-top: 100px;
+.footer {
+  background-color: rgb(7, 10, 48);
+  margin-top: 100px;
 }
-.footer-bottom{
-    background-repeat: no-repeat;
-    height: 190px;
-    background-image: url('./image_footer/footer-bg.png');
+.footer-bottom {
+  background-repeat: no-repeat;
+  height: 190px;
+  background-image: url("./image_footer/footer-bg.png");
 }
