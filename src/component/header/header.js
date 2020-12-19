@@ -10,7 +10,7 @@ import Datenow from './date/datenow';
 class Header extends Component {
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid" id = "header">
                 <div className="row header1">
                     <div className="col-md-6 col-sm-6 col-xs-6 header1_info_left" >
                         <Datenow/>

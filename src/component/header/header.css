@@ -97,6 +97,7 @@
     font-size: 17px;
     font-weight: 600;
     text-transform:uppercase;
+    cursor: pointer;
 }
 .header2-menu-nav-item-active{
     color: #947054 !important;

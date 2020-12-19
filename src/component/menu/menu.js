@@ -18,6 +18,10 @@ class Menu extends Component {
             else this.setState({scrolled:false})
         });
     }
+    divStyle = {
+        color: 'white',
+        textDecoration: 'none'
+      };
     render(){
         return(
             <div className = "col-md-12 col-sm-12 col-xs-12 header2-menu">
@@ -31,7 +35,7 @@ class Menu extends Component {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="nav navbar-nav ml-auto bg">
                             <li className="nav-item active">
-                                <p className="nav-link header2-menu-nav-item" >Trang chủ</p>
+                                <p className="nav-link header2-menu-nav-item" ><a href = "#header" style = {this.divStyle}>Trang chủ</a></p>
                             </li>
                             <li className="nav-item">
                                 <p className="nav-link header2-menu-nav-item" >Thuê Phòng trọ</p>
@@ -43,7 +47,7 @@ class Menu extends Component {
                                 <p className="nav-link header2-menu-nav-item">Thuê căn hộ</p>
                             </li>
                             <li className="nav-item">
-                                <p className="nav-link header2-menu-nav-item">Liên hệ</p>
+                                <p className="nav-link header2-menu-nav-item"><a href = "#footer" style = {this.divStyle}>Liên hệ</a></p>
                             </li>
                         </ul>
                     </div>

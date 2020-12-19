@@ -7,7 +7,7 @@ import img_phone_call from "./image_footer/phone-call.png";
 class Footer extends Component {
   render() {
     return (
-      <div class="footer">
+      <div class="footer" id = "footer">
         <h3>WEBSITE TÌM PHÒNG TRỌ</h3>
         <div class="left">
           <h3>PhongTroVN</h3>
