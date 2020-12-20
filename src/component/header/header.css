@@ -1,6 +1,7 @@
 .row{
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 .container-fluid{
     padding: 0;
@@ -132,6 +133,7 @@
     width: 100%;
     z-index: 100000 !important;
 }
+
 .form_filter{
     padding: 30px 50px !important;
     position: relative;

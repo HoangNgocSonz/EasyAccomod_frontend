@@ -18,7 +18,7 @@ class Register extends Component {
         } 
     }
     handleSubmitRegister=async ()=>{
-        let {username,password,email,verifypassword,firstname,lastname,phone}=this.state;
+        let {username,password,email,verifypassword,firstname,lastname}=this.state;
         if(!username || !password || !email || !verifypassword ||!firstname || !lastname)
         {
             this.setState({
