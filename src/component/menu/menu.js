@@ -26,7 +26,7 @@ class Menu extends Component {
         return(
             <div className = "col-md-12 col-sm-12 col-xs-12 header2-menu">
                 <nav className = {!this.state.scrolled ? "navbar navbar-expand-lg header2-menu-nav":"navbar navbar-expand-lg header2-menu-nav-fixed"}>
-                    <p className = "navbar-brand">PhongTroVN</p>
+                    <p className = "navbar-brand">EasyAccomod</p>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon">
                             <img src={img_icon_menu} alt="icomn_menu"></img>
