@@ -30,7 +30,7 @@ class Header extends Component {
                        <SlideHeader/>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row ">
                     <div className="container form_filter">
                         <Filter></Filter>
                     </div>

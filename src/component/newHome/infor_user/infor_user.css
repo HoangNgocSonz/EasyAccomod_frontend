@@ -1,0 +1,38 @@
+.radio-sex-female{
+    margin-left: 50px;
+ }
+ .form-change-image{
+    padding: 50px;
+ }
+ .img-circle{
+    height: 200px !important;
+    width: 200px !important;
+ }
+ .personal-info{
+    padding: 30px 0px;
+ }
+ h2{
+    text-align: center;
+    margin-top: 40px;
+ }
+ p{
+    text-align: center;
+ }
+ .tieudepage_mg>p {
+   color: #947054;
+   font-size: 14px;
+   margin-bottom: 0;
+   font-style: italic;
+   line-height: 2;
+   font-weight: 600;
+   margin-bottom: 10px;
+ }
+ .tieudepage_mg-h2 {
+   font-family: inherit;
+   font-weight: 500;
+   line-height: 1.2;
+   color: inherit;
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 5px;
+}

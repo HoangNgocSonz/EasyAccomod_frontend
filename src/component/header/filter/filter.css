@@ -5,7 +5,7 @@
     height: 45px;
     background-color: #947054;
     top: -46px;
-    left: 50%;
+    
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     padding: 0 40px;
@@ -19,30 +19,11 @@
 .nice-select{
     line-height: 27px;
 }
-/* Slider Price and Acreage */
-.MuiSlider-root{
-    color: #947054 !important;
-}
-.MuiSlider-thumb{
-    height: 16px !important;
-    width: 16px !important;
-}
-.MuiSlider-rail{
-    height:6px !important;
-}
-.MuiSlider-track{
-    height:6px !important;
-}
+
 .select_item{
     margin-bottom: 20px;
-   
 }
-.range{
-    margin-bottom: 18px;
-    font-size: 14px;
-    margin-top: 15px;
-    font-weight: 600;
-}
+
 .find_home{
     float: right;
 }

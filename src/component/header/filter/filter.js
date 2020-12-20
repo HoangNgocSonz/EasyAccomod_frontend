@@ -7,12 +7,9 @@ import Slider from '@material-ui/core/Slider';
 class Filter extends Component {
     render(){
         return (
-<div className="advanced-search-form" >
-                 <div className="search-title" id="Find_News">
-                     Tìm kiếm 
-                 </div>
+<div className="advanced-search-for filter" >
                  <div className="row" >
-                    <div className="col-md-3 col-sm-4 col-xs-12 select_item">
+                    <div className="col-md-2 col-sm-4 col-xs-12 select_item">
                         <select className="form-control nice-select wide select_item" 
                         >
                                     <option data-display="Thể loại" value="0" >Tất cả</option>
@@ -23,70 +20,54 @@ class Filter extends Component {
                     </div>
                     <div className="col-md-3 col-sm-4 col-xs-12">
                         <div className="form-group">
-                            <select className="form-control nice-select wide select_item" name="Haha" onChange={e=>this.submitClickCity(e)}>
+                            <select className="form-control nice-select wide select_item" name="Haha">
                                       <option value='0'>-- Chọn Tỉnh/Thành Phố --</option>
-                                      
-                                    {/* { 
-                                      this.state.citys.map((item,index)=>
-                                        <option key={index} value={item.code} >{item.name}</option>)
-                                    } */}
+                                    
                             </select>
                         </div>
                     </div>
                     <div className="col-md-3 col-sm-4 col-xs-12">
                         <div className="form-group">
-                            <select className="form-control nice-select wide select_item" onChange={e=>this.sumitClickDictrict(e)}>
+                            <select className="form-control nice-select wide select_item" >
                                             <option value='0'>-- Chọn Quận/Huyện --</option>
-                                            {/* {
-                                                this.state.districts.map((item,index)=>
-                                                    <option key={index} value={item.code} >{item.typename}</option>
-                                                )
-                                            } */}
+                                          
                             </select>
                         </div>
                     </div>
-                    <div className="col-md-3 col-sm-4 col-xs-12">
-                        <div className="form-group">
-                                <select className="form-control nice-select wide select_item" onChange={e=>this.sumitClickStreet(e)}>
-                                            <option value='0'>-- Chọn Tên Đường --</option>
-                                            {/* {
-                                            this.state.streets.map((item,index)=>
-                                                <option key={index} value={item.code}>{item.typename}</option>
-                                            )
-                                            } */}
-                                </select>
-                        </div>
+                    <div className="col-md-2 col-sm-4 col-xs-12 select_item">
+                        <select className="form-control nice-select wide select_item">
+                                    <option data-display="Mức giá" value="0" >Mức giá</option>
+                                    <option value="1">Dưới 1 triệu</option>
+                                    <option value="2">1 - 2 triệu</option>
+                                    <option value="3">2 - 3 triệu</option>
+                                    <option value="4">3 - 5 triệu</option>
+                                    <option value="5">5 - 7 triệu</option>
+                                    <option value="6">7 - 10 triệu</option>
+                                    <option value="7">10 - 20 triệu</option>
+                                    <option value="8">20 - 50 triệu</option>
+                                    <option value="8">50 - 100 triệu</option>
+                                    <option value="8">Trên 100 triệu</option>
+                        </select>
                     </div>
-                 </div>
-                 <div className="row">
-                       
-                        <div className="col-md-6 col-sm-6 col-xs-12">
-                                <Slider
-                                max={50}
-                                min={0}
-                                
-                                valueLabelDisplay="auto"
-                                aria-labelledby="range-slider"/>
-
-                                <label className="range">Giá tiền</label>
-                                
-                            
-                        </div>
-                        <div className="col-md-6 col-sm-6 col-xs-12">
-                                <Slider
-                                 max={200}
-                                 min={0}
-                               
-                                valueLabelDisplay="auto"
-                                aria-labelledby="range-slider"/>
-                                
-                                <label className="range">Diện tích</label>
-                        </div>
-
-
+                    <div className="col-md-2 col-sm-4 col-xs-12 select_item">
+                        <select className="form-control nice-select wide select_item">
+                                    <option data-display="Diện tích" value="0" >Diện tích</option>
+                                    <option value="1">0 - 15 m2</option>
+                                    <option value="2">15 - 20 m2</option>
+                                    <option value="3">20- 25 m2</option>
+                                    <option value="4">25 - 30 m2</option>
+                                    <option value="5">30 - 35 m2</option>
+                                    <option value="6">35 - 40 m2</option>
+                                    <option value="7">40 - 50 m2</option>
+                                    <option value="8">50 - 60 m2</option>
+                                    <option value="9">60 - 80 m2</option>
+                                    <option value="10">80 - 100 m2</option>
+                                    <option value="11">Trên 100 m2</option>
+                        </select>
+                    </div>
                  </div>
                  <div className="row find_home">
-                        <input className="bnt_find" type="button" value="Tìm Kiếm" onClick={e=>this.ClickFilter(e)}/>
+                        <input className="bnt_find" type="button" value="Tìm Kiếm"/>
                  </div>
             </div>
         );
