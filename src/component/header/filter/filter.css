@@ -39,6 +39,7 @@
     padding: 0 30px;
     text-transform: uppercase;
     border: none;
+    margin-left: 430px;
 }
 .bnt_find:hover{
     background-color: black;
