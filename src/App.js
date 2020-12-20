@@ -8,6 +8,8 @@ import { Slide } from "@material-ui/core";
 import Footer from "./component/footer/footer";
 import HomePage from "./component/home/HomePage";
 import RoomList from "./component/home/roomList/RoomList";
+import Admin from "./component/admin/admin";
+
 class App extends Component {
   render() {
     return (
@@ -15,7 +17,7 @@ class App extends Component {
         <Router>
           <div>
             <HomePage></HomePage>
-            something
+            <Admin/>
           </div>
         </Router>
       </div>
