@@ -15,6 +15,7 @@ class App extends Component {
         <Router>
           <div>
             <HomePage></HomePage>
+            something
           </div>
         </Router>
       </div>
