@@ -22,7 +22,6 @@ class Filter extends Component {
                         <div className="form-group">
                             <select className="form-control nice-select wide select_item" name="Haha">
                                       <option value='0'>-- Chọn Tỉnh/Thành Phố --</option>
-                                    
                             </select>
                         </div>
                     </div>
