@@ -6,6 +6,7 @@ import Inforuser from "../newHome/infor_user/infor_user";
 import ChangePassword from "../newHome/change_password/change_password";
 import NewsDetail from "../newsdetail/newsdetail";
 import NewsHome from "../newHome/new_news/new_news";
+import Report from "../newHome/report_news/report_news"
 export default class HomePage extends Component {
   render() {
     return (
@@ -15,6 +16,7 @@ export default class HomePage extends Component {
         <Inforuser></Inforuser>
         <ChangePassword></ChangePassword>
         <NewsHome/>
+        <Report/>
         <NewsDetail></NewsDetail>
         <Footer></Footer>
        

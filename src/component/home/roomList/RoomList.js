@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./RoomList.css";
 import axios from "axios";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 export default class RoomList extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +14,6 @@ export default class RoomList extends Component {
     axios
       .get("https://accomod.herokuapp.com/api/post")
       .then((res) => {
-        console.log(res.data.data);
         this.setState({
           contents: res.data.data,
         });
@@ -23,42 +23,43 @@ export default class RoomList extends Component {
   render() {
     var contentArr = this.state.contents.map((content) => (
       <div>
-        <div className="content">
-          <Row>
-            <Col sm={3}>
-              <img className="image" src={content.images[0]}></img>
-            </Col>
-            <Col sm={9}>
-              <div className="detail">
-                <div className="limitHeight">
-                  <h4 className="title">{content.title}</h4>
-                  <h5 className="cost">
-                    <span>{content.cost}</span>
-                    <span className="acreage">
-                      {content.acreage}m<span className="two">2</span>
-                    </span>
-                    <span className="quan_huyen">{content.quan_huyen},</span>
-                    <span className="province">{content.province}</span>
-                  </h5>
-                  <div className="description">{content.description}</div>
+        <Link to={`/detail/${content._id}`}>
+          <div className="content">
+            <Row>
+              <Col xs={6} sm={5} md={4} lg={3}>
+                <img className="image" src={content.images[0]}></img>
+              </Col>
+              <Col xs={6} sm={7} md={8} lg={9}>
+                <div className="detail">
+                  <div className="limitHeight">
+                    <h4 className="title">{content.title}</h4>
+                    <h5 className="cost">
+                      <span>{content.cost}</span>
+                      <span className="acreage">
+                        {content.acreage}m<span className="two">2 </span>
+                      </span>
+                      <span className="quan_huyen">{content.quan_huyen},</span>
+                      <span className="province">{content.province}</span>
+                    </h5>
+                    <div className="description">{content.description}</div>
+                  </div>
+                  <div className="date">Hôm nay</div>
                 </div>
-
-                <div className="date">Hôm nay</div>
-              </div>
-            </Col>
-          </Row>
-        </div>
+              </Col>
+            </Row>
+          </div>
+        </Link>
       </div>
     ));
     return (
       <div>
         <Container>
           <Row>
-            <Col xs={12} sm={12} md={12} lg={9} xl={9}>
-              {contentArr}
+            <Col xs={12} sm={12} md={12} lg={12} xl={9}>
+              <div className="mainLeft">{contentArr}</div>
             </Col>
-            <Col xs={0} sm={0} md={0} lg={3} xl={3}>
-              <div className="filter">
+            <Col xs={0} sm={0} md={0} lg={0} xl={3}>
+              <div className="filterRight">
                 <div className="filterCost">
                   <h4 className="filterCostTitle">Lọc theo khoảng giá</h4>
                   <hr width="80%"></hr>

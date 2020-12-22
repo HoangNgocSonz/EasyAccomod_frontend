@@ -55,22 +55,28 @@ class Inforuser extends Component {
               <div className="form-group">
                 <label className="col-lg-3 control-label">Email:</label>
                 <div className="col-lg-8">
-                  <input className="form-control" type="text" 
-                   />
+
+                  {/* <input className="form-control" type="text" ></input> */}
+         <input className="form-control" type="text" placeholder = "mailinh@gmail.com" disabled/>
                 </div>
               </div>
               <div className="form-group">
                 <label className="col-md-3 control-label">Tên đăng nhập:</label>
                 <div className="col-md-8">
-                  <input className="form-control" type="text" 
-                 />
+
+                  {/* <input className="form-control" type="text" /> */}
+
+                  <input className="form-control" type="text" placeholder = "hello" disabled/>
+      
                 </div>
               </div>
               <div className="form-group">
                 <label className="col-md-3 control-label">Số điện thoại:</label>
                 <div className="col-md-8">
-                  <input className="form-control" type="text"
-                 />
+
+                  {/* <input className="form-control" type="text"/> */}
+
+                  <input className="form-control" type="text" placeholder = "0976931294" disabled/>
                 </div>
               </div>
               <div className="form-group">

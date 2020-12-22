@@ -1,0 +1,54 @@
+.imageCorousel {
+  width: 100%;
+  height: 480px;
+}
+.titleDetail {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.RoomDetailRight {
+  background: rgb(216, 216, 216);
+  height: 2000px;
+}
+.costDetail {
+  font-size: 20px;
+  font-weight: 700;
+}
+.acreageDetail {
+  margin-left: 10px;
+}
+.twoDetail {
+  font-size: 12px;
+}
+.quan_huyenDetail,
+.provinceDetail {
+  font-weight: 500;
+  color: #3f3f3f;
+  margin-left: 2px;
+}
+.quan_huyenDetail {
+  margin-left: 10px;
+}
+.detailInfo {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.real_estate_characteristics {
+  margin-top: 34px;
+  margin-bottom: 22px;
+}
+
+.detailInformation {
+  font-weight: 445;
+}
+.bold {
+  font-weight: 560;
+}
+@media only screen and (max-width: 1199px) {
+  .RoomDetailRight {
+    display: none;
+  }
+}
