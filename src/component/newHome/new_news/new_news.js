@@ -6,8 +6,8 @@ class NewsHome extends Component{
     constructor(props){
         super(props);
         this.state = {
-            options: [{name: 'Wifi miễn phí', id: 1},{name: 'Có gác lửng', id: 2},{name: 'Tủ + giường', id: 3},{name: 'Không chung chủ', id: 4},
-            {name: 'Chung chủ', id: 5}, {name: 'Giờ giấc tự do', id: 6}, {name: 'Vệ sinh riêng', id: 7}, {name: 'Vệ sinh chung', id: 8}],
+            options: [{name: 'Không chung chủ', id: 1},
+            {name: 'Chung chủ', id: 2},{name: 'Wifi', id: 3},{name: 'Có gác lửng', id: 4},{name: 'Giường', id: 5},{name: 'Tủ', id: 6}, {name: 'Giờ giấc tự do', id: 7}, {name: 'Vệ sinh riêng', id: 8}, {name: 'Vệ sinh chung', id: 9},{name: 'Nóng lạnh', id: 10},{name: 'Điều hòa', id: 11}],
         }
     }
     render(){

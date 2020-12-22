@@ -4,6 +4,7 @@ import Header from "../header/header";
 import Footer from "../footer/footer";
 import Inforuser from "../newHome/infor_user/infor_user";
 import ChangePassword from "../newHome/change_password/change_password";
+import NewsDetail from "../newsdetail/newsdetail";
 import NewsHome from "../newHome/new_news/new_news";
 export default class HomePage extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class HomePage extends Component {
         <Inforuser></Inforuser>
         <ChangePassword></ChangePassword>
         <NewsHome/>
+        <NewsDetail></NewsDetail>
         <Footer></Footer>
        
       </div>

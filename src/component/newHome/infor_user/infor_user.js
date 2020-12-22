@@ -7,8 +7,8 @@ class Inforuser extends Component {
             <div className="container-fluid">
           <div className="row">
           <div className="col-md-12 col-sm-12 col-xs-12 tieudepage_mg">
-              <h2 className="tieudepage_mg-h2">Chỉnh sửa thông tin cá nhân</h2>
-              <p>Thông tin càng chính xác giúp cho người thuê một cách tốt nhất</p>
+              <h2 className="tieudepage_mg-h2 title">Chỉnh sửa thông tin cá nhân</h2>
+              <p className="par">Thông tin càng chính xác giúp cho người thuê một cách tốt nhất</p>
           </div>
          </div>
        
@@ -55,21 +55,21 @@ class Inforuser extends Component {
               <div className="form-group">
                 <label className="col-lg-3 control-label">Email:</label>
                 <div className="col-lg-8">
-                  <input className="form-control" type="text" disabled
+                  <input className="form-control" type="text" 
                    />
                 </div>
               </div>
               <div className="form-group">
                 <label className="col-md-3 control-label">Tên đăng nhập:</label>
                 <div className="col-md-8">
-                  <input className="form-control" type="text" disabled
+                  <input className="form-control" type="text" 
                  />
                 </div>
               </div>
               <div className="form-group">
                 <label className="col-md-3 control-label">Số điện thoại:</label>
                 <div className="col-md-8">
-                  <input className="form-control" type="text" disabled
+                  <input className="form-control" type="text"
                  />
                 </div>
               </div>

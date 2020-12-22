@@ -3,6 +3,7 @@ import axios from 'axios';
 import img_icon_login from '../image_icon_LaR/avatar.png';
 import img_icon_password from '../image_icon_LaR/lock.png';
 import img_icon_email from '../image_icon_LaR/email.png';
+import img_icon_phone from '../image_icon_LaR/phone.png';
 class Register extends Component {
     constructor(props) {
         super(props);
@@ -10,6 +11,7 @@ class Register extends Component {
             username:'',
             password:'',
             email:'',
+            phone:'',
             verifypassword:'',
             firstname:'',
             lastname:'',
@@ -18,8 +20,8 @@ class Register extends Component {
         } 
     }
     handleSubmitRegister=async ()=>{
-        let {username,password,email,verifypassword,firstname,lastname}=this.state;
-        if(!username || !password || !email || !verifypassword ||!firstname || !lastname)
+        let {username,password,email,phone,verifypassword,firstname,lastname}=this.state;
+        if(!username || !password || !email || !verifypassword ||!firstname || !lastname || !phone)
         {
             this.setState({
                 message:"Vui lòng nhập đầy đủ thông tin!!"
@@ -28,7 +30,7 @@ class Register extends Component {
             if(password===verifypassword)
             {
                 await axios.post('/nguoi-dung/dang-ky',{
-                    username,password,email,firstname,lastname
+                    username,password,email,phone,firstname,lastname
                  },{headers: {'Accept': 'application/json'}})
                 .then(res => {
                     this.setState({
@@ -55,6 +57,7 @@ class Register extends Component {
             username:this.refs.username.value,
             password:this.refs.password.value,
             email:this.refs.email.value,
+            phone:this.refs.phone.value,
             verifypassword:this.refs.verifypassword.value,
             firstname:this.refs.firstname.value,
             lastname:this.refs.lastname.value,
@@ -65,6 +68,7 @@ class Register extends Component {
             username:'',
             password:'',
             email:'',
+            phone:'',
             verifypassword:'',
             firstname:'',
             lastname:'',
@@ -150,6 +154,21 @@ class Register extends Component {
                             ref="verifypassword"
                             onChange={this.handleChangeField}
                             value={this.state.verifypassword}
+                            />
+                        </div>
+                        <br></br>
+                    </div>
+                    <div className="md-form mb-5 row">
+                        <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
+                            <img src={img_icon_phone} alt="icon"/>
+                        </div>
+                        <div className="col-md-10 col-sm-8 col-xs-9 inputpassword">
+                            <input type="text"
+                            className="form-control " 
+                            placeholder="Phone"
+                            ref="phone"
+                            onChange={this.handleChangeField}
+                            value={this.state.phone}
                             />
                         </div>
                     </div>

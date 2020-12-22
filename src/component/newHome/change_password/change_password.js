@@ -3,8 +3,9 @@ import img_icon_password from './icon_change_password/lock.png';
 class ChangePassword extends Component {
     render (){
         return (
-        <div className="modal-dialog" role="document">
-            <div className="modal-content">
+       
+            <div className="modal-dialog" role="document">
+        <div className="modal-content">
             <div className="modal-header text-center">
                 <h4 className="modal-title w-100 font-weight-bold">Đổi mật khẩu</h4>
                 <button type="button" className="close"  data-dismiss="modal" aria-label="Close">
@@ -57,6 +58,7 @@ class ChangePassword extends Component {
                 </div>
             </div>
         </div>
+    
         );
     }
 }
