@@ -17,8 +17,6 @@ export default class HomePage extends Component {
         <ChangePassword></ChangePassword>
         <NewsHome/>
         <Report/>
-        <NewsDetail></NewsDetail>
-        <Footer></Footer>
        
       </div>
     );
