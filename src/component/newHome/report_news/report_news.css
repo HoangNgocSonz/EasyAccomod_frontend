@@ -4,3 +4,6 @@
     padding: 20px;
     margin-left: 100px;
 }
+input:hover{
+    cursor: pointer;
+}

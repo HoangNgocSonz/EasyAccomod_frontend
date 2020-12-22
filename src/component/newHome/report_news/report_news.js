@@ -5,14 +5,14 @@ class Report extends Component{
     render(){
         return(
             <div className = "report">
-                <h4>BÁO CÁO</h4>
+                <h4 style = {{textAlign:'center'}}>BÁO CÁO</h4>
                 <form>
-                    <input type = "radio" checked></input>
-                    <label className = "radio" style={{marginRight: '20px'}}>Đã cho thuê
+                    <input id = "borrowed" type = "radio" name = "baocao" value = "1"></input>
+                    <label for ="borrowed" className = "radio" style={{marginRight: '20px', fontSize:'15px'}}>Đã cho thuê
                         <span className = "checkround"></span>
                     </label>
-                    <input type = "radio"/>
-                    <label className = "radio">Sai thông tin
+                    <input id = "error" type = "radio" name = "baocao" value = "2"/>
+                    <label for = "error" className = "radio">Sai thông tin
                         <span className = "checkround"></span>
                     </label><br/>
                     <button className="btn btn-danger">Gửi báo cáo</button>
