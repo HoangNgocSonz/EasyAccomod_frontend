@@ -32,7 +32,7 @@ export default class RoomList extends Component {
               <Col xs={6} sm={7} md={8} lg={9}>
                 <div className="detail">
                   <div className="limitHeight">
-                    <h4 className="title">{content.title}</h4>
+                    <h4 className="titleRommList">{content.title}</h4>
                     <h5 className="cost">
                       <span>{content.cost}</span>
                       <span className="acreage">
