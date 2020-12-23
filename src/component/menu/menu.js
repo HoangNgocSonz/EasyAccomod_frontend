@@ -7,10 +7,10 @@ class Menu extends Component {
             scrolled: false
         }
     }
-    componentDidMount(){
+    componentDidMount(){//được gọi khi đã hiển thị component ra ngoài trình duyệt
         window.addEventListener('scroll',()=>{
             const isTop = window.scrollY < 10;
-            if(isTop !==true) {
+            if(isTop !== true) {
                 this.setState({
                     scrolled:true
                 })

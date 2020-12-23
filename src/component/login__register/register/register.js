@@ -4,6 +4,7 @@ import img_icon_login from '../image_icon_LaR/avatar.png';
 import img_icon_password from '../image_icon_LaR/lock.png';
 import img_icon_email from '../image_icon_LaR/email.png';
 import img_icon_phone from '../image_icon_LaR/phone.png';
+import {Link} from "react-router-dom";
 class Register extends Component {
     constructor(props) {
         super(props);
@@ -77,24 +78,28 @@ class Register extends Component {
        });
     }
     render() {
+       
         var KTL=true;
         if(this.state.message.length>0){
             KTL=false;
         }
         return (
-            <div className="modal-dialog" role="document">
+            <div className="modal-dialog" role="document" >
                 <div className="modal-content">
                 <div className="modal-header text-center">
                     <h4 className="modal-title w-100 font-weight-bold">Đăng Ký</h4>
+                    
                     <button type="button" className="close"  data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" id="IdRegister" onClick={this.handleClickCloseRegister}>×</span>
                     </button>
                 </div>
+
                 <div className="modal-body mx-3">
                 {!KTL && 
                           <p  className="error_message-login">{ this.state.message} 
                           </p>
                 }
+               
                 <div className="md-form mb-5 row">
                         <div className="col-md-6 col-sm-6 col-xs-6 inputusername input_formname">
                                 <input type="text" 
@@ -131,6 +136,20 @@ class Register extends Component {
                     </div>
                     <div className="md-form mb-5 row">
                         <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
+                            <img src={img_icon_email} alt="icon"/>
+                        </div>
+                        <div className="col-md-10 col-sm-8 col-xs-9 inputpassword">
+                            <input type="email"
+                            className="form-control " 
+                            placeholder="Email"
+                            ref="email"
+                            onChange={this.handleChangeField}
+                            value={this.state.email}
+                            />
+                        </div>
+                    </div>
+                    <div className="md-form mb-5 row">
+                        <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                                 <img src={img_icon_password} alt="icon"/>
                         </div>
                         <div className="col-md-10 col-sm-8 col-xs-9 inputpassword">
@@ -156,9 +175,8 @@ class Register extends Component {
                             value={this.state.verifypassword}
                             />
                         </div>
-                        <br></br>
                     </div>
-                    <div className="md-form mb-5 row">
+                    <div className="md-form mb-4 row">
                         <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                             <img src={img_icon_phone} alt="icon"/>
                         </div>
@@ -172,19 +190,10 @@ class Register extends Component {
                             />
                         </div>
                     </div>
-                    <div className="md-form mb-4 row">
-                        <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
-                            <img src={img_icon_email} alt="icon"/>
-                        </div>
-                        <div className="col-md-10 col-sm-8 col-xs-9 inputpassword">
-                            <input type="email"
-                            className="form-control " 
-                            placeholder="Email"
-                            ref="email"
-                            onChange={this.handleChangeField}
-                            value={this.state.email}
-                            />
-                        </div>
+                    <div className="col-md-8 col-sm-8 col-xs-8 span_registerinlogin">
+                                <h5>Bạn là chủ trọ đăng ký <Link to='/nguoi-dung/chu-tro-dang-ky' data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalOwnRegisterForm">
+                                ở đây
+                                </Link></h5>
                     </div>
                     
                 </div>
