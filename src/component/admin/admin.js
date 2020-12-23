@@ -1,22 +1,53 @@
 import React, { Component } from "react";
-import {NavLink} from "react-router-dom"
-import PhongTro from "./qlphongtro/manage_phongtro"
-import "./admin.css"
+import {NavLink, Link} from "react-router-dom"
+import {Route, Switch} from "react-router-dom"
 
+import PhongTro from "./qlphongtro/manage_phongtro"
+import ManageUser from "./manage_user/manage_user"
+
+import "./admin.css"
+import axios from 'axios';
 class Admin extends Component{
     render(){
         return(
             <div class = "admin">
                 <div class = "left_admin">
                     <h3>EasyAccomod</h3>
-                    <li><span>QUẢN TRỊ</span></li>
-                    <li><span data-target = "#phontro">Danh sách Phòng trọ</span></li>
-                    <NavLink to='/admin/qlphongtro'  className="nav-link" data-toggle="modal" data-target="#phongtro">check</NavLink>
-                    <li><span> Danh sách người dùng</span></li>
-                    <li><span> Báo cáo nội dung</span></li>
-                    <li><span> Thống kê</span></li>
-                    <li><span> Xem Trang chủ</span></li>
+                    <ul class = "post_manager-menu-ul">
+                        <li><span>QUẢN TRỊ</span></li>
+                        <li className = "nav-item nav_menu_mg phontro">
+                            <Link to='/admin/danh-sach-phong-tro' className = "nav-link nav_menu_mg phongtro">Danh sách phòng trọ</Link>
+                        </li>
+                        <li className = "nav-item nav_menu_mg">
+                            <Link to = '/' className = "nav-link nav_menu_mg">Danh sách người dùng</Link>
+                        </li>
+                        <li className = "nav-item nav_menu_mg">
+                            <Link to = '/admin/bao-cao-noi-dung' className = "nav-link nav_menu_mg">Báo cáo nội dung</Link>
+                        </li>
+                        <li className = "nav-item nav_menu_mg">
+                            <Link to = '/admin/thong-ke' className = "nav-link nav_menu_mg">Thống kê</Link>
+                        </li>
+                        <li className = "nav-item nav_menu_mg">
+                            <Link to = '/admin/xem-trang-chu' className = "nav-link nav_menu_mg">Xem trang chủ</Link>
+                        </li>
+                        {/*<li><span data-target = "#phontro">Danh sách Phòng trọ</span></li>
+                        <NavLink to='/admin/qlphongtro'  className="nav-link" data-toggle="modal" data-target="#phongtro">check</NavLink>
+                        <li><span> Danh sách người dùng</span></li>
+                        <li><span> Báo cáo nội dung</span></li>
+                        <li><span> Thống kê</span></li>
+                        <li><span> Xem Trang chủ</span></li>*/}
+                    </ul>
                 </div>
+                <div>
+                    <Switch>
+                        <Route exact path = "admin/danh-sach-phong-tro" component = {PhongTro}/>
+                        <Route exact path = "/" component = {ManageUser}/>
+                    </Switch>
+                    
+                </div>
+              
+               
+                {/*
                 <div class = "right_admin">
                     <div class = "top_admin">
                         <div className="col-md-12 col-sm-12 col-xs-12 tieudepage_mg">
@@ -57,7 +88,7 @@ class Admin extends Component{
                             </table>
                         </div>
                     </div>
-                </div>
+                </div>*/}
             </div>
         )
     }

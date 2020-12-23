@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./manage_phongtro.css"
+import "./manage_user.css"
 
-class PhongTro extends Component{
+class ManageUser extends Component{
     render(){
         return(
-            <div class = "phongtro" id = "phongtro">
+            <div class = "phongtro">
                 <div class = "right_admin">
                     <div class = "top_admin">
                         <div className="col-md-12 col-sm-12 col-xs-12 tieudepage_mg">
@@ -18,11 +18,11 @@ class PhongTro extends Component{
                                 <thead>
                                 <tr>
                                     <th scope="col">ID</th>
-                                    <th scope="col">Tiêu đề</th>
-                                    <th scope="col">Danh mục</th>
-                                    <th scope="col">Giá phòng</th>
+                                    <th scope="col">Họ tên</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Quyền</th>
                                     <th scope="col">Trạng thái</th>
-                                    <th scope="col">Bỏ kiểm duyệt</th>
+                                    <th scope="col">Chỉnh sửa</th>
                                     <th scope="col">Xóa</th>
                                 </tr>
                                 </thead>
@@ -34,4 +34,4 @@ class PhongTro extends Component{
         )
     }
 }
-export default PhongTro;
+export default ManageUser;
