@@ -1,4 +1,7 @@
-
+/* .modal-nbody{
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+} */
 /* Input of login and register */
 .inputusername{
     padding: 0px;
@@ -39,7 +42,7 @@
     padding-left: 17px;
 }
 .bntdangnhap>input{
-    background-color: #947054;
+    background-color: #055699;
     height: 44px;
     width: 180px;
     color: white;

@@ -5,6 +5,8 @@ import Login from './login/login';
 import Register from './register/register';
 import OwnRegister from './register/own_register';
 import axios from 'axios';
+import ChangePassword from '../newHome/change_password/change_password';
+import Inforuser from '../newHome/infor_user/infor_user';
 class LoginRegister extends Component {   
     
 
@@ -27,17 +29,16 @@ class LoginRegister extends Component {
                      
                     </button>
                     <div className="dropdown-menu dropdown-menu-right">
-                            <button className="dropdown-item dropdown-menu_btn" type="button">
+                            <button className="dropdown-item dropdown-menu_btn" type="button" >
                             <NavLink  to='/nguoi-dung/sua-thong-tin' 
-                            onClick={this.props.clickMovedOnUsertoApp}
+                           
                             >Thông tin cơ bản</NavLink>
                             </button>
                             <button className="dropdown-item dropdown-menu_btn" 
                             onClick={this.OpenModalChangePassword} type="button">
                             Đổi mật khẩu</button>
                             <button className="dropdown-item dropdown-menu_btn" 
-                            type="button"
-                            onClick={this.ClickLogout}>
+                            type="button">
                              Đăng xuất</button>
                              <button className="dropdown-item dropdown-menu_btn hidden-change-password" 
                             type="button" id="HiddenChangePassword" data-toggle="modal" data-target="#modalChangePassword"

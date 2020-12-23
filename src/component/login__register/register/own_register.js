@@ -87,7 +87,7 @@ class OwnRegister extends Component {
             KTL=false;
         }
         return (
-            <div className="modal-dialog" role="document" id="modalOwnRegisterForm">
+            <div className="modal-dialog" role="document" >
                 <div className="modal-content">
                 <div className="modal-header text-center">
                     <h4 className="modal-title w-100 font-weight-bold">Đăng Ký</h4>
@@ -96,12 +96,12 @@ class OwnRegister extends Component {
                     <span aria-hidden="true" id="IdOwnRegister" onClick={this.handleClickCloseOwnRegister}>×</span>
                     </button>
                 </div>
-                <div className="modal-body mx-3">
+                <div className="modal-body mx-3 modal-nbody">
                 {!KTL && 
                           <p  className="error_message-login">{ this.state.message} 
                           </p>
                 }
-                <div className="md-form mb-5 row">
+                <div className="md-form mb-4 row">
                         <div className="col-md-6 col-sm-6 col-xs-6 inputusername input_formname">
                                 <input type="text" 
                                         className="form-control " 
@@ -121,7 +121,7 @@ class OwnRegister extends Component {
                                 />
                         </div>
                 </div>
-                <div className="md-form mb-5 row">
+                <div className="md-form mb-4 row">
                     <div className="col-md-2 col-sm-2 col-xs-3 icon_username">
                         <img src={img_icon_login} alt="icon"/>
                     </div>
@@ -135,7 +135,7 @@ class OwnRegister extends Component {
                             />
                     </div>
                 </div>
-                <div className="md-form mb-5 row">
+                <div className="md-form mb-4 row">
                     <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                         <img src={img_icon_email} alt="icon"/>
                     </div>
@@ -149,7 +149,7 @@ class OwnRegister extends Component {
                         />
                     </div>
                 </div>
-                <div className="md-form mb-5 row">
+                <div className="md-form mb-4 row">
                     <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                             <img src={img_icon_password} alt="icon"/>
                     </div>
@@ -163,7 +163,7 @@ class OwnRegister extends Component {
                         />
                     </div>
                 </div>
-                <div className="md-form mb-5 row">
+                <div className="md-form mb-4 row">
                     <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                         <img src={img_icon_password} alt="icon"/>
                     </div>
@@ -177,7 +177,7 @@ class OwnRegister extends Component {
                         />
                     </div>
                 </div>
-                <div className="md-form mb-5 row">
+                <div className="md-form mb-4 row">
                     <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                         <img src={img_icon_login} alt="icon"/>
                     </div>
@@ -191,24 +191,24 @@ class OwnRegister extends Component {
                         />
                     </div>
                 </div>
-                <div className="md-form mb-4 row">
+                <div className="md-form mb-2 row">
                         <div className="col-md-4 col-sm-6 col-xs-6 ">
-                            <select className="form-control nice-select wide select_item" name="Haha">
+                            <select className="form-control nice-select wide select_item" name="tp">
                                         <option value='0'>Tỉnh/Thành Phố</option>
                             </select>
                         </div>
                         <div className="col-md-4 col-sm-6 col-xs-6">
-                            <select className="form-control nice-select wide select_item" name="Haha">
+                            <select className="form-control nice-select wide select_item" name="qh">
                                       <option value='0'>Quận/huyện</option>
                             </select>
                         </div>
                         <div className="col-md-4 col-sm-6 col-xs-6">
-                            <select className="form-control nice-select wide select_item" name="Haha">
+                            <select className="form-control nice-select wide select_item" name="px">
                                       <option value='0'>Phường/Xã</option>
                             </select>
                         </div>
                 </div>    
-                <div className="md-form mb-4 row">
+                <div className="md-form mb-2 row">
                     <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                         <img src={img_icon_phone} alt="icon"/>
                     </div>

@@ -100,7 +100,7 @@ class Register extends Component {
                           </p>
                 }
                
-                <div className="md-form mb-5 row">
+                <div className="md-form mb-4 row">
                         <div className="col-md-6 col-sm-6 col-xs-6 inputusername input_formname">
                                 <input type="text" 
                                         className="form-control " 
@@ -120,7 +120,7 @@ class Register extends Component {
                                 />
                         </div>
                     </div>
-                    <div className="md-form mb-5 row">
+                    <div className="md-form mb-4 row">
                         <div className="col-md-2 col-sm-2 col-xs-3 icon_username">
                             <img src={img_icon_login} alt="icon"/>
                         </div>
@@ -134,7 +134,7 @@ class Register extends Component {
                                 />
                         </div>
                     </div>
-                    <div className="md-form mb-5 row">
+                    <div className="md-form mb-4 row">
                         <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                             <img src={img_icon_email} alt="icon"/>
                         </div>
@@ -148,7 +148,7 @@ class Register extends Component {
                             />
                         </div>
                     </div>
-                    <div className="md-form mb-5 row">
+                    <div className="md-form mb-4 row">
                         <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                                 <img src={img_icon_password} alt="icon"/>
                         </div>
@@ -162,7 +162,7 @@ class Register extends Component {
                             />
                         </div>
                     </div>
-                    <div className="md-form mb-5 row">
+                    <div className="md-form mb-4 row">
                         <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                             <img src={img_icon_password} alt="icon"/>
                         </div>
@@ -176,7 +176,7 @@ class Register extends Component {
                             />
                         </div>
                     </div>
-                    <div className="md-form mb-4 row">
+                    <div className="md-form mb-3 row">
                         <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                             <img src={img_icon_phone} alt="icon"/>
                         </div>
@@ -191,9 +191,9 @@ class Register extends Component {
                         </div>
                     </div>
                     <div className="col-md-8 col-sm-8 col-xs-8 span_registerinlogin">
-                                <h5>Bạn là chủ trọ đăng ký <Link to='/nguoi-dung/chu-tro-dang-ky' data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalOwnRegisterForm">
+                                <p>Bạn là chủ trọ đăng ký <Link to='/nguoi-dung/chu-tro-dang-ky' data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalOwnRegisterForm">
                                 ở đây
-                                </Link></h5>
+                                </Link></p>
                     </div>
                     
                 </div>

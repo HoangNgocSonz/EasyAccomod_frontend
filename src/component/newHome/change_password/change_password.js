@@ -13,7 +13,7 @@ class ChangePassword extends Component {
                 </button>
             </div>
             <div className="modal-body mx-3">
-                <div className="md-form mb-5 row">
+                <div className="md-form mb-4 row">
                     <div className="col-md-2 col-sm-2 col-xs-3 icon_username">
                         <img src={img_icon_password} alt="icon"/>
                     </div>
@@ -26,7 +26,7 @@ class ChangePassword extends Component {
                     </div>
                 </div>
                 
-                <div className="md-form mb-5 row">
+                <div className="md-form mb-4 row">
                     <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                             <img src={img_icon_password} alt="icon"/>
                     </div>
@@ -39,7 +39,7 @@ class ChangePassword extends Component {
                         />
                     </div>
                 </div>
-                <div className="md-form mb-5 row">
+                <div className="md-form mb-4 row">
                     <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
                         <img src={img_icon_password} alt="icon"/>
                     </div>

@@ -30,7 +30,7 @@ class GoogleMap extends Component {
                 lat: position.coords.latitude,
                 lng:position.coords.longitude
             }
-        })
+        }) 
         this.props.getLocationNews(this.state.center)
     }
     handleApiLoaded=(map, maps)=>{
