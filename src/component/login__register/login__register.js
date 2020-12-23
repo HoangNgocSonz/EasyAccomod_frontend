@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 import './login__register.css';
 import Login from './login/login';
 import Register from './register/register';
+import OwnRegister from './register/own_register';
 import axios from 'axios';
 class LoginRegister extends Component {   
     
@@ -56,6 +57,9 @@ class LoginRegister extends Component {
                 </div>
                 <div className="modal fade" id="modalRegisterForm" tabIndex={-1} role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <Register/>
+                </div>
+                <div className="modal fade" id="modalOwnRegisterForm" tabIndex={-1} role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <OwnRegister/>
                 </div>
             </div>
         );
