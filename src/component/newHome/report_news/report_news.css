@@ -1,0 +1,9 @@
+.report{
+    border: 2px dashed red;
+    display: inline-block;
+    padding: 20px;
+    margin-left: 100px;
+}
+input:hover{
+    cursor: pointer;
+}

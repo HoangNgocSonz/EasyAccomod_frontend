@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Carousel, Row, Col, Container } from "react-bootstrap";
+import Report from "../newHome/report_news/report_news";
 import axios from "axios";
 import "./RoomDetail.css";
 export default class RoomDetail extends Component {
@@ -102,7 +103,7 @@ export default class RoomDetail extends Component {
                           ? "có"
                           : "không"}
                       </p>
-                    </div>
+                    </div><hr/>
                   </div>
                 </div>
               ) : (

@@ -2,12 +2,14 @@ import React, { Component, useState } from "react";
 import { Multiselect } from 'multiselect-react-dropdown';
 import './new_news.css'
 
+import GoogleMap from "./google_map/google_map"
+
 class NewsHome extends Component{    
     constructor(props){
         super(props);
         this.state = {
-            options: [{name: 'Wifi miễn phí', id: 1},{name: 'Có gác lửng', id: 2},{name: 'Tủ + giường', id: 3},{name: 'Không chung chủ', id: 4},
-            {name: 'Chung chủ', id: 5}, {name: 'Giờ giấc tự do', id: 6}, {name: 'Vệ sinh riêng', id: 7}, {name: 'Vệ sinh chung', id: 8}],
+            options: [{name: 'Không chung chủ', id: 1},
+            {name: 'Chung chủ', id: 2},{name: 'Wifi', id: 3},{name: 'Có gác lửng', id: 4},{name: 'Giường', id: 5},{name: 'Tủ', id: 6}, {name: 'Giờ giấc tự do', id: 7}, {name: 'Vệ sinh riêng', id: 8}, {name: 'Vệ sinh chung', id: 9},{name: 'Nóng lạnh', id: 10},{name: 'Điều hòa', id: 11}],
         }
     }
     render(){
@@ -69,9 +71,12 @@ class NewsHome extends Component{
                                     <div className="form-group">
                                         <label for ="address">Địa chỉ phòng trọ:</label> Bạn có thể nhập hoặc chọn ví trí trên bản đồ 
                                         <input type="text" id="location-text-box" name="txtaddress" className="form-control" value="" id = "address" />
-                                        <input type="hidden" id="txtaddress" name="txtaddress" value=""  className="form-control"  />
-                                        <input type="hidden" id="txtlat" value="" name="txtlat"  className="form-control"  />
-                                        <input type="hidden" id="txtlng"  value="" name="txtlng" className="form-control" />
+                                        <div className="row">
+                                            <label>Lựa chọn vị trí trên bản đồ:</label>
+                                            <div className="col-md-12 col-sm-12 col-xs-12 google_map">
+                                                <GoogleMap getLocationtoNewsNews={this.getLocation}/>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="row content_news">
                                         <div className="col-md-8 col-sm-8 col-xs-12 content_news">
