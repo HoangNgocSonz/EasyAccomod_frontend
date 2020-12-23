@@ -13,12 +13,12 @@ class LoginRegister extends Component {
         return (
             <div className="navbar navbar-expand-sm header1_info_right__div-login_register">
                 <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <NavLink to='/nguoi-dung/dang-nhap'  className="nav-link" data-toggle="modal" data-target="#modalLoginForm">Đăng nhập</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink  to='/nguoi-dung/dang-ky' className="nav-link" data-toggle="modal" data-target="#modalRegisterForm">Đăng ký</NavLink>
-                            </li>
+                    <li className="nav-item">
+                        <NavLink to='/nguoi-dung/dang-nhap'  className="nav-link" data-toggle="modal" data-target="#modalLoginForm">Đăng nhập</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink  to='/nguoi-dung/dang-ky' className="nav-link" data-toggle="modal" data-target="#modalRegisterForm">Đăng ký</NavLink>
+                    </li>
                 </ul>
                 :
                 <div className="btn-group">
@@ -49,7 +49,7 @@ class LoginRegister extends Component {
                     {/* Link đăng tin mới lên website */}
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink  to='/nguoi-dung/dang-tin-moi' className="nav-link" >Đăng tin mới</NavLink>
+                            <NavLink  to='/nguoi-dung/dang-tin-moi' className="nav-link"  data-toggle="modal" data-target="#modalLoginForm" >Đăng tin mới</NavLink>
                         </li>
                     </ul>
                 <div>

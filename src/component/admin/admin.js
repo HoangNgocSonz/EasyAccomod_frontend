@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {NavLink} from "react-router-dom"
+import PhongTro from "./qlphongtro/manage_phongtro"
 import "./admin.css"
 
 class Admin extends Component{
@@ -8,7 +10,8 @@ class Admin extends Component{
                 <div class = "left_admin">
                     <h3>EasyAccomod</h3>
                     <li><span>QUẢN TRỊ</span></li>
-                    <li><span>Danh sách Phòng trọ</span></li>
+                    <li><span data-target = "#phontro">Danh sách Phòng trọ</span></li>
+                    <NavLink to='/admin/qlphongtro'  className="nav-link" data-toggle="modal" data-target="#phongtro">check</NavLink>
                     <li><span> Danh sách người dùng</span></li>
                     <li><span> Báo cáo nội dung</span></li>
                     <li><span> Thống kê</span></li>
@@ -23,6 +26,9 @@ class Admin extends Component{
                     </div>
                     <div class = "bottom_admin">
                         <div class ="table_admin">
+                            <div>
+                                <PhongTro/>
+                            </div>
                             <table className="table table-striped">
                                 <thead>
                                 <tr>

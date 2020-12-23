@@ -111,9 +111,11 @@ class Login extends Component {
                                 </Link>
                         </div>
                         <div className="col-md-8 col-sm-8 col-xs-8 span_registerinlogin">
-                                <span>Bạn chưa có tài khoản?<Link to='/nguoi-dung/dang-ky' data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalRegisterForm">
-                                Đăng ký
-                                </Link></span>
+                                <span>Bạn chưa có tài khoản?
+                                    <Link to='/nguoi-dung/dang-ky' data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalRegisterForm">
+                                                        Đăng ký
+                                    </Link>
+                                </span>
                         </div>
                         
                     </div>

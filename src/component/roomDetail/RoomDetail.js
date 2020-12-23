@@ -68,40 +68,40 @@ export default class RoomDetail extends Component {
                     <h5>Thông tin mô tả</h5>
                     <span>{this.state.dataOfRoom.description}</span>
                     <h5 className="real_estate_characteristics">
-                      Đặc điểm bất động sản
+                        Đặc điểm bất động sản
                     </h5>
                     <div className="detailInfo">
                       <p className="detailInformation">
-                        <span className="bold">Loại tin đăng: </span> cho thuê{" "}
-                        {this.state.dataOfRoom.kindOfRoom}
+                          <span className="bold">Loại tin đăng: </span> cho thuê{" "}
+                          {this.state.dataOfRoom.kindOfRoom}
                       </p>
                       <p className="detailInformation">
-                        <span className="bold">Địa chỉ: </span>
-                        {this.state.dataOfRoom.addressDetail},{" "}
-                        {this.state.dataOfRoom.quan_huyen},{" "}
-                        {this.state.dataOfRoom.province}{" "}
+                          <span className="bold">Địa chỉ: </span>
+                          {this.state.dataOfRoom.addressDetail},{" "}
+                          {this.state.dataOfRoom.quan_huyen},{" "}
+                          {this.state.dataOfRoom.province}{" "}
                       </p>
                       <p className="detailInformation">
-                        <span className="bold">Số phòng ngủ:</span>{" "}
-                        {this.state.dataOfRoom.detailInfor.Bedroom}
+                          <span className="bold">Số phòng ngủ:</span>{" "}
+                          {this.state.dataOfRoom.detailInfor.Bedroom}
                       </p>
                       <p className="detailInformation">
-                        <span className="bold">Bình nóng lạnh:</span>{" "}
-                        {this.state.dataOfRoom.detailInfor.electric_water_heater
-                          ? "có"
-                          : "không"}
+                          <span className="bold">Bình nóng lạnh:</span>{" "}
+                          {this.state.dataOfRoom.detailInfor.electric_water_heater
+                            ? "có"
+                            : "không"}
                       </p>
                       <p className="detailInformation">
-                        <span className="bold">Điều hòa:</span>{" "}
-                        {this.state.dataOfRoom.detailInfor.air_conditioning
-                          ? "có"
-                          : "không"}
+                          <span className="bold">Điều hòa:</span>{" "}
+                          {this.state.dataOfRoom.detailInfor.air_conditioning
+                            ? "có"
+                            : "không"}
                       </p>
                       <p className="detailInformation">
-                        <span className="bold">Ban công:</span>{" "}
-                        {this.state.dataOfRoom.detailInfor.balcony
-                          ? "có"
-                          : "không"}
+                          <span className="bold">Ban công:</span>{" "}
+                          {this.state.dataOfRoom.detailInfor.balcony
+                            ? "có"
+                            : "không"}
                       </p>
                     </div><hr/>
                   </div>
