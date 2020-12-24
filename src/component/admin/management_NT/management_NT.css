@@ -9,6 +9,7 @@
 }
 .tieudepage_mg{
     padding-top:20px;   
+    border: 1px solid rgb(211, 210, 210);
 }
 .tieudepage_mg-h2{
     padding-left: 500px;
@@ -16,32 +17,43 @@
 .tieudepage_mg p{
     padding-left: 480px;  
 }
-
+/*thay đổi vị trí bảng*/
+.table-striped{
+    margin-left: 10px;
+    background-color: rgba(218, 218, 218, 0.5);
+    border-radius: 1em;
+}
+table{
+    border: 2px solid rgb(184, 182, 182);
+    border-radius: 1em;
+}
 #customer {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
+    margin-left: 5px;
+}
 #customers td, #customer th {
     border: 1px solid #ddd;
     padding: 4px;
+    text-align: center;
 }
-#customers tr:nth-child(even){background-color: #ccbbbb;}
+#customers tr{background-color: #ffffff;}
 
 #customers tr:hover {background-color: #ddd;}
 
 #customers th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
+    text-align: center;
+    background-color: #7efa7e;
+    border-bottom: 2px solid rgb(184, 182, 182);
 }
 #customers th:nth-child(1){
-    width: 30px;
+    width: 150px;
 }
 #customers th:nth-child(2){
-    width: 300px;
+    width: 200px;
 }
 #customers th:nth-child(3){
     width: 300px;
@@ -57,3 +69,17 @@
 #customers th:nth-child(6){
     width: 150px;
 }
+#customers th:nth-child(7){
+    width: 150px;
+}
+
+#main_table{
+    border: 3px sodid rgb(0, 0, 0);
+    border-radius: 5px;
+    height: 600px;
+    background-color: rgba(218, 218, 218, 0.5);
+}
+
+@media only screen and (max-width: 680px) {
+}
+  

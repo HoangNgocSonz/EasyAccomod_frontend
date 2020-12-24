@@ -3,12 +3,14 @@
 }
 .sidebar{
     border: 1px solid #ccc;
-    height: auto;
+    height: 705px;
     box-shadow: 0 5px 30px rgba(0,0,0,.15);
     position: fixed;
     z-index: 10000;
     top:0px;
     left: 0px;
+    background-color: #21212e;
+    color: white;
     
 }
 .navbar_mg{
@@ -23,7 +25,7 @@
 
 .nav_menu_mg:hover{
    border: none;
-   color: #000;
+   color: rgb(255, 0, 0);
    background: #cccccc;
    font-weight: bold;
 }
@@ -31,12 +33,17 @@
     font-weight: bold;
 }
 /* Menu Post Manager News (Menu quản lý tin đăng) */
-.post_manager-memu{
-    color: #333;
+.post_manager-memu span{
+    color: white;
+    padding-left: 30px;
 }
+.post_manager-memu span:hover{
+    color: rgb(255, 0, 0);
+}
+
 .post_manager-memu:hover{
     border: none;
-    color: #000;
+    color: rgb(255, 0, 0);
     font-weight: bold;
 }
 .post_manager-memu:hover .post_manager-memu-ul{
