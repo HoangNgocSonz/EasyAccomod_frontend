@@ -1,79 +1,54 @@
-.admin{
-    margin-top: 100px;
-    height: 800px;
+.sidebar{
+    padding: 0;
+}
+.sidebar{
+    border: 1px solid #ccc;
+    height: auto;
+    box-shadow: 0 5px 30px rgba(0,0,0,.15);
+    position: fixed;
+    z-index: 10000;
+    top:0px;
+    left: 0px;
+    
+}
+.navbar_mg{
+    width: 100%;
+}
+.navbar_mg-ul{
+    width: 100%;  
+}
+.nav_menu_mg{
+    color: #333;
+}
+
+.nav_menu_mg:hover{
+   border: none;
+   color: #000;
+   background: #cccccc;
+   font-weight: bold;
+}
+.nav_menu_mg:active{
     font-weight: bold;
 }
-.left_admin{
-    background-color: #21212e;
-    color: white;
-    width: 20%;
-    float: left;
-    height: 800px;
+/* Menu Post Manager News (Menu quản lý tin đăng) */
+.post_manager-memu{
+    color: #333;
 }
-.left_admin li{
-    list-style-type: none;
-    padding: 10px;
-    cursor: pointer;
+.post_manager-memu:hover{
+    border: none;
+    color: #000;
+    font-weight: bold;
 }
-.left_admin li:hover{
-    color: red;
-}
-.right_admin{
+.post_manager-memu:hover .post_manager-memu-ul{
     display: block;
-    float: left;
-    width: 80%;
-    position: relative;
-    z-index: 1;
-    background-color: rgba(218, 218, 218, 0.5);
-}
-.top_admin{
-    border: 1px solid rgb(184, 182, 182);
-    height: 150px;
-    margin-bottom: 20px;
-    background-color: white;
-}
-.bottom_admin{
-    height: 630px;
-    background-color: rgba(218, 218, 218, 0.5);
-    position: relative;
-    z-index: 2;
-}
-.table_admin{
-    border: 1px solid rgb(184, 182, 182);
-    border-radius: 7px;
-    height: 500px;
-    margin: 0px 20px;
-    position: relative;
-    z-index: 3;
-    background-color: white;
-}
-.tieudepage_mg{
-    padding-top:20px;   
-    text-align: center;
-}
-.tieudepage_mg-h2{
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.2;
-    color: inherit;
-    font-size: 30px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-.tieudepage_mg>p{
-    color: #947054;
-    font-size: 14px;
-    margin-bottom: 0;
-    font-style: italic;
-    line-height: 2;
-    font-weight: 600;
-    margin-bottom: 10px;
 }
 .post_manager-memu-ul{
-    display: none;
     list-style-type: none;
     padding: 15px;
     margin: 0px;
 } 
-
-
+.wapper{
+    margin-top:45px;
+    margin-left:250px;
+    margin-bottom: 20px;
+}

@@ -4,6 +4,7 @@ import SlideHeader from "./component/header/slide_header/slide_header";
 import { Slide } from "@material-ui/core";
 import HomePage from "./component/home/HomePage";
 import RoomDetail from "./component/roomDetail/RoomDetail";
+import Admin from "./component/admin/admin"
 class App extends Component {
   render() {
     return (
