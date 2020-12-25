@@ -4,88 +4,51 @@ import './infor_user.css'
 class Inforuser extends Component {
     render(){
         return (
-            <div className="container-fluid">
-          <div className="row">
-          <div className="col-md-12 col-sm-12 col-xs-12 tieudepage_mg">
-              <h2 className="tieudepage_mg-h2 title">Chỉnh sửa thông tin cá nhân</h2>
-              <p className="par">Thông tin càng chính xác giúp cho người thuê một cách tốt nhất</p>
-          </div>
-         </div>
-       
-        <div className="row info_news  wow fadeInUp"  data-wow-delay="0.1s">
-          {/* left column */}
-          <div className="col-md-3 form-change-image">
-            <div className="text-center">
-               <img src="https://static123.com/uploads/images/2018/12/12/boy_1544603222.png" className="avatar img-circle img-responsive" alt="avatar" />
-              <h6>Upload a different photo...</h6>
-              <input type="file" className="form-control" />
-            </div>
-          </div>
-          {/* edit form column */}
-          <div className="col-md-9 personal-info">            
-            <h3>Thông tin</h3>
-              <div className="form-group">
-                <label className="col-lg-3 control-label">Họ:</label>
-                <div className="col-lg-8">
-                  <input className="form-control" type="text"
-                  ref="firstname"
-                />
-                </div>
-              </div>
-              <div className="form-group">
-                <label className="col-lg-3 control-label">Tên:</label>
-                <div className="col-lg-8">
-                  <input className="form-control" type="text" 
-                   ref="lastname"
-                   />
-                </div>
-              </div>
-              <div className=" form-group">
-                 <label className="  col-lg-3 control-label">Giới tính:</label>
-                 <div className=" col-lg-8">
-                    <input className=" radio-sex" type="radio" name="gender"   ref="male"  
+<div className="wrapper bg-white mt-sm-5">
+    <h4 className="pb-4 border-bottom">Chỉnh sửa thông tin tài khoản</h4>
+    <div className="d-flex align-items-start py-3 border-bottom"> <img src="https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" className="img" alt=""/>
+        <div className="pl-sm-4 pl-2" id="img-section"> <b>Ảnh đại diện</b>
+           <div><input type="file" className=""/></div>
+        </div>
+    </div>
+    <div className="py-3">
+        <div className="row py-3">
+            <div className="col-md-6"> <label for="firstname">Họ</label> <input type="text" className="bg-light form-control" placeholder="Nguyễn"/> </div>
+            <div className="col-md-6 pt-md-0 pt-3"> <label for="lastname">Tên</label> <input type="text" className="bg-light form-control" placeholder="Thắm"/> </div>
+        </div>
+        <div className="row py-3">
+            <div className="col-md-6"> <label for="email">Địa chỉ email</label> <input type="text" className="bg-light form-control" placeholder="tham2412tt1@gmail.com"/> </div>
+            <div className="col-md-6 pt-md-0 pt-3"> <label for="phone">Số điện thoại</label> <input type="tel" className="bg-light form-control" placeholder="0987654321"/> </div>
+        </div>
+        <div className="row py-3">
+            <div className="col-md-6"> <label for="">Giới tính</label> 
+              <div>
+              <input className=" radio-sex" type="radio" name="gender"   ref="male"  
                     defaultChecked="male"
                   /> <span>Nam</span>
                     <input className=" radio-sex-female" type="radio" name="gender"  ref="female" 
                    
                     /> <span>Nữ</span>
-                </div>
-                    
               </div>
-              <div className="form-group">
-                <label className="col-lg-3 control-label">Email:</label>
-                <div className="col-lg-8">
-         <input className="form-control" type="text" placeholder = "mailinh@gmail.com" disabled/>
-                </div>
-              </div>
-              <div className="form-group">
-                <label className="col-md-3 control-label">Tên đăng nhập:</label>
-                <div className="col-md-8">
-
-                
-
-                  <input className="form-control" type="text" placeholder = "hello" disabled/>
-      
-                </div>
-              </div>
-              <div className="form-group">
-                <label className="col-md-3 control-label">Số điện thoại:</label>
-                <div className="col-md-8">
-
-               
-                  <input className="form-control" type="text" placeholder = "0976931294" disabled/>
-                </div>
-              </div>
-              <div className="form-group">
-                <label className="col-md-3 control-label" />
-                <div className="col-md-8">
-                  <input type="button" className="btn btn-primary" defaultValue="Lưu" />
-                </div>
-              </div>
-
-          </div>
+             
+            </div>
+            <div className="col-md-6"> <label for="cmnd">Số chứng minh nhân dân</label> <input type="text" className="bg-light form-control" placeholder="125880443"/> </div>
         </div>
+        <div className="row py-3">
+            <div className="col-md-4"> <label for="city">Tỉnh/Thành phố</label> <select name="city" id="city" className="bg-light">
+                    <option value="0" selected>Tỉnh/Thành phố</option>
+                </select> </div>
+              <div className="col-md-4"> <label for="district">Quận/Huyện</label> <select name="district" id="district" className="bg-light">
+                  <option value="0" selected>Quận/Huyện</option>
+              </select> </div>
+              <div className="col-md-4"> <label for="city">Phường/Xã</label> <select name="sub-district" id="sub-distrct" className="bg-light">
+                    <option value="0" selected>Phường/Xã</option>
+                </select> </div>
         </div>
+        <div className="py-3 pb-4 border-bottom"> <button className="btn btn-primary mr-3">Cập nhật</button> <button className="btn border button">Thoát</button> </div>
+    </div>
+</div>
+
         );
     }
 }
