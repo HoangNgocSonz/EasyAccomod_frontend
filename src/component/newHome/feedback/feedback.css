@@ -1,0 +1,26 @@
+.modal-dialog {
+    height: 50%;
+    width: 50%;
+    margin: auto
+}
+
+.header {
+    color: white;
+    background-color: #007bff
+}
+
+textarea {
+    border: none;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    outline: 0px !important;
+}
+.modal-body{
+    margin: auto;
+}
+.modal-footer {
+    margin: auto
+}
+input {
+    color: #007bff
+}
