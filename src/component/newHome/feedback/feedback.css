@@ -6,7 +6,8 @@
 
 .header {
     color: white;
-    background-color: #007bff
+    background-color: teal;
+    display: block;
 }
 
 textarea {
@@ -14,6 +15,9 @@ textarea {
     box-shadow: none !important;
     -webkit-appearance: none;
     outline: 0px !important;
+}
+.textarea{
+    margin-left: 20px;
 }
 .modal-body{
     margin: auto;
@@ -23,4 +27,8 @@ textarea {
 }
 input {
     color: #007bff
+}
+.ml-3{
+    font-size: larger;
+    color: black;
 }

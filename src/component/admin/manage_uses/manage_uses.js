@@ -6,8 +6,8 @@ class ManageUse extends Component{
     render(){
         return(
             <div class = "post_container">
-                <div className = "tieudepage_mg">
-                    <h2 className="tieudepage_mg-h2">Quản lý chủ trọ</h2>
+                <div className = "style_tieudepage_mg">
+                    <h2 className="style_tieudepage_mg-h2">QUẢN LÝ CHỦ TRỌ</h2>
                     <p>Thông tin càng chính xác giúp cho người thuê một cách tốt nhất</p>
                 </div>
             

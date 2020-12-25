@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
 import { Multiselect } from 'multiselect-react-dropdown';
 import './new_news.css'
+import { Container, Row, Col } from "react-bootstrap";
 
 import GoogleMap from "./google_map/google_map"
 
@@ -10,7 +11,12 @@ class NewsHome extends Component{
         this.state = {
             options: [{name: 'Không chung chủ', id: 1},
             {name: 'Chung chủ', id: 2},{name: 'Wifi', id: 3},{name: 'Có gác lửng', id: 4},{name: 'Giường', id: 5},{name: 'Tủ', id: 6}, {name: 'Giờ giấc tự do', id: 7}, {name: 'Vệ sinh riêng', id: 8}, {name: 'Vệ sinh chung', id: 9},{name: 'Nóng lạnh', id: 10},{name: 'Điều hòa', id: 11}],
+
+            options_2: [{name: 'Gần trường đại học, cao đẳng', id: 1},
+            {name: 'Gần trung tâm thương mại', id: 2},{name: 'Gần bến xe bus', id: 3},{name: 'Gần cây ATM', id: 4},{name: 'Gần chợ, siêu thị', id: 5},{name: 'Gần công viên', id: 6}, {name: 'Gần trung tâm thể thao', id: 7}, {name: 'Gần trung tâm hành chính nhà nước', id: 8}],
+
         }
+
     }
     render(){
         return(
@@ -105,7 +111,7 @@ class NewsHome extends Component{
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="form-group">
-                                                <label for="cost">Giá phòng( vnđ ):</label>
+                                                <label for="cost">Giá phòng( vnđ )/tháng:</label>
                                                 <input type="number" name="txtprice" className="form-control" placeholder="750000" id = "cost"/>
                                             </div>
                                         </div>
@@ -115,12 +121,62 @@ class NewsHome extends Component{
                                                 <input type="number" name="txtarea" className="form-control" placeholder="16" id = "s"/>
                                             </div>
                                         </div>
+                                        <div className="col-md-6">
+                                            <div className="form-group">
+                                                <label for="cost_elect">Tiền điện:</label>
+                                                <select id = "cos_elec">
+                                                    <option value="1">5.000 VNĐ/1 số</option>
+                                                    <option value="2">4.000 VNĐ/1 số</option>
+                                                    <option value="3">3.000 VNĐ/1 số</option>
+                                                    <option value="4">2.000 VNĐ/1 số</option>
+                                                    <option value="5">1.000 VNĐ/1 số</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <div className="form-group">
+                                                <label for="cost_water">Tiền nước</label>
+                                                <select id = "cos_water">
+                                                    <optgroup label = "Tiền nước(theo đầu người):">
+                                                        <option value="1">150.000 VNĐ/1 người</option>
+                                                        <option value="2">100.000 VNĐ/1 người</option>
+                                                        <option value="3">75.000 VNĐ/1 người</option>
+                                                        <option value="4">50.000 VNĐ/1 người</option>
+                                                    </optgroup>
+                                                    <optgroup label = "Tiền nước(theo số nước):">
+                                                        <option value="1">30.000 VNĐ/1 số</option>
+                                                        <option value="2">25.000 VNĐ/1 số</option>
+                                                        <option value="3">20.000 VNĐ/1 số</option>
+                                                        <option value="4">15.000 VNĐ/1 số</option>
+                                                        <option value="4">10.000 VNĐ/1 số</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <div className="form-group">
+                                                <label for="cost_elect">Tiền vệ sinh</label>
+                                                <select id = "cos_elec">
+                                                    <option value="1">50.00 VNĐ/1 người</option>
+                                                    <option value="2">40.000 VNĐ/1 người</option>
+                                                    <option value="3">30.000 VNĐ/1 người</option>
+                                                    <option value="4">20.000 VNĐ/1 người</option>
+                                                    <option value="5">10.000 VNĐ/1 người</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-md-4">
                                             <div className="form-group">
                                             <label for="usr">SĐT Liên hệ:</label>
                                             <input type="text" name="txtphone" className="form-control" placeholder="0915111234" id = "usr"></input>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-4">
+                                            <div className="form-group">
+                                            <label for="num">Số lượng người tối đa(tối thiểu 1 người):</label>
+                                            <input type="text" name="txtphone" className="form-control" placeholder="1" id = "num"></input>
                                             </div>
                                         </div>
                                     </div> 
@@ -133,6 +189,18 @@ class NewsHome extends Component{
                                                 showCheckbox={true}
                                                 closeIcon = "cancel"
                                                 placeholder = "Lựa chọn tiện ích"
+                                            />
+                                        </div>
+                                    </form>
+                                    <form>
+                                        <div className="form-group">
+                                            <label for = "dropdown-test">Địa điểm công cộng gần đây:</label>
+                                            <Multiselect
+                                                options={this.state.options_2}
+                                                displayValue="name"
+                                                showCheckbox={true}
+                                                closeIcon = "cancel"
+                                                placeholder = "Lựa chọn địa điểm công cộng gần đây"
                                             />
                                         </div>
                                     </form>

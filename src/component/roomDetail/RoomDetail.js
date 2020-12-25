@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import { Carousel, Row, Col, Container } from "react-bootstrap";
 import Report from "../newHome/report_news/report_news";
+import Navbar from "../menu/Navbar"
 import axios from "axios";
 import "./RoomDetail.css";
+
+import img_banner from "../header/image_header/banner.png"
 export default class RoomDetail extends Component {
   constructor(props) {
     super(props);
@@ -40,6 +43,9 @@ export default class RoomDetail extends Component {
   render() {
     return (
       <Container>
+        <div class = "menu_zoom">
+          <Navbar/>
+        </div>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} xl={9}>
             <div className="Carousel_wrap">
@@ -111,8 +117,14 @@ export default class RoomDetail extends Component {
               )}
             </div>
           </Col>
+          
           <Col xs={0} sm={0} md={0} lg={0} xl={3}>
-            <div className="RoomDetailRight"></div>
+            <div class = "header_right">
+                Phone: 0976931294
+            </div>
+            <div class = "reportnews">
+              <Report/>
+            </div>
           </Col>
         </Row>
       </Container>

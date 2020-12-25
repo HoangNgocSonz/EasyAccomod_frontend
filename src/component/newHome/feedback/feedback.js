@@ -11,8 +11,8 @@ export default class Feedback extends Component {
         <div className="modal-content">
             
             <div className="modal-header header">
-                <h3>Đánh giá</h3>
-                <button type="button" className="close" data-dismiss="modal" style={{color: "white"}}>&times;</button>
+                <h3>ĐÁNH GIÁ</h3>
+              
             </div> 
             <div className="modal-body text-center">
                 <h5><strong>Hãy cho chúng tôi biết đánh giá của bạn</strong></h5>
@@ -27,7 +27,7 @@ export default class Feedback extends Component {
           
             <div className="text-center">
                 <h4>Đánh giá của bạn</h4>
-            </div> <textarea type="textarea" placeholder=" Đánh giá" rows="3"></textarea>
+            </div> <textarea type="textarea" placeholder="Đánh giá" rows="3" class = "textarea"></textarea>
             <div className="modal-footer"> <Link to="" className="btn btn-primary">Gửi  </Link> <Link to="" className="btn btn-outline-primary" data-dismiss="modal">Thoát</Link> </div>
         </div>
     </div>

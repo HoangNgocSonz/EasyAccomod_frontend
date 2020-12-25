@@ -47,6 +47,22 @@
 .bold {
   font-weight: 560;
 }
+.reportnews{
+  margin-top: 10px;
+}
+.header_right{
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(25, 24, 46);
+  color: white;
+  padding: 5px;
+}
+.menu_zoom{
+  margin-bottom: 10px;
+}
 @media only screen and (max-width: 1199px) {
   .RoomDetailRight {
     display: none;

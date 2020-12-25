@@ -46,7 +46,7 @@ label{
 .btn_PostNews{
     margin-bottom:10px;
     height: 42px;
-    background:#947054;
+    background:teal;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
@@ -54,10 +54,18 @@ label{
     text-transform: uppercase;
     border: none;
     border-radius: 5px;
-    
+    padding: 5px;
+}
+.btn_PostNews:hover{
+    border: 1px solid rgb(0, 107, 107);
+    background-color: rgb(0, 107, 107);
+    font-weight: 710;
 }
 .option_news{
     max-height: 200px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+select.mystyle_new{
+    width: 200px;
 }

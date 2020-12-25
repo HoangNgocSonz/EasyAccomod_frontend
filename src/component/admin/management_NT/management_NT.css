@@ -7,15 +7,19 @@
     position: fixed;
     z-index: 100;
 }
-.tieudepage_mg{
+.style_tieudepage_mg{
     padding-top:20px;   
     border: 1px solid rgb(211, 210, 210);
+    
 }
-.tieudepage_mg-h2{
+.style_tieudepage_mg-h2{
     padding-left: 500px;
+    font-weight: bold;
 }
-.tieudepage_mg p{
+.style_tieudepage_mg p{
     padding-left: 480px;  
+    color: rgb(255, 38, 0);
+    font-weight: bold;
 }
 /*thay đổi vị trí bảng*/
 .table-striped{
