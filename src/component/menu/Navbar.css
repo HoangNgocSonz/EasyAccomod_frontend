@@ -4,6 +4,7 @@
   border: none;
   background-color: #f8f9fa;
   color: rgb(48, 48, 48);
+  margin: 0px 7px;
 }
 .directional:hover {
   color: teal;

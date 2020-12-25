@@ -1,4 +1,4 @@
-.post_container{
+/*.post_container{
     border: 2px solid #ccc;
     box-shadow: 0 5px 30px rgba(0,0,0,.15);
     display: block;
@@ -9,10 +9,11 @@
 }
 .tieudepage_mg{
     padding-top:20px;   
+    border: 1px solid rgb(211, 210, 210);
 }
 .tieudepage_mg-h2{
     padding-left: 500px;
 }
 .tieudepage_mg p{
     padding-left: 480px;  
-}
+}*/
