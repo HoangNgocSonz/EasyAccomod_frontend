@@ -10,7 +10,7 @@ class NewsHome extends Component{
         super(props);
         this.state = {
             options: [{name: 'Không chung chủ', id: 1},
-            {name: 'Chung chủ', id: 2},{name: 'Wifi', id: 3},{name: 'Có gác lửng', id: 4},{name: 'Giường', id: 5},{name: 'Tủ', id: 6}, {name: 'Giờ giấc tự do', id: 7}, {name: 'Vệ sinh riêng', id: 8}, {name: 'Vệ sinh chung', id: 9},{name: 'Nóng lạnh', id: 10},{name: 'Điều hòa', id: 11}],
+            {name: 'Chung chủ', id: 2},{name: 'Wifi', id: 3},{name: 'Có gác lửng', id: 4},{name: 'Giường', id: 5},{name: 'Tủ', id: 6}, {name: 'Giờ giấc tự do', id: 7}, {name: 'Vệ sinh riêng', id: 8}, {name: 'Vệ sinh chung', id: 9},{name: 'Nóng lạnh', id: 10},{name: 'Điều hòa', id: 11},{name: 'Có ban công', id: 12}],
 
             options_2: [{name: 'Gần trường đại học, cao đẳng', id: 1},
             {name: 'Gần trung tâm thương mại', id: 2},{name: 'Gần bến xe bus', id: 3},{name: 'Gần cây ATM', id: 4},{name: 'Gần chợ, siêu thị', id: 5},{name: 'Gần công viên', id: 6}, {name: 'Gần trung tâm thể thao', id: 7}, {name: 'Gần trung tâm hành chính nhà nước', id: 8}],
@@ -143,12 +143,12 @@ class NewsHome extends Component{
                                                         <option value="3">75.000 VNĐ/1 người</option>
                                                         <option value="4">50.000 VNĐ/1 người</option>
                                                     </optgroup>
-                                                    <optgroup label = "Tiền nước(theo số nước):">
-                                                        <option value="1">30.000 VNĐ/1 số</option>
-                                                        <option value="2">25.000 VNĐ/1 số</option>
-                                                        <option value="3">20.000 VNĐ/1 số</option>
-                                                        <option value="4">15.000 VNĐ/1 số</option>
-                                                        <option value="4">10.000 VNĐ/1 số</option>
+                                                    <optgroup label = "Tiền nước(theo số khối):">
+                                                        <option value="1">30.000 VNĐ/1 khối</option>
+                                                        <option value="2">25.000 VNĐ/1 khối</option>
+                                                        <option value="3">20.000 VNĐ/1 khối</option>
+                                                        <option value="4">15.000 VNĐ/1 khối</option>
+                                                        <option value="4">10.000 VNĐ/1 khối</option>
                                                     </optgroup>
                                                 </select>
                                             </div>
@@ -175,7 +175,7 @@ class NewsHome extends Component{
                                         </div>
                                         <div className="col-md-4">
                                             <div className="form-group">
-                                            <label for="num">Số lượng người tối đa(tối thiểu 1 người):</label>
+                                            <label for="num">Số lượng người ở tối đa:</label>
                                             <input type="text" name="txtphone" className="form-control" placeholder="1" id = "num"></input>
                                             </div>
                                         </div>
