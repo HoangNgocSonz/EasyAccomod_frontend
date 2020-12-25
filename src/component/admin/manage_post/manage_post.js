@@ -6,7 +6,7 @@ class ManagePost extends Component{
         return (
             <div class = "post_container" data-wow-delay="0.2s">
                 <div className = "tieudepage_mg">
-                    <h2 className="tieudepage_mg-h2">Quản lý tin Phòng Trọ</h2>
+                    <h2 className="tieudepage_mg-h2">Quản lý bài đăng</h2>
                     <p>Thông tin càng chính xác giúp cho người thuê một cách tốt nhất</p>
                 </div>
             

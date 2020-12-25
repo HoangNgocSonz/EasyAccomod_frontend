@@ -8,6 +8,12 @@ import ManageUse from "./manage_uses/manage_uses"
 import ManagePost from "./manage_post/manage_post"
 
 class Admin extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            showResult: 'true'
+        }
+    }
     render() {
         return (
             <div>
@@ -19,10 +25,10 @@ class Admin extends Component {
                                             <h2>EasyAccomod</h2><br/>
                                             <li style = {{fontWeight:'bold'}}><span>QUẢN TRỊ</span></li>
                                             <li className="nav-link post_manager-memu" >
-                                                <Link to = '/admin/quan-li-nha-tro' className = "nav-link nav_menu_mg"><span>Danh sách trọ cho thuê</span></Link>
+                                                <Link to = '/admin/quan-li-nha-tro' className = "nav-link nav_menu_mg" ><span>Danh sách trọ cho thuê</span></Link>
                                             </li>
                                             <li className = "nav-link post_manager-memu">
-                                                <Link to = '/admin/danh-sach-nguoi-dung' className = "nav-link nav_menu_mg"><span>Danh sách chủ trọ</span></Link>
+                                                <Link to = '/admin/danh-sach-nguoi-dung' className = "nav-link nav_menu_mg" ><span>Danh sách chủ trọ</span></Link>
                                             </li>
                                             <li className = "nav-link post_manager-memu">
                                                 <Link to = '/admin/danh-sach-bai-dang' className = "nav-link nav_menu_mg"><span>Danh sách bài đăng</span></Link>
@@ -44,7 +50,7 @@ class Admin extends Component {
                             <Route  exact path="/admin/danh-sach-bai-dang" component={ManagePost}/>  
                         </Switch>
                     </div> 
-                </div>
+                </div>    
             </div>
         );
     }

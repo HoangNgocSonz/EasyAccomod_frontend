@@ -13,6 +13,9 @@
     color: white;
     
 }
+.container{
+    display: block;
+}
 .navbar_mg{
     width: 100%;
 }
