@@ -5,13 +5,13 @@ class Report extends Component{
     render(){
         return(
             <div className = "report">
-                <h4 style = {{textAlign:'center', fontWeight:"bold", fontSize: "30px"}}>BÁO CÁO</h4>
+                <h4 style = {{textAlign:'center', fontWeight:"bold", fontSize: "20px"}}>BÁO CÁO</h4>
                 <form>
                     <label for ="borrowed" className = "radio" /*style={{marginRight: '20px', fontSize:'15px'}}*/>Phòng trọ đã cho thuê
                         <input id = "borrowed" type = "radio" name = "baocao" value = "1"></input>
                         <span className = "checkround"></span>
                     </label>
-                    <label for = "error" className = "radio">Sai thông tin của phòng trọ
+                    <label for = "error" className = "radio">Sai thông tin
                         <input id = "error" type = "radio" name = "baocao" value = "2"/>
                         <span className = "checkround"></span>
                     </label><br/>

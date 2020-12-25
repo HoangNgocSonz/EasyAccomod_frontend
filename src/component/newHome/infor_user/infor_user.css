@@ -58,7 +58,7 @@ input[placeholder] {
 
 .form-control:focus {
     box-shadow: none;
-    border: 1.5px solid #0779e4
+    border: 1.5px solid teal
 }
 
 select {
@@ -76,16 +76,22 @@ select:focus {
 
 .button {
     background-color: #fff;
-    color: #0779e4
+    color: teal;
 }
 
 .button:hover {
-    background-color: #0779e4;
-    color: #fff
+    border: 1px solid rgb(0, 107, 107);
+    background-color: rgb(0, 107, 107);
+    font-weight: 710;
 }
 
 .btn-primary {
-    background-color: #0779e4
+    background-color: teal;
+}
+.btn-primary:hover{
+    border: 1px solid rgb(0, 107, 107);
+    background-color: rgb(0, 107, 107);
+    font-weight: 710;
 }
 .radio-sex-female{
     margin-left: 30px;

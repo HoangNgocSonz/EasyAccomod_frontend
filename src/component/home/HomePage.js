@@ -23,7 +23,6 @@ export default class HomePage extends Component {
         <Inforuser></Inforuser>
         <ChangePassword></ChangePassword>
         <NewsHome />
-        <Report />
         <Feedback/>
         <Footer />
       </div>
