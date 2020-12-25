@@ -1,0 +1,17 @@
+#demo {
+  width: 100% !important;
+}
+.next_backgroups {
+  background-color: teal !important;
+  border-radius: 20px;
+  padding-left: 3px !important;
+}
+.prev_backgroups {
+  background-color: teal !important;
+  border-radius: 20px;
+  padding-right: 3.5px !important;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  margin-top: -1px;
+}

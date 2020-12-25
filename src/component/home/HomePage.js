@@ -5,19 +5,25 @@ import Footer from "../footer/footer";
 import Inforuser from "../newHome/infor_user/infor_user";
 import ChangePassword from "../newHome/change_password/change_password";
 import NewsHome from "../newHome/new_news/new_news";
-import Report from "../newHome/report_news/report_news"
-import Admin from "../admin/admin"
+import Report from "../newHome/report_news/report_news";
+import Admin from "../admin/admin";
+import Filter from "../header/filter/filter";
+import SlideHeader from "../header/slide_header/slide_header";
+import Navbar from "../menu/Navbar";
+
 export default class HomePage extends Component {
   render() {
     return (
       <div>
-        <Header></Header>
+        <Navbar></Navbar>
+        <SlideHeader></SlideHeader>
+        <Filter></Filter>
         <RoomList></RoomList>
         <Inforuser></Inforuser>
         <ChangePassword></ChangePassword>
-        <NewsHome/>
-        <Report/>
-        <Footer/>
+        <NewsHome />
+        <Report />
+        <Footer />
       </div>
     );
   }

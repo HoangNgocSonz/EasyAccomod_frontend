@@ -3,127 +3,146 @@
     overflow-y: auto;
 } */
 /* Input of login and register */
-.inputusername{
-    padding: 0px;
+.inputusername {
+  padding: 0px;
 }
-.inputpassword{
-    padding: 0px;
+.inputpassword {
+  padding: 0px;
 }
-.error_message-login{
-    text-align: center;
-    color: red;
-    
+.error_message-login {
+  text-align: center;
+  color: red;
 }
-.inputusername>input{
-    border: none;
-    border-radius:0px ;
-    border-bottom:1.5px solid #ccc ;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    font-weight: 500;
+.inputusername > input {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1.5px solid #ccc;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
 }
-.inputusername>input:focus{
-    border-color: none;
-    border-radius:0px ;
+.inputusername > input:focus {
+  border-color: none;
+  border-radius: 0px;
 }
-.form-control:focus{
-    border-color: none;
-    box-shadow:none;
-    border-bottom:1.5px solid #947054;
+.form-control:focus {
+  border-color: none;
+  box-shadow: none;
+  border-bottom: 1.5px solid #947054;
 }
 
 /* Icon login and register */
-.icon_username{
-    padding-top: 5px;
-    padding-left: 17px;
+.icon_username {
+  padding-top: 5px;
+  padding-left: 17px;
 }
-.icon_password{
-    padding-top: 5px;
-    padding-left: 17px;
+.icon_password {
+  padding-top: 5px;
+  padding-left: 17px;
 }
-.bntdangnhap>input{
-    background-color: #055699;
-    height: 44px;
-    width: 180px;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    border-radius:0px ;
+.bntdangnhap > input {
+  background-color: teal;
+  height: 44px;
+  width: 180px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 0px;
+  border-radius: 20px;
 }
-.modal-body{
-    padding-bottom: 0px;
+.modal-body {
+  padding-bottom: 0px;
 }
-.span_registerinlogin{
-    text-align: right;
-    padding: 20px 0px 0px 0px;
+.span_registerinlogin {
+  text-align: right;
+  padding: 20px 0px 0px 0px;
 }
-.span_registerinlogin>a{
-    text-decoration: none;
-    color: #495057;
-    font-weight: 600;
+.span_registerinlogin > a {
+  text-decoration: none;
+  color: #495057;
+  font-weight: 600;
 }
-.span_registerinlogin>span>a{
-    text-decoration: none;
-    color: #495057;
-    font-weight: 600;
+.span_registerinlogin > span > a {
+  text-decoration: none;
+  color: #495057;
+  font-weight: 600;
 }
-.span_registerinlogin>a:hover{
-    color: #947054;
+.span_registerinlogin > a:hover {
+  color: #947054;
 }
-.span_registerinlogin>span>a:hover{
-    color: #947054;
+.span_registerinlogin > span > a:hover {
+  color: #947054;
 }
 /* Menu dropdown Login success*/
-.bnt_btuserprofile{
-    background-color: #947054;
-    border: none;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 600;
+.bnt_btuserprofile {
+  border: none;
+  color: teal;
+  font-size: 15px;
+  font-weight: 600;
 }
-.bnt_btuserprofile:hover{
-    background-color:#947054;
-
+.bnt_btuserprofile:hover {
+  background-color: teal;
+  color: white;
 }
-.show>.btn-secondary.dropdown-toggle{
-    background-color:#947054;
-    border-color: white;
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #947054;
+  border-color: white;
 }
-.btn:focus{
-    outline: none !important;
-    box-shadow:none;
+.btn:focus {
+  outline: none !important;
+  box-shadow: none;
 }
-.show>.btn-secondary.dropdown-toggle:focus{
-    border: none;
-    outline: none;
+.show > .btn-secondary.dropdown-toggle:focus {
+  border: none;
+  outline: none;
 }
 .dropdown-toggle::after {
-    margin-left: 1.255em;
+  margin-left: 1.255em;
 }
-.dropdown-menu_btn:hover{
-    font-weight:  600;
+.dropdown-menu_btn:hover {
+  font-weight: 600;
 }
 .dropdown-menu.show {
-    width: 12rem;
+  width: 12rem;
 }
-.dropdown-item:active{
-    background-color:#947054;
-    border: none;
+.dropdown-item:active {
+  background-color: #947054;
+  border: none;
 }
-.input_formname{
-   padding: 0px 15px;
+.input_formname {
+  padding: 0px 15px;
 }
-
 
 /* hidden-change-password */
-.hidden-change-password{
-    visibility: hidden;
+.hidden-change-password {
+  visibility: hidden;
 }
 
 /*FeedBack */
-.feedback-content{
-    margin-bottom: 20px !important;
+.feedback-content {
+  margin-bottom: 20px !important;
 }
-.feedback-content-textarea{
-    min-height: 120px;
+.feedback-content-textarea {
+  min-height: 120px;
+}
+.header1_info_right__div-login_register {
+  height: auto !important;
+  background-color: #f8f9fa;
+}
+#deleteStyle {
+  /* color: rgb(48, 48, 48);
+  font-weight: 500; */
+  margin-bottom: 0px;
+  font-weight: 550;
+  border: none;
+  background-color: #f8f9fa;
+  color: rgb(48, 48, 48);
+  font-size: 16.6px;
+}
+#deleteStyle:hover {
+  border: unset;
+  color: teal;
+}
+.header1_info_right__div-login_register {
+  padding: 0px 19px !important;
 }

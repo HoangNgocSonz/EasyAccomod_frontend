@@ -1,0 +1,44 @@
+.directional {
+  /* margin-bottom: -3px; */
+  font-weight: 650;
+  border: none;
+  background-color: #f8f9fa;
+  color: rgb(48, 48, 48);
+}
+.directional:hover {
+  color: teal;
+}
+.login,
+.logout {
+  margin-bottom: 0px;
+  font-weight: 550;
+  border: none;
+  background-color: #f8f9fa;
+  color: rgb(48, 48, 48);
+}
+.login:focus,
+.logout:focus,
+.directional:focus {
+  outline: 0 !important;
+}
+.login:hover,
+.logout:hover {
+  color: teal;
+}
+.mr-sm-2 {
+  border-radius: 20px;
+}
+.mr-sm-2:focus {
+  border: 1px solid teal;
+}
+.navbar-brand {
+  margin-top: -4px;
+  color: rgb(48, 48, 48) !important;
+}
+.navbar-brand:hover {
+  color: teal !important;
+}
+.bg-light {
+  padding-bottom: 9px !important;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}

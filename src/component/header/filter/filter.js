@@ -19,7 +19,6 @@ class Filter extends Component {
                   Tất cả
                 </option>
                 <option value="1">Thuê Phòng Trọ</option>
-                <option value="2">Thuê Nhà Trọ</option>
                 <option value="3">Thuê Căn Hộ</option>
               </select>
             </Col>
