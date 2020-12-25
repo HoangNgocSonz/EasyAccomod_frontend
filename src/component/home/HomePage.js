@@ -10,6 +10,7 @@ import Admin from "../admin/admin";
 import Filter from "../header/filter/filter";
 import SlideHeader from "../header/slide_header/slide_header";
 import Navbar from "../menu/Navbar";
+import Feedback from "../newHome/feedback/feedback";
 
 export default class HomePage extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class HomePage extends Component {
         <ChangePassword></ChangePassword>
         <NewsHome />
         <Report />
+        <Feedback/>
         <Footer />
       </div>
     );
