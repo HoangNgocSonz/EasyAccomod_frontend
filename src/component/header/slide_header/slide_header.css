@@ -15,3 +15,40 @@
 .carousel-control-prev-icon {
   margin-top: -1px;
 }
+@media only screen and (max-width: 820px) {
+  .carousel-item_img {
+    height: 190px !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .carousel-item_img {
+    height: 180px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .carousel-item_img {
+    height: 170px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .carousel-item_img {
+    height: 155px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .carousel-item_img {
+    height: 140px !important;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .carousel-item_img {
+    height: 120px !important;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .carousel-item_img {
+    height: 80px !important;
+  }
+}
