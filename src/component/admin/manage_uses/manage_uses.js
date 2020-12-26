@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import './managa_uses.css'
-
 class ManageUse extends Component{
     render(){
         return(

@@ -66,6 +66,7 @@ class ManageNT extends Component {
                                 </tr>
                             </tbody>
                         </table>
+                        
                     </div>
                 </div>
             </div>

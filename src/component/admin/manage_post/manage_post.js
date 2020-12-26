@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 
-import './manage_post.css'
 class ManagePost extends Component{
     render() {
         return (

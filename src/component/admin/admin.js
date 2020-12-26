@@ -6,6 +6,7 @@ import './admin.css'
 import ManageNT from "./management_NT/management_NT"
 import ManageUse from "./manage_uses/manage_uses"
 import ManagePost from "./manage_post/manage_post"
+import AcceptComment from "./accept_comment/accept_comment"
 
 class Admin extends Component {
     constructor(props){
@@ -34,6 +35,9 @@ class Admin extends Component {
                                                 <Link to = '/admin/danh-sach-bai-dang' className = "nav-link nav_menu_mg"><span>Danh sách bài đăng</span></Link>
                                             </li>
                                             <li className = "nav-link post_manager-memu">
+                                                <Link to = '/admin/danh-sach-phan-hoi' className = "nav-link nav_menu_mg"><span>Danh sách phản hồi</span></Link>
+                                            </li>
+                                            <li className = "nav-link post_manager-memu">
                                                 <Link to = '/admin/thong-ke' className = "nav-link nav_menu_mg"><span>Thống kê</span></Link>
                                             </li>
                                             <li className = "nav-link post_manager-memu">
@@ -48,6 +52,7 @@ class Admin extends Component {
                             <Route  exact path="/admin/quan-li-nha-tro" component={ManageNT}/>  
                             <Route  exact path="/admin/danh-sach-nguoi-dung" component={ManageUse}/>          
                             <Route  exact path="/admin/danh-sach-bai-dang" component={ManagePost}/>  
+                            <Route  exact path="/admin/danh-sach-phan-hoi" component={AcceptComment}/> 
                         </Switch>
                     </div> 
                 </div>    
