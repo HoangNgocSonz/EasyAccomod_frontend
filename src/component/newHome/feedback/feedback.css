@@ -1,38 +1,62 @@
 .modal-dialog {
-    height: 50%;
-    width: 50%;
-    margin: auto
+  height: 50%;
+  margin: auto;
 }
 
 .header {
-    color: white;
-    background-color: teal;
-    display: block;
+  color: rgb(27, 27, 27);
+  /* background-color: teal; */
+  display: block;
 }
 
 textarea {
-    border: none;
-    box-shadow: none !important;
-    -webkit-appearance: none;
-    outline: 0px !important;
+  /* border: none;
+  overflow: auto; */
+
+  resize: none; /*remove the resize handle on the bottom right*/
 }
-.textarea{
-    margin-left: 20px;
+.textarea {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 4px;
+  outline: none;
+  padding-left: 10px;
 }
-.modal-body{
-    margin: auto;
+.textarea:focus {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 4px;
+  outline: none;
 }
-.modal-footer {
-    margin: auto
+.modal-body {
+  margin: auto;
+}
+.modal-footer-x {
+  background-color: teal;
+  height: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 550;
+  padding-top: 7px;
+  color: white;
+  margin-bottom: 20px;
 }
 input {
-    color: #007bff
+  color: #007bff;
 }
-.ml-3{
-    font-size: larger;
-    color: black;
+.ml-3 {
+  font-size: 15px;
+  font-weight: 550;
+  color: black;
 }
-.btn-outline-primary{
-    background-color: teal;
-    color: white;
+.btn-outline-primary {
+  background-color: teal;
+  color: white;
+}
+.feedBackLeft {
+  margin-top: 15px;
 }

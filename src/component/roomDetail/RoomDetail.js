@@ -4,6 +4,8 @@ import Report from "../newHome/report_news/report_news";
 import Navbar from "../menu/Navbar";
 import axios from "axios";
 import "./RoomDetail.css";
+import Feedback from "../newHome/feedback/feedback";
+import Filter from "../header/filter/filter";
 
 import img_banner from "../header/image_header/banner.png";
 export default class RoomDetail extends Component {
@@ -87,6 +89,7 @@ export default class RoomDetail extends Component {
     return (
       <div>
         <Navbar></Navbar>
+        <Filter></Filter>
         <div className="roomDetail">
           <Container>
             <Row>
@@ -174,10 +177,11 @@ export default class RoomDetail extends Component {
                   )}
                 </div>
 
-                <div class="header_right">Phone: 0976931294</div>
+                <Feedback></Feedback>
                 <div class="reportnews">
                   <Report />
                 </div>
+
                 {this.state.email.length != 0 ? (
                   <input
                     type="text"

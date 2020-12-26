@@ -26,6 +26,7 @@ export default class HomePage extends Component {
         <NewsHome />
         <Feedback />
         <Footer />
+        <Admin></Admin>
       </div>
     );
   }
