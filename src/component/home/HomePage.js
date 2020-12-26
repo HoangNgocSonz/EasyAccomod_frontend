@@ -11,11 +11,13 @@ import Filter from "../header/filter/filter";
 import SlideHeader from "../header/slide_header/slide_header";
 import Navbar from "../menu/Navbar";
 import Feedback from "../newHome/feedback/feedback";
+import FormPost from "../user/FornPost";
 
 export default class HomePage extends Component {
   render() {
     return (
       <div>
+        <FormPost></FormPost>
         <Navbar></Navbar>
         <SlideHeader></SlideHeader>
         <Filter></Filter>
@@ -23,7 +25,7 @@ export default class HomePage extends Component {
         <Inforuser></Inforuser>
         <ChangePassword></ChangePassword>
         <NewsHome />
-        <Feedback/>
+        <Feedback />
         <Footer />
       </div>
     );

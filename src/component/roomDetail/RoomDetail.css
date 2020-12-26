@@ -1,3 +1,6 @@
+.roomDetail {
+  margin-top: 15px;
+}
 .imageCorousel {
   width: 100%;
   height: 480px;
@@ -47,10 +50,10 @@
 .bold {
   font-weight: 560;
 }
-.reportnews{
+.reportnews {
   margin-top: 10px;
 }
-.header_right{
+.header_right {
   margin-top: 20px;
   border: 1px solid black;
   border-radius: 3px;
@@ -60,11 +63,49 @@
   color: white;
   padding: 5px;
 }
-.menu_zoom{
+.menu_zoom {
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 1199px) {
   .RoomDetailRight {
     display: none;
   }
+}
+
+.authorInfor {
+  border: 1px solid rgb(206, 206, 206);
+  padding: 20px;
+  border-radius: 4px;
+}
+.imgAvatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 34px;
+  border: 1px solid teal;
+}
+.spanPhone {
+  height: 40px;
+  background-color: teal;
+  border-radius: 4px;
+  color: white;
+  padding-top: 7.5px;
+  font-weight: 550;
+  margin-top: 10px;
+}
+#myInput {
+  opacity: 0;
+  margin-bottom: -50px;
+}
+.copyEmail {
+  border: 1px solid teal;
+  border-radius: 3px;
+  height: 40px;
+  padding-top: 5px;
+  font-weight: 550;
+  margin-top: 10px;
+}
+.userName {
+  font-weight: 550;
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
