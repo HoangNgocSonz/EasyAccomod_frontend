@@ -17,7 +17,6 @@ export default class HomePage extends Component {
   render() {
     return (
       <div>
-        <FormPost></FormPost>
         <Navbar></Navbar>
         <SlideHeader></SlideHeader>
         <Filter></Filter>
