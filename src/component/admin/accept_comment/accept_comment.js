@@ -4,7 +4,7 @@ import axios from 'axios';
 class AcceptComment extends Component {
     render() {
         return (
-            <div class = "post_container" data-wow-delay="0.2s">
+            <div className = "post_container" data-wow-delay="0.2s">
                 <div className = "style_tieudepage_mg">
                     <h2 className="style_tieudepage_mg-h2" style={{marginLeft:'-50px'}}>QUẢN LÝ PHẢN HỒI KHÁCH HÀNG</h2>
                     <p>Thông tin càng chính xác giúp cho người thuê một cách tốt nhất</p>

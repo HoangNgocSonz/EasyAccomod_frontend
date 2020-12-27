@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
-            {/*<Route exact path="/">
+            <Route exact path="/">
               <HomePage></HomePage>
             </Route>
             <Route
@@ -20,7 +20,7 @@ class App extends Component {
               render={(props) => {
                 return <RoomDetail {...props} />;
               }}
-            />*/}
+            />
             <Admin/>
           </div>
         </Router>
