@@ -29,8 +29,7 @@ class AcceptComment extends Component {
                                     <td>1</td>
                                     <td></td>
                                     <td>Phạm Mai Linh</td>
-                                    <td><span>Phòng trọ đầy đủ tiện nghi, website dễ dùng.</span>
-                                    </td>
+                                    <td><p>Phòng trọ đầy đủ tiện nghi, website dễ dùng. Thông tin mô tả chính xác.Phòng trọ đầy đủ tiện nghi, website dễ dùng. Thông tin mô tả chính xác.</p></td>
                                     <td></td>
                                     <td></td>
                                 </tr>
@@ -38,7 +37,7 @@ class AcceptComment extends Component {
                                     <td>1</td>
                                     <td></td>
                                     <td>Phạm Mai Linh</td>
-                                    <td>Phòng trọ đầy đủ tiện nghi, website dễ dùng</td>
+                                    <td><p>Phòng trọ đầy đủ tiện nghi, website dễ dùng</p></td>
                                     <td></td>
                                     <td></td>
                                 </tr>
@@ -46,7 +45,7 @@ class AcceptComment extends Component {
                                     <td>1</td>
                                     <td></td>
                                     <td>Phạm Mai Linh</td>
-                                    <td>Phòng trọ đầy đủ tiện nghi, website dễ dùng</td>
+                                    <td><p>Phòng trọ đầy đủ tiện nghi, website dễ dùng</p></td>
                                     <td></td>
                                     <td></td>
                                 </tr>
@@ -54,7 +53,7 @@ class AcceptComment extends Component {
                                     <td>1</td>
                                     <td></td>
                                     <td>Phạm Mai Linh</td>
-                                    <td>Phòng trọ đầy đủ tiện nghi, website dễ dùng</td>
+                                    <td><p>Phòng trọ đầy đủ tiện nghi, website dễ dùng</p></td>
                                     <td></td>
                                     <td></td>
                                 </tr>

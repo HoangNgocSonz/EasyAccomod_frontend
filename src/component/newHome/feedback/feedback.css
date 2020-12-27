@@ -65,19 +65,21 @@ input {
   margin-top: -10px;
   flex-direction: row-reverse;
   margin-left: 50px;
-  float: left
+  float: left;
 }
 
 .rating>input {
-  display: none
+  display: none;
+  padding-right: 10px;
 }
 
 .rating>label {
   position: relative;
-  width: 19px;
+  width: 24px;
   font-size: 25px;
-  color:yellow;
-  cursor: pointer
+  color:red;
+  cursor: pointer;
+  padding-right: 10px;
 }
 
 .rating>label::before {

@@ -27,7 +27,7 @@ class ManagePost extends Component{
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Cho thuê phòng trọ</td>
+                                <td><p>Cho thuê phòng trọ giá rẻ bất ngờ, đầy đủ tiện nghi, thuận tiện đi lại</p></td>
                                 <td>25/12/2020</td>
                                 <td>mailinh1352000@gmail.com</td>
                                 <td>Chưa duyệt</td>
@@ -36,8 +36,8 @@ class ManagePost extends Component{
                             </tr>
                             <tr>
                                 <td>2</td>
+                                <td><p>Cho thuê phòng trọ</p></td>
                                 <td></td>
-                                <td>Cho thuê phòng trọ</td>
                                 <td>1 700 000 VNĐ</td>
                                 <td>Hoạt động</td>
                                 <td>Không</td>
@@ -45,8 +45,8 @@ class ManagePost extends Component{
                             </tr>
                             <tr>
                                 <td>3</td>
+                                <td><p>Cho thuê phòng trọ</p></td>
                                 <td></td>
-                                <td>Cho thuê phòng trọ</td>
                                 <td>2 500 000 VNĐ</td>
                                 <td>Hoạt động</td>
                                 <td>Không</td>

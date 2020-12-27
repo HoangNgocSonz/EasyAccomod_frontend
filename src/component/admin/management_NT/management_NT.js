@@ -31,7 +31,8 @@ class ManageNT extends Component {
                                 <tr>
                                     <td>1</td>
                                     <td></td>
-                                    <td>Cho thuê phòng trọ ở Cầu Giấy</td>
+                                    <td><p>
+                                        Cho thuê phòng trọ ở Cầu Giấy giá rẻ khép kin, gần trường đại học. Cho thuê phòng trọ ở Cầu Giấy giá rẻ khép kin, gần trường đại học. Cho thuê phòng trọ ở Cầu Giấy giá rẻ khép kin, gần trường đại học.</p></td>
                                     <td>2 000 000 VNĐ</td>
                                     <td>Hoạt động</td>
                                     <td>Không</td>
@@ -40,7 +41,7 @@ class ManageNT extends Component {
                                 <tr>
                                     <td>2</td>
                                     <td></td>
-                                    <td>Cho thuê phòng trọ</td>
+                                    <td><p>Cho thuê phòng trọ ở Cầu Giấy giá rẻ khép kín</p></td>
                                     <td>1 700 000 VNĐ</td>
                                     <td>Hoạt động</td>
                                     <td>Không</td>
@@ -49,7 +50,7 @@ class ManageNT extends Component {
                                 <tr>
                                     <td>3</td>
                                     <td></td>
-                                    <td>Cho thuê phòng trọ</td>
+                                    <td><p>Cho thuê phòng trọ</p></td>
                                     <td>2 500 000 VNĐ</td>
                                     <td>Hoạt động</td>
                                     <td>Không</td>
@@ -58,7 +59,7 @@ class ManageNT extends Component {
                                 <tr>
                                     <td>3</td>
                                     <td></td>
-                                    <td>Cho thuê phòng trọ</td>
+                                    <td><p>Cho thuê phòng trọ</p></td>
                                     <td>2 500 000 VNĐ</td>
                                     <td>Hoạt động</td>
                                     <td>Không</td>

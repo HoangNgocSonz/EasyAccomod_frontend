@@ -20,9 +20,9 @@ export default class NavBar extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <button className="directional">Thuê phòng trọ</button>
-              <span>/</span>
+              <span></span>
               <button className="directional">Thuê căn hộ</button>
-              <span>/</span>
+              <span></span>
               <button className="directional">Yêu thích</button>
             </Nav>
 

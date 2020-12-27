@@ -157,7 +157,7 @@ class NewsHome extends Component{
                                             <div className="form-group">
                                                 <label for="cost_elect">Tiền vệ sinh</label>
                                                 <select id = "cos_elec">
-                                                    <option value="1">50.00 VNĐ/1 người</option>
+                                                    <option value="1">50.000 VNĐ/1 người</option>
                                                     <option value="2">40.000 VNĐ/1 người</option>
                                                     <option value="3">30.000 VNĐ/1 người</option>
                                                     <option value="4">20.000 VNĐ/1 người</option>
