@@ -3,7 +3,6 @@ import React, { Component } from "react";
 
 export default class FormPost extends Component {
   postUser() {
-    console.log("okkkk");
     axios
       .post("https://accomod.herokuapp.com/api/user", {
         userName: "sonnkkkk",

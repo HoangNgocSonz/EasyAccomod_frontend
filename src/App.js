@@ -4,7 +4,8 @@ import SlideHeader from "./component/header/slide_header/slide_header";
 import { Slide } from "@material-ui/core";
 import HomePage from "./component/home/HomePage";
 import RoomDetail from "./component/roomDetail/RoomDetail";
-import Admin from "./component/admin/admin"
+import Admin from "./component/admin/admin";
+import Favourite from "./component/favorite/Favourite";
 class App extends Component {
   render() {
     return (
@@ -21,6 +22,9 @@ class App extends Component {
                 return <RoomDetail {...props} />;
               }}
             />
+            <Route exact path="/favourite">
+              <Favourite></Favourite>
+            </Route>
           </div>
         </Router>
       </div>

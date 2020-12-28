@@ -9,29 +9,29 @@ import {
   Button,
 } from "react-bootstrap";
 import LoginRegister from "../login__register/login__register";
+import { Link } from "react-router-dom";
 
 export default class NavBar extends Component {
   render() {
     return (
       <div>
         <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home">Accomod</Navbar.Brand>
+          <Link to="/">
+            <Navbar.Brand href="#home">Accomod</Navbar.Brand>
+          </Link>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <button className="directional">Thuê phòng trọ</button>
-              <span>/</span>
-              <button className="directional">Thuê căn hộ</button>
-              <span>/</span>
-              <button className="directional">Yêu thích</button>
-            </Nav>
 
-            {/* <button className="login">Đăng nhập</button>
-            <sapn>/</sapn>
-            <button className="logout">Đăng ký</button>
-            <sapn>/</sapn>
-            <button className="logout">Đăng tin mới</button> */}
-            <LoginRegister></LoginRegister>
+              <button className="directional">Thuê căn hộ</button>
+              <Link to="/favourite">
+                <button className="directional">Yêu thích</button>
+              </Link>
+
+              <LoginRegister></LoginRegister>
+            </Nav>
 
             <Form inline>
               <FormControl

@@ -6,6 +6,8 @@ import axios from "axios";
 import "./RoomDetail.css";
 import Feedback from "../newHome/feedback/feedback";
 import Filter from "../header/filter/filter";
+import { FcLikePlaceholder, FcLike } from "react-icons/fc";
+import heart from "./image/heart.jpg";
 
 import img_banner from "../header/image_header/banner.png";
 export default class RoomDetail extends Component {
@@ -16,11 +18,12 @@ export default class RoomDetail extends Component {
       dataOfRoom: [],
       author: [],
       email: [],
+      motelId: [],
     };
   }
   componentDidMount() {
     axios
-      .get(`https://accomod.herokuapp.com/api/user/5fe706b79af27b0023c94354`)
+      .get(`https://accomod.herokuapp.com/api/user/5fe846051244af0023bb6e02`)
       .then((res2) => {
         this.setState({
           author: (
@@ -50,8 +53,6 @@ export default class RoomDetail extends Component {
           ),
           email: res2.data.data.email,
         });
-
-        console.log(res2.data.data);
       })
       .catch((err) => console.log("err: " + err + this.props.match.params._id));
 
@@ -74,6 +75,7 @@ export default class RoomDetail extends Component {
             </Carousel.Item>
           )),
           dataOfRoom: res.data.data,
+          motelId: res.data.data._id,
         });
       })
       .catch((err) => console.log("err: " + err + this.props.match.params._id));
@@ -84,6 +86,20 @@ export default class RoomDetail extends Component {
     copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
     alert("Copied the text: " + copyText.value);
+  }
+  addToFavouriteList() {
+    // console.log(JSON.parse(localStorage.user)._id);
+    axios
+      .put(
+        `https://accomod.herokuapp.com/api/user/${
+          JSON.parse(localStorage.user)._id
+        }`,
+        {
+          favourite: [`${this.state.motelId}`],
+        }
+      )
+      .then((res3) => console.log(res3.data.data))
+      .catch((err) => console.log("errrr:" + err));
   }
   render() {
     return (
@@ -116,6 +132,11 @@ export default class RoomDetail extends Component {
                         <span className="provinceDetail">
                           {this.state.dataOfRoom.province}
                         </span>
+                        <img
+                          src={heart}
+                          onClick={this.addToFavouriteList.bind(this)}
+                          className="heart"
+                        ></img>
                       </h5>
                       <hr></hr>
                       <div>

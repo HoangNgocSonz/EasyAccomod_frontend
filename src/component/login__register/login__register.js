@@ -8,6 +8,9 @@ import axios from "axios";
 import ChangePassword from "../newHome/change_password/change_password";
 import Inforuser from "../newHome/infor_user/infor_user";
 class LoginRegister extends Component {
+  logout() {
+    localStorage.removeItem("user");
+  }
   render() {
     return (
       <div className="navbar navbar-expand-sm header1_info_right__div-login_register">
@@ -55,7 +58,11 @@ class LoginRegister extends Component {
             >
               Đổi mật khẩu
             </button>
-            <button className="dropdown-item dropdown-menu_btn" type="button">
+            <button
+              className="dropdown-item dropdown-menu_btn"
+              type="button"
+              onClick={this.logout}
+            >
               Đăng xuất
             </button>
             <button
