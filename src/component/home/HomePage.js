@@ -12,6 +12,7 @@ import SlideHeader from "../header/slide_header/slide_header";
 import Navbar from "../menu/Navbar";
 import Feedback from "../newHome/feedback/feedback";
 import FormPost from "../user/FornPost";
+import { Router } from "react-router-dom";
 
 export default class HomePage extends Component {
   render() {

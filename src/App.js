@@ -9,22 +9,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
-          <div>
-            <Route exact path="/">
-              <HomePage></HomePage>
-            </Route>
-            <Route
-              exact
-              path="/detail/:_id"
-              render={(props) => {
-                return <RoomDetail {...props} />;
-              }}
-            />
-            </div>
-        </Router>
+      <Router>
+        <div>
+          <Route exact path="/">
+            <HomePage></HomePage>
+          </Route>
+          <Route
+            exact
+            path="/detail/:_id"
+            render={(props) => {
+              return <RoomDetail {...props} />;
+            }}
+          />
+          </div>
+      </Router>
 
-      </div>
+    </div>
     );
   }
 }

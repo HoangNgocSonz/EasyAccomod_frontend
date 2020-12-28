@@ -33,17 +33,19 @@ textarea {
 .modal-body {
   margin: auto;
 }
-.modal-footer-x {
+.submitFeedback{
+  border: 1px solid rgb(0, 107, 107);
   background-color: teal;
-  height: 40px;
-  margin-right: 20px;
-  margin-left: 20px;
+ height: 40px;
+ margin-left: 20px;
+ margin-right: 20px;
+ margin-bottom: 20px;
   border-radius: 4px;
   text-align: center;
   font-weight: 550;
-  padding-top: 7px;
   color: white;
-  margin-bottom: 20px;
+ 
+
 }
 input {
   color: #007bff;
@@ -62,7 +64,7 @@ input {
 }
 .rating {
   display: flex;
-  margin-top: -10px;
+  margin-top:-10px;
   flex-direction: row-reverse;
   margin-left: 50px;
   float: left;
@@ -77,7 +79,7 @@ input {
   position: relative;
   width: 24px;
   font-size: 25px;
-  color:red;
+  color:yellow;
   cursor: pointer;
   padding-right: 10px;
 }
