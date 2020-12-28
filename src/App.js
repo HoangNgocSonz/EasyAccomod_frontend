@@ -21,7 +21,8 @@ class App extends Component {
                 return <RoomDetail {...props} />;
               }}
             />
-          </div>
+            </div>
+          <Admin/>
         </Router>
 
       </div>
