@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          {/*<div>
+          <div>
             <Route exact path="/">
               <HomePage></HomePage>
             </Route>
@@ -21,9 +21,8 @@ class App extends Component {
                 return <RoomDetail {...props} />;
               }}
             />
-            </div>*/}
-              <Admin/>
-            </Router>
+          </div>
+        </Router>
 
       </div>
     );
