@@ -3,6 +3,7 @@ import React, {Component} from "react";
 class ManagePost extends Component{
     render() {
         return (
+            <div style = {{marginLeft:'250px'}}>
             <div className = "post_container" data-wow-delay="0.2s">
                 <div className = "style_tieudepage_mg">
                     <h2 className="style_tieudepage_mg-h2">QUẢN LÝ BÀI ĐĂNG</h2>
@@ -56,7 +57,7 @@ class ManagePost extends Component{
                     </table>
                     </div>
                 </div>
-            </div>
+            </div></div>
         );
     }
 }

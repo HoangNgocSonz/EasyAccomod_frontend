@@ -4,6 +4,7 @@ import axios from 'axios';
 class AcceptComment extends Component {
     render() {
         return (
+            <div style={{marginLeft:'250px'}}>
             <div className = "post_container" data-wow-delay="0.2s">
                 <div className = "style_tieudepage_mg">
                     <h2 className="style_tieudepage_mg-h2" style={{marginLeft:'-50px'}}>QUẢN LÝ PHẢN HỒI KHÁCH HÀNG</h2>
@@ -61,7 +62,7 @@ class AcceptComment extends Component {
                         </table>
                     </div>
                 </div>
-            </div>
+            </div></div>
         );
     }
 }

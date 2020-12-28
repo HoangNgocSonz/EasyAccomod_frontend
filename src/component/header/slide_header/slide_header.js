@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import img_slide1 from "../image_header/1.jpg";
 import img_slide2 from "../image_header/2.jpg";
-import img_slide3 from "../image_header/5.jpg";
+import img_slide3 from "../image_header/3.jpg";
 import "./slide_header.css";
 
 class SlideHeader extends Component {

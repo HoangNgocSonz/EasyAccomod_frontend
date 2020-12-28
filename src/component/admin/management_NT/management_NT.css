@@ -1,11 +1,23 @@
-.post_container{
+/*.post_container{
     border: 2px solid #ccc;
     box-shadow: 0 5px 30px rgba(0,0,0,.15);
-    display: block;
     width: 100%;
+    margin: auto;
+    display: block;
     margin-left: 250px;
     position: fixed;
     z-index: 2;
+
+}*/
+.post_container{
+    border: 2px solid #ccc;
+    box-shadow: 0 5px 30px rgba(0,0,0,.15);
+    width: auto;
+    margin: auto;
+    float: right;
+    position: fixed;
+    z-index: 2;
+
 }
 .style_tieudepage_mg{
     padding-top:20px;   
@@ -13,17 +25,16 @@
     
 }
 .style_tieudepage_mg-h2{
-    padding-left: 500px;
+    text-align: center;
     font-weight: bold;
 }
 .style_tieudepage_mg p{
-    padding-left: 480px;  
+    text-align: center;
     color: rgb(255, 38, 0);
     font-weight: bold;
 }
 /*thay đổi vị trí bảng*/
 .table-striped{
-    margin-left: 10px;
     /*background-color: rgba(218, 218, 218, 0.5);*/
     border-radius: 1em;
 }
@@ -39,7 +50,7 @@ table p{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    margin-left: 5px;
+    margin: auto;
 }
 #customers td, #customer th {
     border: 1px solid #ddd;

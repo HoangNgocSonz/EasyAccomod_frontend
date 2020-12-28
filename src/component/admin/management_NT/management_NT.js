@@ -6,6 +6,7 @@ import './management_NT.css'
 class ManageNT extends Component {
     render() {
         return (
+            <div style={{marginLeft:'250px'}}>
             <div className = "post_container" data-wow-delay="0.2s">
                 <div className = "style_tieudepage_mg">
                     <h2 className="style_tieudepage_mg-h2">QUẢN LÝ TIN PHÒNG TRỌ</h2>
@@ -70,7 +71,7 @@ class ManageNT extends Component {
                         
                     </div>
                 </div>
-            </div>
+            </div></div>
         );
     }
 }

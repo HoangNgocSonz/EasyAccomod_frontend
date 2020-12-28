@@ -20,17 +20,15 @@ class NewsHome extends Component{
     }
     render(){
         return(
-            <div className="container-fluid newshome">
-                <div className="row">
-                    <div className="col-md-12 col-sm-12 col-xs-12 tieudepage_mg">
-                        <h2 className="tieudepage_mg-h2">Đăng tin phòng trọ</h2>
-                        <p>Thông tin càng chính xác giúp cho người thuê một cách tốt nhất</p>
-                    </div>
+            <div className="post_newsnew" id = "center">
+                <div className="col-md-12 col-sm-12 col-xs-12 tieudepage_mg news_tieude">
+                    <h2 className="tieudepage_mg-h2">Đăng tin phòng trọ</h2>
+                    <p>Thông tin càng chính xác giúp cho người thuê một cách tốt nhất</p>
                 </div>
-                <div className="ggmappage wow fadeInUp main_news" data-wow-delay="0.1s">
-                    <div className="row">
+                <div className="main_news" data-wow-delay="0.1s">
+                    <div>
 		                <div className="col-md-8">
-                            <div className="panel panel-default">
+                            <div className="panel-default">
                                 <div id ="panel-heading">Thông tin bắt buộc*</div>	
                                 <div className = "panel-body">               
                                     <input type="hidden" name="_token"/>
