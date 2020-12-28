@@ -75,8 +75,8 @@ select:focus {
 }
 
 .button {
-    background-color: #fff;
-    color: teal;
+    background-color:rgb(0, 107, 107);;
+    color: white;
 }
 
 .button:hover {

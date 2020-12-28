@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 
-import './managa_uses.css'
-
 class ManageUse extends Component{
     render(){
         return(
-            <div class = "post_container">
+            <div style={{marginLeft:'250px'}}>
+            <div className = "post_container">
                 <div className = "style_tieudepage_mg">
                     <h2 className="style_tieudepage_mg-h2">QUẢN LÝ CHỦ TRỌ</h2>
                     <p>Thông tin càng chính xác giúp cho người thuê một cách tốt nhất</p>
@@ -58,7 +57,7 @@ class ManageUse extends Component{
                         </table>
                     </div>
                 </div>
-            </div>
+            </div></div>
         );
     }
 }

@@ -1,11 +1,23 @@
+/*.post_container{
+    border: 2px solid #ccc;
+    box-shadow: 0 5px 30px rgba(0,0,0,.15);
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-left: 250px;
+    position: fixed;
+    z-index: 2;
+
+}*/
 .post_container{
     border: 2px solid #ccc;
     box-shadow: 0 5px 30px rgba(0,0,0,.15);
-    display: block;
-    width: 100%;
-    margin-left: 250px;
+    width: auto;
+    margin: auto;
+    float: right;
     position: fixed;
-    z-index: 100;
+    z-index: 2;
+
 }
 .style_tieudepage_mg{
     padding-top:20px;   
@@ -13,70 +25,88 @@
     
 }
 .style_tieudepage_mg-h2{
-    padding-left: 500px;
+    text-align: center;
     font-weight: bold;
 }
 .style_tieudepage_mg p{
-    padding-left: 480px;  
+    text-align: center;
     color: rgb(255, 38, 0);
     font-weight: bold;
 }
 /*thay đổi vị trí bảng*/
 .table-striped{
-    margin-left: 10px;
-    background-color: rgba(218, 218, 218, 0.5);
+    /*background-color: rgba(218, 218, 218, 0.5);*/
     border-radius: 1em;
 }
 table{
-    border: 2px solid rgb(184, 182, 182);
+    border: 2px solid rgb(156, 155, 155);
     border-radius: 1em;
+    
+}
+table p{
+    max-height:10px;
 }
 #customer {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    margin-left: 5px;
+    margin: auto;
 }
 #customers td, #customer th {
     border: 1px solid #ddd;
     padding: 4px;
     text-align: center;
+    max-width: 400px;
+    height: 10px;
+    overflow: hidden;
 }
-#customers tr{background-color: #ffffff;}
+#customers tr{
+    background-color: #ffffff;
+    padding: 10px;
+}
 
 #customers tr:hover {background-color: #ddd;}
 
 #customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px;
+    color: white;
     text-align: center;
-    background-color: #7efa7e;
-    border-bottom: 2px solid rgb(184, 182, 182);
+    background-color: #21212e;
+    border: 2px solid rgb(184, 182, 182);
 }
-#customers th:nth-child(1){
-    width: 150px;
-}
+/*
 #customers th:nth-child(2){
     width: 200px;
+    overflow: hidden;
 }
 #customers th:nth-child(3){
     width: 300px;
+    overflow: hidden;
 }
 
 #customers th:nth-child(4){
     width: 150px;
+    height: 20px;
+    overflow: hidden;
 }
 
 #customers th:nth-child(5){
     width: 150px;
+    overflow: hidden;
 }
 #customers th:nth-child(6){
     width: 150px;
+    overflow: hidden;
 }
 #customers th:nth-child(7){
     width: 150px;
-}
+    overflow: hidden;
+}*/
+#customer tr{
+    height: 10px;
+    overflow: hidden;
 
+}
 #main_table{
     border: 3px sodid rgb(0, 0, 0);
     border-radius: 5px;

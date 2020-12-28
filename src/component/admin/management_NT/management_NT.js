@@ -6,7 +6,8 @@ import './management_NT.css'
 class ManageNT extends Component {
     render() {
         return (
-            <div class = "post_container" data-wow-delay="0.2s">
+            <div style={{marginLeft:'250px'}}>
+            <div className = "post_container" data-wow-delay="0.2s">
                 <div className = "style_tieudepage_mg">
                     <h2 className="style_tieudepage_mg-h2">QUẢN LÝ TIN PHÒNG TRỌ</h2>
                     <p>Thông tin càng chính xác giúp cho người thuê một cách tốt nhất</p>
@@ -31,7 +32,8 @@ class ManageNT extends Component {
                                 <tr>
                                     <td>1</td>
                                     <td></td>
-                                    <td>Cho thuê phòng trọ ở Cầu Giấy</td>
+                                    <td><p>
+                                        Cho thuê phòng trọ ở Cầu Giấy giá rẻ khép kin, gần trường đại học. Cho thuê phòng trọ ở Cầu Giấy giá rẻ khép kin, gần trường đại học. Cho thuê phòng trọ ở Cầu Giấy giá rẻ khép kin, gần trường đại học.</p></td>
                                     <td>2 000 000 VNĐ</td>
                                     <td>Hoạt động</td>
                                     <td>Không</td>
@@ -40,7 +42,7 @@ class ManageNT extends Component {
                                 <tr>
                                     <td>2</td>
                                     <td></td>
-                                    <td>Cho thuê phòng trọ</td>
+                                    <td><p>Cho thuê phòng trọ ở Cầu Giấy giá rẻ khép kín</p></td>
                                     <td>1 700 000 VNĐ</td>
                                     <td>Hoạt động</td>
                                     <td>Không</td>
@@ -49,7 +51,7 @@ class ManageNT extends Component {
                                 <tr>
                                     <td>3</td>
                                     <td></td>
-                                    <td>Cho thuê phòng trọ</td>
+                                    <td><p>Cho thuê phòng trọ</p></td>
                                     <td>2 500 000 VNĐ</td>
                                     <td>Hoạt động</td>
                                     <td>Không</td>
@@ -58,7 +60,7 @@ class ManageNT extends Component {
                                 <tr>
                                     <td>3</td>
                                     <td></td>
-                                    <td>Cho thuê phòng trọ</td>
+                                    <td><p>Cho thuê phòng trọ</p></td>
                                     <td>2 500 000 VNĐ</td>
                                     <td>Hoạt động</td>
                                     <td>Không</td>
@@ -66,9 +68,10 @@ class ManageNT extends Component {
                                 </tr>
                             </tbody>
                         </table>
+                        
                     </div>
                 </div>
-            </div>
+            </div></div>
         );
     }
 }

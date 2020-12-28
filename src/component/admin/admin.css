@@ -3,7 +3,7 @@
 }
 .sidebar{
     border: 1px solid #ccc;
-    height: 705px;
+    height: 712px;
     box-shadow: 0 5px 30px rgba(0,0,0,.15);
     position: fixed;
     z-index: 10000;

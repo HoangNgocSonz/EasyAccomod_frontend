@@ -187,6 +187,46 @@ export default class RoomDetail extends Component {
                     ""
                   )}
                 </div>
+              <div>
+                <div>
+                  <h6>Bình luận</h6>
+                </div>
+                <div className="d-flex flex-row p-3">
+                  <img src="https://i.imgur.com/zQZSWrt.jpg" width="50" className="rounded-circle mr-2"/>
+                  <textarea type="textarea" placeholder="Bình luận của bạn..." rows="1" className="form-control"></textarea>
+                  <input type="button" className="btn btn-default btn1" value="Đăng" />
+                </div>
+            
+                <div className="d-flex flex-row p-3"> <img src="https://i.imgur.com/zQZSWrt.jpg" width="40" height="40" className="rounded-circle mr-3"/>
+                      <div className="w-80">
+                          <div className="d-flex">
+                              <div className="d-flex"> <span className="mr-2">Nguyễn Thắm</span></div>
+                          </div> 
+                          <p className=" comment-text ">Phòng đẹp, đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện.Phòng đẹp , đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện.Phòng đẹp, đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện. hòng đẹp, đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện.Phòng đẹp , đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện.Phòng đẹp, đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện</p>
+                      </div>
+                </div>
+                <div className="d-flex flex-row p-3"> <img src="https://i.imgur.com/zQZSWrt.jpg" width="40" height="40" className="rounded-circle mr-3"/>
+                      <div className="w-80">
+                          <div className="d-flex">
+                              <div className="d-flex"> <span className="mr-2">Nguyễn Thắm</span></div>
+                          </div> 
+                          <p className="comment-text ">Phòng đẹp, đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện.</p>
+                      </div>
+                </div>
+                <div className="d-flex flex-row p-3"> <img src="" width="40" height="40" className="rounded-circle mr-3" alt="avatar"/>
+                      <div className="w-80">
+                          <div className="d-flex">
+                              <div className="d-flex"> <span className="mr-2">Tên tài khoản</span></div>
+                          </div> 
+                          <p className=" comment-text ">comment</p>
+                      </div>
+                </div>
+              </div>
+              
+              
+            
+    
+               
               </Col>
 
               <Col xs={0} sm={0} md={0} lg={0} xl={3}>

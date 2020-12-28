@@ -60,3 +60,43 @@ input {
 .feedBackLeft {
   margin-top: 15px;
 }
+.rating {
+  display: flex;
+  margin-top: -10px;
+  flex-direction: row-reverse;
+  margin-left: 50px;
+  float: left;
+}
+
+.rating>input {
+  display: none;
+  padding-right: 10px;
+}
+
+.rating>label {
+  position: relative;
+  width: 24px;
+  font-size: 25px;
+  color:red;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.rating>label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+  opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+  opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+  opacity: 0.4
+}
