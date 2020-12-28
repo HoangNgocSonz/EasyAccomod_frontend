@@ -22,12 +22,13 @@ class App extends Component {
                 return <RoomDetail {...props} />;
               }}
             />
+
             <Route exact path="/favourite">
               <Favourite></Favourite>
             </Route>
           </div>
+          {/* <Admin /> */}
         </Router>
-
       </div>
     );
   }
