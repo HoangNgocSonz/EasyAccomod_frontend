@@ -27,7 +27,7 @@ class NewsHome extends Component{
                 </div>
                 <div className="main_news" data-wow-delay="0.1s">
                     <div>
-		                <div className="col-md-8">
+		                <div className="col-md-8 main_content">
                             <div className="panel-default">
                                 <div id ="panel-heading">Thông tin bắt buộc*</div>	
                                 <div className = "panel-body">               
