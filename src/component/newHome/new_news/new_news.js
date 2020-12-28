@@ -37,7 +37,7 @@ class NewsHome extends Component{
                                         <input type="text" className="form-control" name="txttitle" id = "head"/>
                                     </div>
                                     <div className="row">
-                                        <div className="col-md-3 col-sm-3 col-xs-12">
+                                        <div>
                                             <div className="form-group">
                                                 <label for="city">Tỉnh/ Thành phố:</label>
                                                 <select className="form-control nice-select wide select_item" name="Haha" id = "city">
@@ -53,14 +53,14 @@ class NewsHome extends Component{
                                                 </select>
                                             </div>
                                         </div>
-                                        <div className="col-md-3 col-sm-3 col-xs-12">
+                                        {/*<div className="col-md-3 col-sm-3 col-xs-12">
                                             <div className="form-group">
                                                 <label for="name">Tên đường</label>
                                                 <select className="form-control nice-select wide select_item" id = "name">
                                                     <option value='0'>-- Chọn Tên Đường --</option>
                                                 </select>
                                             </div>
-                                        </div>
+                                        </div>*/}
                                         <div className="col-md-3 col-sm-3 col-xs-12">
                                             <div className="form-group">
                                                 <label for="items">Danh mục:</label>
@@ -73,18 +73,17 @@ class NewsHome extends Component{
                                         </div>
                                     </div>
                                     <div className="form-group">
-                                        <label for ="address">Địa chỉ phòng trọ:</label> Bạn có thể nhập hoặc chọn ví trí trên bản đồ 
+                                        <label for ="address">Địa chỉ phòng trọ:</label> Mô tả chi tiết địa chỉ
                                         <input type="text" id="location-text-box" name="txtaddress" className="form-control" value="" id = "address" />
-                                        <div className="row">
+                                        {/*<div className="row">
                                             <label>Lựa chọn vị trí trên bản đồ:</label>
                                             <div className="col-md-12 col-sm-12 col-xs-12 google_map">
                                                 <GoogleMap getLocationtoNewsNews={this.getLocation}/>
                                             </div>
-                                        </div>
+                                    </div>*/}
                                     </div>
                                     <div className="row content_news">
-                                        <div className="col-md-8 col-sm-8 col-xs-12 content_news">
-                                            
+                                        <div className="col-md-8 col-sm-8 form-group content_news">
                                             <textarea 
                                             ref="content_infor"
                                             placeholder="Mô tả thông tin nhà trọ"/>
@@ -99,27 +98,26 @@ class NewsHome extends Component{
                                                         <li>Nội dung phải viết bằng tiếng Việt có dấu</li>
                                                         <li>Tiêu đề tin không dài quá 100 kí tự</li>
                                                         <li>Các bạn nên điền đầy đủ thông tin vào các mục để tin đăng có hiệu quả hơn.</li>
-                                                        <li> Để tăng độ tin cậy và tin rao được nhiều người quan tâm hơn, hãy sửa vị trí tin rao của bạn trên bản đồ bằng cách kéo icon tới đúng vị trí của tin rao.</li>
-                                                        <li>Tin đăng có hình ảnh rõ ràng sẽ được xem và gọi gấp nhiều lần so với tin rao không có ảnh. Hãy đăng ảnh để được giao dịch nhanh chóng!</li>
+                                                        <li>Tin đăng có hình ảnh rõ ràng sẽ được xem và gọi gấp nhiều lần so với tin không có ảnh. Hãy đăng ảnh để được giao dịch nhanh chóng!</li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="row">
-                                        <div className="col-md-6">
+                                        <div>
                                             <div className="form-group">
                                                 <label for="cost">Giá phòng( vnđ )/tháng:</label>
                                                 <input type="number" name="txtprice" className="form-control" placeholder="750000" id = "cost"/>
                                             </div>
                                         </div>
-                                        <div className="col-md-6">
+                                        <div className="col-md-4">
                                             <div className="form-group">
                                                 <label for="s">Diện tích( m<sup>2</sup> ):</label>
                                                 <input type="number" name="txtarea" className="form-control" placeholder="16" id = "s"/>
                                             </div>
                                         </div>
-                                        <div className="col-md-6">
+                                        <div className="col-md-3">
                                             <div className="form-group">
                                                 <label for="cost_elect">Tiền điện:</label>
                                                 <select id = "cos_elec">
@@ -131,7 +129,7 @@ class NewsHome extends Component{
                                                 </select>
                                             </div>
                                         </div>
-                                        <div className="col-md-6">
+                                        <div>
                                             <div className="form-group">
                                                 <label for="cost_water">Tiền nước</label>
                                                 <select id = "cos_water">
@@ -151,7 +149,7 @@ class NewsHome extends Component{
                                                 </select>
                                             </div>
                                         </div>
-                                        <div className="col-md-6">
+                                        <div className="col-md-3">
                                             <div className="form-group">
                                                 <label for="cost_elect">Tiền vệ sinh</label>
                                                 <select id = "cos_elec">
@@ -163,21 +161,20 @@ class NewsHome extends Component{
                                                 </select>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col-md-4">
+                                        <div>
                                             <div className="form-group">
                                             <label for="usr">SĐT Liên hệ:</label>
                                             <input type="text" name="txtphone" className="form-control" placeholder="0915111234" id = "usr"></input>
                                             </div>
                                         </div>
-                                        <div className="col-md-4">
+                                        <div>
                                             <div className="form-group">
                                             <label for="num">Số lượng người ở tối đa:</label>
                                             <input type="text" name="txtphone" className="form-control" placeholder="1" id = "num"></input>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
+                                     
                                     <form>
                                         <div className="form-group">
                                             <label for = "dropdown-test">Các tiện ích có trong phòng trọ:</label>
@@ -205,7 +202,7 @@ class NewsHome extends Component{
                                     <form>
                                         <div class="form-group">
                                             <label for="exampleFormControlFile1">Thêm ảnh minh họa</label>
-                                            <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple/>
+                                            <input type="text" className="form-control" name="image" id = "exampleFormControlFile1"/>
                                         </div>
                                     </form>
                                     <button class="btn_PostNews">Đăng Tin</button>
