@@ -5,6 +5,11 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import Slider from "@material-ui/core/Slider";
 class Filter extends Component {
+  abc() {
+    this.props.setKindOfMoterFilter(
+      document.getElementById("select_itemx").value
+    );
+  }
   render() {
     return (
       <div className="filter-top">
@@ -18,8 +23,8 @@ class Filter extends Component {
                 <option data-display="Thể loại" value="0">
                   Tất cả
                 </option>
-                <option value="1">Thuê Phòng Trọ</option>
-                <option value="3">Thuê Căn Hộ</option>
+                <option>Nhà trọ</option>
+                <option>Căn hộ</option>
               </select>
             </Col>
             <Col xs={4} md={2}>
@@ -74,7 +79,7 @@ class Filter extends Component {
               </select>
             </Col>
             <Col xs={4} md={2}>
-              <div className="searchright">
+              <div className="searchright" onClick={this.abc.bind(this)}>
                 <input className="bnt_find" type="button" value="Tìm Kiếm" />
               </div>
             </Col>

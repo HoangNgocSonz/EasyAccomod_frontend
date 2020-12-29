@@ -3,7 +3,7 @@ import { Multiselect } from "multiselect-react-dropdown";
 import "./new_news.css";
 import { Container, Row, Col } from "react-bootstrap";
 
-// import GoogleMap from "./google_map/google_map"
+import GoogleMap from "./google_map/google_map";
 
 class NewsHome extends Component {
   constructor(props) {
@@ -38,19 +38,15 @@ class NewsHome extends Component {
   }
   render() {
     return (
-      <div className="container-fluid newshome">
-        <div className="row">
-          <div className="col-md-12 col-sm-12 col-xs-12 tieudepage_mg">
-            <h2 className="tieudepage_mg-h2">Đăng tin phòng trọ</h2>
-            <p>
-              Thông tin càng chính xác giúp cho người thuê một cách tốt nhất
-            </p>
-          </div>
+      <div className="post_newsnew" id="center">
+        <div className="col-md-12 col-sm-12 col-xs-12 tieudepage_mg news_tieude">
+          <h2 className="tieudepage_mg-h2">Đăng tin phòng trọ</h2>
+          <p>Thông tin càng chính xác giúp cho người thuê một cách tốt nhất</p>
         </div>
-        <div className="ggmappage wow fadeInUp main_news" data-wow-delay="0.1s">
-          <div className="row">
-            <div className="col-md-8">
-              <div className="panel panel-default">
+        <div className="main_news" data-wow-delay="0.1s">
+          <div>
+            <div className="col-md-8 main_content">
+              <div className="panel-default">
                 <div id="panel-heading">Thông tin bắt buộc*</div>
                 <div className="panel-body">
                   <input type="hidden" name="_token" />
@@ -128,7 +124,7 @@ class NewsHome extends Component {
                     <div className="row">
                       <label>Lựa chọn vị trí trên bản đồ:</label>
                       <div className="col-md-12 col-sm-12 col-xs-12 google_map">
-                        {/* <GoogleMap getLocationtoNewsNews={this.getLocation}/> */}
+                        <GoogleMap getLocationtoNewsNews={this.getLocation} />
                       </div>
                     </div>
                   </div>
@@ -232,7 +228,7 @@ class NewsHome extends Component {
                       <div className="form-group">
                         <label for="cost_elect">Tiền vệ sinh</label>
                         <select id="cos_elec">
-                          <option value="1">50.00 VNĐ/1 người</option>
+                          <option value="1">50.000 VNĐ/1 người</option>
                           <option value="2">40.000 VNĐ/1 người</option>
                           <option value="3">30.000 VNĐ/1 người</option>
                           <option value="4">20.000 VNĐ/1 người</option>

@@ -46,6 +46,7 @@ class LoginRegister extends Component {
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
+            id="buttonMoreNavbar"
           ></button>
           <div className="dropdown-menu dropdown-menu-right">
             <button className="dropdown-item dropdown-menu_btn" type="button">

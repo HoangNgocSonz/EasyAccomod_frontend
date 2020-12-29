@@ -14,17 +14,53 @@ import Feedback from "../newHome/feedback/feedback";
 import FormPost from "../user/FornPost";
 import Favourite from "../favorite/Favourite";
 export default class HomePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      filterString: "",
+      kindOfMoterFilter: "",
+    };
+  }
+  // try() {
+  //   console.log("rr");
+  //   // this.setState({
+  //   //   filterString: "a",
+  //   // });
+  // }
+  callbackFunction = (childData) => {
+    console.log(childData);
+    this.setState({ filterString: childData });
+  };
+  setKindOfMoterFilter = (childData) => {
+    console.log(childData);
+    if (childData != "0") {
+      this.setState({
+        kindOfMoterFilter: childData,
+      });
+    } else {
+      this.setState({
+        kindOfMoterFilter: "",
+      });
+    }
+  };
   render() {
     return (
       <div>
-        <Navbar></Navbar>
+        {/* <button onClick={() => this.try()}>submit cha</button> */}
+        <Navbar
+          try={this.try}
+          parentCallback={this.callbackFunction}
+          setKindOfMoterFilter={this.setKindOfMoterFilter}
+        ></Navbar>
         <SlideHeader></SlideHeader>
-        <Filter></Filter>
-        <RoomList></RoomList>
+        <Filter setKindOfMoterFilter={this.setKindOfMoterFilter}></Filter>
+        <RoomList
+          filterString={this.state.filterString}
+          kindOfMoterFilter={this.state.kindOfMoterFilter}
+        ></RoomList>
         <Inforuser></Inforuser>
         <ChangePassword></ChangePassword>
         <NewsHome />
-        <Feedback />
         <Footer />
       </div>
     );

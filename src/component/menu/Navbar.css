@@ -4,7 +4,7 @@
   border: none;
   background-color: #f8f9fa;
   color: rgb(48, 48, 48);
-  margin: 0px 7px;
+  margin-left: 15px;
 }
 .directional:hover {
   color: teal;
@@ -42,4 +42,10 @@
 .bg-light {
   padding-bottom: 9px !important;
   border-bottom: 1px solid rgb(224, 224, 224);
+}
+#NavbarFavourite {
+  margin-top: 8px;
+}
+.header1_info_right__div-login_register {
+  padding-left: 10px !important;
 }

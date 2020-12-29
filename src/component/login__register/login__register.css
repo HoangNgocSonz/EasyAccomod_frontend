@@ -73,16 +73,23 @@
 .span_registerinlogin > span > a:hover {
   color: #947054;
 }
+#buttonMoreNavbar {
+  background-color: #f8f9fa;
+  color: teal;
+}
+
 /* Menu dropdown Login success*/
 .bnt_btuserprofile {
   border: none;
   color: teal;
   font-size: 15px;
   font-weight: 600;
+  /* margin: 0px 10px !important; */
+  background-color: tan;
 }
 .bnt_btuserprofile:hover {
-  background-color: teal;
-  color: white;
+  background-color: teal !important;
+  color: white !important;
 }
 .show > .btn-secondary.dropdown-toggle {
   background-color: #947054;

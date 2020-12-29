@@ -12,6 +12,15 @@ import LoginRegister from "../login__register/login__register";
 import { Link } from "react-router-dom";
 
 export default class NavBar extends Component {
+  sendData = () => {
+    this.props.parentCallback(document.getElementById("stringForFilter").value);
+  };
+  filterMotel() {
+    this.props.setKindOfMoterFilter("Nhà trọ");
+  }
+  filterApartment() {
+    this.props.setKindOfMoterFilter("Căn hộ");
+  }
   render() {
     return (
       <div>
@@ -23,11 +32,23 @@ export default class NavBar extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <button className="directional">Thuê phòng trọ</button>
+              <button
+                className="directional"
+                onClick={this.filterMotel.bind(this)}
+              >
+                Thuê phòng trọ
+              </button>
 
-              <button className="directional">Thuê căn hộ</button>
+              <button
+                className="directional"
+                onClick={this.filterApartment.bind(this)}
+              >
+                Thuê căn hộ
+              </button>
               <Link to="/favourite">
-                <button className="directional">Yêu thích</button>
+                <button className="directional" id="NavbarFavourite">
+                  Yêu thích
+                </button>
               </Link>
 
               <LoginRegister></LoginRegister>
@@ -38,6 +59,8 @@ export default class NavBar extends Component {
                 type="text"
                 placeholder="Tìm kiếm"
                 className="mr-sm-2"
+                id="stringForFilter"
+                onChange={this.sendData}
               />
             </Form>
           </Navbar.Collapse>

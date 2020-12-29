@@ -88,6 +88,7 @@ export default class RoomDetail extends Component {
     alert("Copied the text: " + copyText.value);
   }
   addToFavouriteList() {
+    console.log("11111");
     // console.log(JSON.parse(localStorage.user)._id);
     axios
       .put(
@@ -98,8 +99,24 @@ export default class RoomDetail extends Component {
           favourite: [`${this.state.motelId}`],
         }
       )
-      .then((res3) => console.log(res3.data.data))
+      .then((res3) => {
+        console.log(res3.data.data);
+        axios
+          .get("https://accomod.herokuapp.com/api/user", {
+            params: {
+              email: `${JSON.parse(localStorage.user).email}`,
+            },
+          })
+          .then((resx) => {
+            console.log("update local");
+            console.log(resx.data.data);
+            localStorage.user = JSON.stringify(resx.data.data[0]);
+          })
+          .catch((err) => console.log("errrrr: " + err));
+      })
       .catch((err) => console.log("errrr:" + err));
+
+    //sdfsdfsdsfsdf
   }
   render() {
     return (
@@ -187,46 +204,96 @@ export default class RoomDetail extends Component {
                     ""
                   )}
                 </div>
-              <div>
                 <div>
-                  <h6>Bình luận</h6>
-                </div>
-                <div className="d-flex flex-row p-3">
-                  <img src="https://i.imgur.com/zQZSWrt.jpg" width="50" className="rounded-circle mr-2"/>
-                  <textarea type="textarea" placeholder="Bình luận của bạn..." rows="1" className="form-control"></textarea>
-                  <input type="button" className="btn btn-default btn1" value="Đăng" />
-                </div>
-            
-                <div className="d-flex flex-row p-3"> <img src="https://i.imgur.com/zQZSWrt.jpg" width="40" height="40" className="rounded-circle mr-3"/>
-                      <div className="w-80">
-                          <div className="d-flex">
-                              <div className="d-flex"> <span className="mr-2">Nguyễn Thắm</span></div>
-                          </div> 
-                          <p className=" comment-text ">Phòng đẹp, đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện.Phòng đẹp , đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện.Phòng đẹp, đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện. hòng đẹp, đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện.Phòng đẹp , đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện.Phòng đẹp, đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện</p>
+                  <div>
+                    <h6>Bình luận</h6>
+                  </div>
+                  <div className="d-flex flex-row p-3">
+                    <img
+                      src="https://i.imgur.com/zQZSWrt.jpg"
+                      width="50"
+                      className="rounded-circle mr-2"
+                    />
+                    <textarea
+                      type="textarea"
+                      placeholder="Bình luận của bạn..."
+                      rows="1"
+                      className="form-control"
+                    ></textarea>
+                    <input
+                      type="button"
+                      className="btn btn-default btn1"
+                      value="Đăng"
+                    />
+                  </div>
+
+                  <div className="d-flex flex-row p-3">
+                    {" "}
+                    <img
+                      src="https://i.imgur.com/zQZSWrt.jpg"
+                      width="40"
+                      height="40"
+                      className="rounded-circle mr-3"
+                    />
+                    <div className="w-80">
+                      <div className="d-flex">
+                        <div className="d-flex">
+                          {" "}
+                          <span className="mr-2">Nguyễn Thắm</span>
+                        </div>
                       </div>
-                </div>
-                <div className="d-flex flex-row p-3"> <img src="https://i.imgur.com/zQZSWrt.jpg" width="40" height="40" className="rounded-circle mr-3"/>
-                      <div className="w-80">
-                          <div className="d-flex">
-                              <div className="d-flex"> <span className="mr-2">Nguyễn Thắm</span></div>
-                          </div> 
-                          <p className="comment-text ">Phòng đẹp, đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện.</p>
+                      <p className=" comment-text ">
+                        Phòng đẹp, đầy đủ tiện nghi giống với mô tả, chủ nhà
+                        thân thiện.Phòng đẹp , đầy đủ tiện nghi giống với mô tả,
+                        chủ nhà thân thiện.Phòng đẹp, đầy đủ tiện nghi giống với
+                        mô tả, chủ nhà thân thiện. hòng đẹp, đầy đủ tiện nghi
+                        giống với mô tả, chủ nhà thân thiện.Phòng đẹp , đầy đủ
+                        tiện nghi giống với mô tả, chủ nhà thân thiện.Phòng đẹp,
+                        đầy đủ tiện nghi giống với mô tả, chủ nhà thân thiện
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex flex-row p-3">
+                    {" "}
+                    <img
+                      src="https://i.imgur.com/zQZSWrt.jpg"
+                      width="40"
+                      height="40"
+                      className="rounded-circle mr-3"
+                    />
+                    <div className="w-80">
+                      <div className="d-flex">
+                        <div className="d-flex">
+                          {" "}
+                          <span className="mr-2">Nguyễn Thắm</span>
+                        </div>
                       </div>
-                </div>
-                <div className="d-flex flex-row p-3"> <img src="" width="40" height="40" className="rounded-circle mr-3" alt="avatar"/>
-                      <div className="w-80">
-                          <div className="d-flex">
-                              <div className="d-flex"> <span className="mr-2">Tên tài khoản</span></div>
-                          </div> 
-                          <p className=" comment-text ">comment</p>
+                      <p className="comment-text ">
+                        Phòng đẹp, đầy đủ tiện nghi giống với mô tả, chủ nhà
+                        thân thiện.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex flex-row p-3">
+                    {" "}
+                    <img
+                      src=""
+                      width="40"
+                      height="40"
+                      className="rounded-circle mr-3"
+                      alt="avatar"
+                    />
+                    <div className="w-80">
+                      <div className="d-flex">
+                        <div className="d-flex">
+                          {" "}
+                          <span className="mr-2">Tên tài khoản</span>
+                        </div>
                       </div>
+                      <p className=" comment-text ">comment</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              
-              
-            
-    
-               
               </Col>
 
               <Col xs={0} sm={0} md={0} lg={0} xl={3}>

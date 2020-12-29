@@ -20,37 +20,45 @@ export default class RoomList extends Component {
       })
       .catch((err) => console.log("err: " + err));
   }
+
   render() {
-    var contentArr = this.state.contents.map((content) => (
-      <div>
-        <Link to={`/detail/${content._id}`}>
-          <div className="content">
-            <Row>
-              <Col xs={6} sm={5} md={4} lg={3}>
-                <img className="image" src={content.images[0]}></img>
-              </Col>
-              <Col xs={6} sm={7} md={8} lg={9}>
-                <div className="detail">
-                  <div className="limitHeight">
-                    <h4 className="titleRommList">{content.title}</h4>
-                    <h5 className="cost">
-                      <span>{content.cost}</span>
-                      <span className="acreage">
-                        {content.acreage}m<span className="two">2 </span>
-                      </span>
-                      <span className="quan_huyen">{content.quan_huyen},</span>
-                      <span className="province">{content.province}</span>
-                    </h5>
-                    <div className="description">{content.description}</div>
+    var contentArr = this.state.contents
+      .filter((contentx) => contentx.title.includes(this.props.filterString))
+      .filter((contentx) =>
+        contentx.kindOfRoom.includes(this.props.kindOfMoterFilter)
+      )
+      .map((content) => (
+        <div>
+          <Link to={`/detail/${content._id}`}>
+            <div className="content">
+              <Row>
+                <Col xs={6} sm={5} md={4} lg={3}>
+                  <img className="image" src={content.images[0]}></img>
+                </Col>
+                <Col xs={6} sm={7} md={8} lg={9}>
+                  <div className="detail">
+                    <div className="limitHeight">
+                      <h4 className="titleRommList">{content.title}</h4>
+                      <h5 className="cost">
+                        <span>{content.cost}</span>
+                        <span className="acreage">
+                          {content.acreage}m<span className="two">2 </span>
+                        </span>
+                        <span className="quan_huyen">
+                          {content.quan_huyen},
+                        </span>
+                        <span className="province">{content.province}</span>
+                      </h5>
+                      <div className="description">{content.description}</div>
+                    </div>
+                    <div className="date">Hôm nay</div>
                   </div>
-                  <div className="date">Hôm nay</div>
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </Link>
-      </div>
-    ));
+                </Col>
+              </Row>
+            </div>
+          </Link>
+        </div>
+      ));
     return (
       <div>
         <Container>
