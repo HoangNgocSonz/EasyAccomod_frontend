@@ -34,11 +34,11 @@ class App extends Component {
             <Route exact path="/dashboard">
               <Dashboard></Dashboard>
             </Route>
-            <Route exact path="/admin">
-              <Admin></Admin>
+            <Route path="/admin">
+              <Admin />
             </Route>
+            {/* <Admin /> */}
           </div>
-          {/* <Admin /> */}
         </Router>
       </div>
     );
