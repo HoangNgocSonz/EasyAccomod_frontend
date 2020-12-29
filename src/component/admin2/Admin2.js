@@ -23,7 +23,7 @@ export default class Dashboard extends Component {
         this.setState({
           listUser: res.data.data,
           userOwner: res.data.data
-            // .filter((contentAdmin) => contentAdmin.position.includes(""))
+            .filter((contentAdmin) => contentAdmin.position.includes("owner"))
             .map((owner) => (
               <div>
                 <Row>

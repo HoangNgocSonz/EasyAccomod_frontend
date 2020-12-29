@@ -29,7 +29,10 @@ export default class RoomDetail extends Component {
           author: (
             <div>
               <center>
-                <img className="imgAvatar" src={res2.data.data.avatar}></img>
+                <img
+                  className="imgAvatar"
+                  src={res2.data.data.avatar ? res2.data.data.avatar : ""}
+                ></img>
               </center>
               <center>
                 <div>
@@ -275,7 +278,7 @@ export default class RoomDetail extends Component {
                   <div className="d-flex flex-row p-3">
                     {" "}
                     <img
-                       src=""
+                      src=""
                       width="40"
                       height="40"
                       className="rounded-circle mr-3"
