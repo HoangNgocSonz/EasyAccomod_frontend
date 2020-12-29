@@ -45,6 +45,10 @@ class Login extends Component {
             res.data.data[0].password ===
             document.getElementById("defaultForm-pass").value
           ) {
+            const close = document.getElementById("closelogin");
+            close.click();
+            this.props.callApiGetUser();
+            this.handleClickClose();
             // success
             //console.log("success");
             this.setState({
@@ -179,6 +183,7 @@ class Login extends Component {
                 type="button"
                 className="btn btn-default"
                 value="Đăng nhập"
+                id = "closelogin"
                 onClick={this.handleSubmit}
               />
             </div>
