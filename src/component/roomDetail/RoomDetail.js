@@ -19,6 +19,8 @@ export default class RoomDetail extends Component {
       author: [],
       email: [],
       motelId: [],
+      opacity: 0.5,
+      onclick: false,
     };
   }
   componentDidMount() {
@@ -88,6 +90,21 @@ export default class RoomDetail extends Component {
     alert("Copied the text: " + copyText.value);
   }
   addToFavouriteList() {
+    console.log("11111");
+    if(!this.state.onclick){
+      this.setState(prevState =>({
+        opacity: prevState.opacity + 0.5,
+        onclick: !this.state.onclick,
+      }))
+    }
+    else{
+      this.setState(prevState =>({
+        opacity: 0.5,
+        onclick: !this.state.onclick,
+      }))
+    }
+    
+    // console.log(JSON.parse(localStorage.user)._id);
     axios
       .put(
         `https://accomod.herokuapp.com/api/user/${
@@ -115,6 +132,9 @@ export default class RoomDetail extends Component {
       .catch((err) => console.log("errrr:" + err));
 
     //sdfsdfsdsfsdf
+  }
+  convertColor(){
+
   }
   render() {
     return (
@@ -147,7 +167,7 @@ export default class RoomDetail extends Component {
                         <span className="provinceDetail">
                           {this.state.dataOfRoom.province}
                         </span>
-                        <img
+                        <img style = {{opacity: this.state.opacity}}
                           src={heart}
                           onClick={this.addToFavouriteList.bind(this)}
                           className="heart"
