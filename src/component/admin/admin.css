@@ -1,64 +1,66 @@
-.sidebar{
-    padding: 0;
+.sidebar {
+  padding: 0;
 }
-.sidebar{
-    border: 1px solid #ccc;
-    height: 712px;
-    box-shadow: 0 5px 30px rgba(0,0,0,.15);
-    position: fixed;
-    z-index: 10000;
-    top:0px;
-    left: 0px;
-    background-color: #21212e;
-    color: white;
-    
+.sidebar {
+  border: 1px solid #ccc;
+  height: 712px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 10000;
+  top: 0px;
+  left: 0px;
+  background-color: #21212e;
+  color: white;
 }
-.container{
-    display: block;
+.container {
+  display: block;
 }
-.navbar_mg{
-    width: 100%;
+.navbar_mg {
+  width: 100%;
 }
-.navbar_mg-ul{
-    width: 100%;  
+.navbar_mg-ul {
+  width: 100%;
 }
-.nav_menu_mg{
-    color: #333;
+.nav_menu_mg {
+  color: #333;
 }
 
-.nav_menu_mg:hover{
-   border: none;
-   color: rgb(255, 0, 0);
-   background: #cccccc;
-   font-weight: bold;
+.nav_menu_mg:hover {
+  border: none;
+  color: rgb(255, 0, 0);
+  background: #cccccc;
+  font-weight: bold;
 }
-.nav_menu_mg:active{
-    font-weight: bold;
+.nav_menu_mg:active {
+  font-weight: bold;
 }
 /* Menu Post Manager News (Menu quản lý tin đăng) */
-.post_manager-memu span{
-    color: white;
-    padding-left: 30px;
+.post_manager-memu span {
+  color: white;
+  padding-left: 30px;
 }
-.post_manager-memu span:hover{
-    color: rgb(255, 0, 0);
+.post_manager-memu span:hover {
+  color: rgb(255, 0, 0);
 }
 
-.post_manager-memu:hover{
-    border: none;
-    color: rgb(255, 0, 0);
-    font-weight: bold;
+.post_manager-memu:hover {
+  border: none;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
 }
-.post_manager-memu:hover .post_manager-memu-ul{
-    display: block;
+.post_manager-memu:hover .post_manager-memu-ul {
+  display: block;
 }
-.post_manager-memu-ul{
-    list-style-type: none;
-    padding: 15px;
-    margin: 0px;
-} 
-.wapper{
-    margin-top:45px;
-    margin-left:250px;
-    margin-bottom: 20px;
+.post_manager-memu-ul {
+  list-style-type: none;
+  padding: 15px;
+  margin: 0px;
+}
+.wapper {
+  margin-top: 45px;
+  margin-left: 250px;
+  margin-bottom: 20px;
+}
+.Slidebar {
+  top: 100px !important;
 }

@@ -54,9 +54,6 @@ export default class HomePage extends Component {
           filterString={this.state.filterString}
           kindOfMoterFilter={this.state.kindOfMoterFilter}
         ></RoomList>
-        <Inforuser></Inforuser>
-        <ChangePassword></ChangePassword>
-        {/* <NewsHome /> */}
         <Footer />
       </div>
     );

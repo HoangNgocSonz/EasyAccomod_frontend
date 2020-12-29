@@ -51,7 +51,9 @@ class LoginRegister extends Component {
           ></button>
           <div className="dropdown-menu dropdown-menu-right">
             <button className="dropdown-item dropdown-menu_btn" type="button">
-              <NavLink to="/nguoi-dung/sua-thong-tin">Thông tin cơ bản</NavLink>
+              <NavLink to="/nguoi-dung/sua-thong-tin">
+                <Link to="/dashboard">Thông tin cơ bản</Link>
+              </NavLink>
             </button>
             <button
               className="dropdown-item dropdown-menu_btn"
@@ -66,6 +68,13 @@ class LoginRegister extends Component {
               onClick={this.logout}
             >
               Đăng xuất
+            </button>
+            <button
+              className="dropdown-item dropdown-menu_btn"
+              type="button"
+              onClick={this.logout}
+            >
+              <Link to="/admin">Quản lý</Link>
             </button>
             <button
               className="dropdown-item dropdown-menu_btn hidden-change-password"

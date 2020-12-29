@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
 import { Multiselect } from "multiselect-react-dropdown";
 import "./new_news.css";
+import axios from "axios";
 import { Container, Row, Col } from "react-bootstrap";
 import Navbar from "../menu/Navbar";
 import filter from "../header/filter/filter";
@@ -39,23 +40,27 @@ class NewsHome extends Component {
     };
   }
   postNewToDatabase() {
-    // axios
-    //   .post(`https://accomod.herokuapp.com/api/user`, {
-    //     title: document.getElementById("headPostNew").value,
-    //     province: document.getElementById("cityPostNew").value,
-    //     quan_huyen: document.getElementById("quan_huyen_postNew").value,
-    //     kindOfRoom: document.getElementById("itemsPostNew").value,
-    //     addressDetail: document.getElementById("addressDetail").value,
-    //     kindOfRoom: document.getElementById("itemsPostNew").value,
-    //     description: document.getElementById("descriptionPostNew").value,
-    //     kindOfRoom: document.getElementById("itemsPostNew").value,
-    //     kindOfRoom: document.getElementById("itemsPostNew").value,
-    //     kindOfRoom: document.getElementById("itemsPostNew").value,
-    //   })
-    //   .then((res) => {
-    //     console.log(res.data.data);
-    //   })
-    //   .catch((err) => console.log("err: " + err + this.props.match.params._id));
+    var LinkString = document.getElementById("imagesLinkPostNew").value;
+    var LinkList = LinkString.split(",");
+
+    axios
+      .post(`https://accomod.herokuapp.com/api/post`, {
+        title: document.getElementById("headPostNew").value,
+        title: document.getElementById("headPostNew").value,
+        province: document.getElementById("cityPostNew").value,
+        quan_huyen: document.getElementById("quan_huyen_postNew").value,
+        kindOfRoom: document.getElementById("itemsPostNew").value,
+        addressDetail: document.getElementById("addressDetail").value,
+        description: document.getElementById("descriptionPostNew").value,
+        cost: document.getElementById("costPostNew").value,
+        acreage: document.getElementById("acreagePostNew").value,
+        phone: document.getElementById("phonePostNew").value,
+      })
+      .then((res) => {
+        console.log("post success");
+        console.log(res.data.data);
+      })
+      .catch((err) => console.log("errrrrr: " + err));
   }
   render() {
     return (
@@ -93,9 +98,8 @@ class NewsHome extends Component {
                             name="Haha"
                             id="cityPostNew"
                           >
-                            <option value="0" name="0">
-                              -- Chọn Tỉnh/Thành Phố --
-                            </option>
+                            <option name="0">Hà Nội</option>
+                            <option name="0">Hồ Chí Minh</option>
                           </select>
                         </div>
                       </div>
@@ -125,8 +129,8 @@ class NewsHome extends Component {
                             className="form-control nice-select wide select_item"
                             id="itemsPostNew"
                           >
-                            <option value="1">Nhà trọ</option>
-                            <option value="2">Căn hộ</option>
+                            <option>Nhà trọ</option>
+                            <option>Căn hộ</option>
                           </select>
                         </div>
                       </div>
@@ -139,7 +143,6 @@ class NewsHome extends Component {
                         id="location-text-box"
                         name="txtaddress"
                         className="form-control"
-                        value=""
                         id="addressDetail"
                       />
                       {/*<div className="row">
@@ -189,7 +192,7 @@ class NewsHome extends Component {
                             name="txtprice"
                             className="form-control"
                             placeholder="750000"
-                            id="cost"
+                            id="costPostNew"
                           />
                         </div>
                       </div>
@@ -203,11 +206,11 @@ class NewsHome extends Component {
                             name="txtarea"
                             className="form-control"
                             placeholder="16"
-                            id="s"
+                            id="acreagePostNew"
                           />
                         </div>
                       </div>
-                      <div className="col-md-3">
+                      {/* <div className="col-md-3">
                         <div className="form-group">
                           <label for="cost_elect">Tiền điện:</label>
                           <select id="cos_elec">
@@ -218,9 +221,9 @@ class NewsHome extends Component {
                             <option value="5">1.000 VNĐ/1 số</option>
                           </select>
                         </div>
-                      </div>
+                      </div> */}
                       <div>
-                        <div className="form-group">
+                        {/* <div className="form-group">
                           <label for="cost_water">Tiền nước</label>
                           <select id="cos_water">
                             <optgroup label="Tiền nước(theo đầu người):">
@@ -237,9 +240,9 @@ class NewsHome extends Component {
                               <option value="4">10.000 VNĐ/1 khối</option>
                             </optgroup>
                           </select>
-                        </div>
+                        </div> */}
                       </div>
-                      <div className="col-md-3">
+                      {/* <div className="col-md-3">
                         <div className="form-group">
                           <label for="cost_elect">Tiền vệ sinh</label>
                           <select id="cos_elec">
@@ -250,7 +253,7 @@ class NewsHome extends Component {
                             <option value="5">10.000 VNĐ/1 người</option>
                           </select>
                         </div>
-                      </div>
+                      </div> */}
                       <div>
                         <div className="form-group">
                           <label for="usr">SĐT Liên hệ:</label>
@@ -259,11 +262,11 @@ class NewsHome extends Component {
                             name="txtphone"
                             className="form-control"
                             placeholder="0915111234"
-                            id="usr"
+                            id="phonePostNew"
                           ></input>
                         </div>
                       </div>
-                      <div>
+                      {/* <div>
                         <div className="form-group">
                           <label for="num">Số lượng người ở tối đa:</label>
                           <input
@@ -274,10 +277,10 @@ class NewsHome extends Component {
                             id="num"
                           ></input>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
 
-                    <form>
+                    {/* <form>
                       <div className="form-group">
                         <label for="dropdown-test">
                           Các tiện ích có trong phòng trọ:
@@ -290,8 +293,8 @@ class NewsHome extends Component {
                           placeholder="Lựa chọn tiện ích"
                         />
                       </div>
-                    </form>
-                    <form>
+                    </form> */}
+                    {/* <form>
                       <div className="form-group">
                         <label for="dropdown-test">
                           Địa điểm công cộng gần đây:
@@ -304,7 +307,7 @@ class NewsHome extends Component {
                           placeholder="Lựa chọn địa điểm công cộng gần đây"
                         />
                       </div>
-                    </form>
+                    </form> */}
                     <form>
                       <div class="form-group">
                         <label for="exampleFormControlFile1">
@@ -314,7 +317,7 @@ class NewsHome extends Component {
                           type="text"
                           className="form-control"
                           name="image"
-                          id="exampleFormControlFile1"
+                          id="imagesLinkPostNew"
                         />
                       </div>
                     </form>
