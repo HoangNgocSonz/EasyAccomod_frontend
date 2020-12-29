@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import img_icon_password from './icon_change_password/lock.png';
 class ChangePassword extends Component {
     render (){
@@ -21,7 +22,7 @@ class ChangePassword extends Component {
                             <input type="password" 
                             className="form-control " 
                             placeholder="Mật khẩu cũ"
-                            ref="passwordold"    
+                            ref="passwordold"  
                         />
                     </div>
                 </div>
@@ -35,7 +36,7 @@ class ChangePassword extends Component {
                         className="form-control " 
                         placeholder="Mật khẩu mới"
                         ref="password"
-                    
+                
                         />
                     </div>
                 </div>
@@ -48,7 +49,7 @@ class ChangePassword extends Component {
                         className="form-control " 
                         placeholder="Nhập lại mật khẩu mới"
                         ref="verifypassword"
-                    
+                   
                         />
                     </div>
                 </div>

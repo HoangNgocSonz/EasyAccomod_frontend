@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './infor_user.css'
-
 class Inforuser extends Component {
     render(){
         return (
@@ -45,7 +44,8 @@ class Inforuser extends Component {
                     <option value="0" selected>Phường/Xã</option>
                 </select> </div>
         </div>
-        <div className="py-3 pb-4 border-bottom"> <button className="btn btn-primary mr-3">Cập nhật</button> <button className="btn border button">Thoát</button> </div>
+        <div className="py-3 pb-4 border-bottom"> 
+        <button className="btn btn-primary mr-3">Cập nhật</button> <button className="btn border button">Thoát</button> </div>
     </div>
 </div>
 

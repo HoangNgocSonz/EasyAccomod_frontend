@@ -88,8 +88,6 @@ export default class RoomDetail extends Component {
     alert("Copied the text: " + copyText.value);
   }
   addToFavouriteList() {
-    console.log("11111");
-    // console.log(JSON.parse(localStorage.user)._id);
     axios
       .put(
         `https://accomod.herokuapp.com/api/user/${

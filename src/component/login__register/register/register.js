@@ -44,12 +44,16 @@ class Register extends Component {
       });
     } else {
       if (password === verifypassword) {
+        this.setState({
+          message: "Đăng ký thành công!!!",
+        });
         axios
           .post(`https://accomod.herokuapp.com/api/user`, {
             userName: document.getElementById("userNameRegister").value,
             password: document.getElementById("passwordRegister").value,
             email: document.getElementById("emailRegister").value,
             phone: document.getElementById("phoneRegister").value,
+            position: "renter",
           })
           .then((res) => {
             console.log(res.data.data);

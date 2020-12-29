@@ -39,6 +39,7 @@ class LoginRegister extends Component {
             </NavLink>
           </li>
         </ul>
+
         <div className="btn-group">
           {/* Menu Website if User login success (Menu website nếu user đăng nhập thành công)*/}
           <button
@@ -48,7 +49,9 @@ class LoginRegister extends Component {
             aria-haspopup="true"
             aria-expanded="false"
             id="buttonMoreNavbar"
-          ></button>
+          >
+            {" "}
+          </button>
           <div className="dropdown-menu dropdown-menu-right">
             <button className="dropdown-item dropdown-menu_btn" type="button">
               <NavLink to="/nguoi-dung/sua-thong-tin">
@@ -76,7 +79,7 @@ class LoginRegister extends Component {
             >
               <Link to="/admin">Quản lý</Link>
             </button>
-            <button
+            {/* <button
               className="dropdown-item dropdown-menu_btn hidden-change-password"
               type="button"
               id="HiddenChangePassword"
@@ -84,7 +87,7 @@ class LoginRegister extends Component {
               data-target="#modalChangePassword"
             >
               HiddenChangePassWord
-            </button>
+            </button> */}
           </div>
         </div>
         {/* Link đăng tin mới lên website */}

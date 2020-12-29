@@ -8,10 +8,12 @@ import Admin from "./component/admin/admin";
 import Favourite from "./component/favorite/Favourite";
 import NewsHome from "./component/newHome/new_news";
 import Dashboard from "./component/dashboard/Dashboard";
+import Admin2 from "./component/admin2/Admin2";
 class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* <Admin2></Admin2> */}
         <Router>
           <div>
             <Route exact path="/">
@@ -34,10 +36,9 @@ class App extends Component {
             <Route exact path="/dashboard">
               <Dashboard></Dashboard>
             </Route>
-            <Route path="/admin">
+            {/* <Route path="/admin">
               <Admin />
-            </Route>
-            {/* <Admin /> */}
+            </Route> */}
           </div>
         </Router>
       </div>
