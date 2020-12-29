@@ -27,6 +27,7 @@ export default class RoomList extends Component {
       .filter((contentx) =>
         contentx.kindOfRoom.includes(this.props.kindOfMoterFilter)
       )
+      .filter((contentx) => contentx.province.includes(this.props.cityFilter))
       .map((content) => (
         <div>
           <Link to={`/detail/${content._id}`}>
@@ -40,7 +41,7 @@ export default class RoomList extends Component {
                     <div className="limitHeight">
                       <h4 className="titleRommList">{content.title}</h4>
                       <h5 className="cost">
-                        <span>{content.cost}</span>
+                        <span>{content.cost} triệu</span>
                         <span className="acreage">
                           {content.acreage}m<span className="two">2 </span>
                         </span>

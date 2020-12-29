@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./Admin2.css";
+import "./ManageUser.css";
 import axios from "axios";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Navbar from "../menu/Navbar";
-export default class Dashboard extends Component {
+export default class ManageUser extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,38 +14,28 @@ export default class Dashboard extends Component {
   }
   componentDidMount() {
     axios
-      .get(`https://accomod.herokuapp.com/api/user`)
+      .get(`https://accomod.herokuapp.com/api/post`)
       .then((res) => {
         console.log(res.data.data);
         this.setState({
           listUser: res.data.data,
           userOwner: res.data.data
-            .filter((contentAdmin) => contentAdmin.position.includes("owner"))
+            // .filter((contentAdmin) => contentAdmin.position.includes("owner"))
             .map((owner) => (
               <div className="rowAdmin2">
                 <Row>
                   <Col xs={4} sm={4}>
                     <span className="contentAdmin2">{owner._id}</span>
                   </Col>
-                  <Col xs={2} sm={2}>
-                    <span className="contentAdmin2">{owner.userName}</span>
-                  </Col>
-                  <Col xs={3} sm={3}>
-                    <span className="contentAdmin2">
-                      {owner.soChungMinhThu}
-                    </span>
+                  <Col xs={5} sm={5}>
+                    <span className="contentAdmin2">{owner.title}</span>
                   </Col>
                   <Col xs={3} sm={3}>
                     <span
-                      className="contentAdmin2"
+                      className="deleteItem"
                       onClick={() => this.updateStatus(owner._id)}
                     >
-                      {" "}
-                      {owner.status == "chưa duyệt" ? (
-                        <button className="buttonDuyet">Duyệt</button>
-                      ) : (
-                        "Đã duyệt"
-                      )}
+                      Xóa
                     </span>
                   </Col>
                 </Row>
@@ -58,9 +48,7 @@ export default class Dashboard extends Component {
   updateStatus(id) {
     console.log(id);
     axios
-      .put(`https://accomod.herokuapp.com/api/user/${id}`, {
-        status: "đã duyệt",
-      })
+      .delete(`https://accomod.herokuapp.com/api/post/${id}`)
       .then((res) => {
         console.log(res.data.data);
         window.location.reload();
@@ -79,11 +67,8 @@ export default class Dashboard extends Component {
                 <Col xs={4} sm={4}>
                   ID
                 </Col>
-                <Col xs={2} sm={2}>
-                  Tên đăng nhập
-                </Col>
-                <Col xs={3} sm={3}>
-                  Số căn cước
+                <Col xs={5} sm={5}>
+                  Tiêu đề
                 </Col>
                 <Col xs={3} sm={3}>
                   Trạng thái

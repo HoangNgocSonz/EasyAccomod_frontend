@@ -12,7 +12,7 @@ class LoginRegister extends Component {
   logout() {
     localStorage.removeItem("user");
   }
- 
+
   render() {
     return (
       <div className="navbar navbar-expand-sm header1_info_right__div-login_register">
@@ -78,7 +78,14 @@ class LoginRegister extends Component {
               type="button"
               onClick={this.logout}
             >
-              <Link to="/admin">Quản lý</Link>
+              <Link to="/quan_ly_chu_tro">Quản lý chủ trọ</Link>
+            </button>
+            <button
+              className="dropdown-item dropdown-menu_btn"
+              type="button"
+              onClick={this.logout}
+            >
+              <Link to="/quan_ly_bai_dang">Quản lý bài đăng</Link>
             </button>
             {/* <button
               className="dropdown-item dropdown-menu_btn hidden-change-password"
@@ -91,7 +98,7 @@ class LoginRegister extends Component {
             </button> */}
           </div>
         </div>
-  
+
         {/* Link đăng tin mới lên website */}
 
         <ul className="navbar-nav">
@@ -145,7 +152,6 @@ class LoginRegister extends Component {
       </div>
     );
   }
-  
 }
 
 export default LoginRegister;

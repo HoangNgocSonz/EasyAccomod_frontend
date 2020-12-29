@@ -37,6 +37,38 @@ class NewsHome extends Component {
         { name: "Gần trung tâm thể thao", id: 7 },
         { name: "Gần trung tâm hành chính nhà nước", id: 8 },
       ],
+      listHN: [
+        "Ba Đình",
+        "Bắc Từ Liêm",
+        "Cầu Giấy",
+        "Đống Đa",
+        "Hà Đông",
+        "Hai Bà Trưng",
+        "Hoàn Kiếm",
+        "Hoàng Mai",
+        "Long Biên",
+        "Nam Từ Liêm",
+        "Tây Hồ",
+        "Thanh Xuân",
+        "TX.Sơn Tây",
+        "Ba Vì",
+        "Chương Mỹ",
+        "Đan Phượng",
+        "Đông Anh",
+        "Gia Lâm",
+        "Hoài Đức",
+        "Mê Linh",
+        "Mỹ Đức",
+        "Phú Xuyên",
+        "Phúc Thọ",
+        "Quốc Oai",
+        "Sóc Sơn",
+        "Thạch Thất",
+        "Thanh Oai",
+        "Thanh Trì",
+        "Thường Tín",
+        "Ứng Hòa",
+      ],
     };
   }
   postNewToDatabase() {
@@ -46,7 +78,7 @@ class NewsHome extends Component {
     axios
       .post(`https://accomod.herokuapp.com/api/post`, {
         title: document.getElementById("headPostNew").value,
-        title: document.getElementById("headPostNew").value,
+        images: LinkList,
         province: document.getElementById("cityPostNew").value,
         quan_huyen: document.getElementById("quan_huyen_postNew").value,
         kindOfRoom: document.getElementById("itemsPostNew").value,
@@ -62,7 +94,75 @@ class NewsHome extends Component {
       })
       .catch((err) => console.log("errrrrr: " + err));
   }
+  setQuanHuyen() {
+    if (document.getElementById("cityPostNew").value == "Hà Nội") {
+      this.setState({
+        listHN: [
+          "Ba Đình",
+          "Bắc Từ Liêm",
+          "Cầu Giấy",
+          "Đống Đa",
+          "Hà Đông",
+          "Hai Bà Trưng",
+          "Hoàn Kiếm",
+          "Hoàng Mai",
+          "Long Biên",
+          "Nam Từ Liêm",
+          "Tây Hồ",
+          "Thanh Xuân",
+          "TX.Sơn Tây",
+          "Ba Vì",
+          "Chương Mỹ",
+          "Đan Phượng",
+          "Đông Anh",
+          "Gia Lâm",
+          "Hoài Đức",
+          "Mê Linh",
+          "Mỹ Đức",
+          "Phú Xuyên",
+          "Phúc Thọ",
+          "Quốc Oai",
+          "Sóc Sơn",
+          "Thạch Thất",
+          "Thanh Oai",
+          "Thanh Trì",
+          "Thường Tín",
+          "Ứng Hòa",
+        ],
+      });
+    } else {
+      this.setState({
+        listHN: [
+          "Quận 1",
+          "Quận 2",
+          "Quận 3",
+          "QUận 4",
+          "Quận 5",
+          "Quận 6",
+          "Quận 7",
+          "Quận 8",
+          "Quận 9",
+          "Quận 10",
+          "Quận 11",
+          "Quận 12",
+          "Quận Bình Tân",
+          "Quận Bình Thạnh",
+          "Quận Gò Vấp",
+          "Quận Phú Nhuận",
+          "Quận Tân Bình",
+          "Quận Tân Phú",
+          "Quận Thủ Đức",
+          "Huyện Bình Chánh",
+          "Huyện Cần Giờ",
+          "Huyện Củ Chi",
+          "Huyện Hóc Môn",
+          "Huyện Nhà Bè",
+        ],
+      });
+    }
+  }
   render() {
+    var items = this.state.listHN.map((item) => <option>{item}</option>);
     return (
       <div>
         <Navbar></Navbar>
@@ -97,6 +197,7 @@ class NewsHome extends Component {
                             className="form-control nice-select wide select_item"
                             name="Haha"
                             id="cityPostNew"
+                            onChange={this.setQuanHuyen.bind(this)}
                           >
                             <option name="0">Hà Nội</option>
                             <option name="0">Hồ Chí Minh</option>
@@ -110,7 +211,7 @@ class NewsHome extends Component {
                             className="form-control nice-select wide select_item"
                             id="quan_huyen_postNew"
                           >
-                            <option value="0">-- Chọn Quận/Huyện --</option>
+                            {items}
                           </select>
                         </div>
                       </div>

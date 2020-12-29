@@ -21,13 +21,14 @@ export default class HomePage extends Component {
     this.state = {
       filterString: "",
       kindOfMoterFilter: "",
+      cityFilter: "",
     };
   }
   callbackFunction = (childData) => {
     console.log(childData);
     this.setState({ filterString: childData });
   };
-  setKindOfMoterFilter = (childData) => {
+  setKindOfMoterFilter = (childData, childData2) => {
     console.log(childData);
     if (childData != "0") {
       this.setState({
@@ -38,6 +39,9 @@ export default class HomePage extends Component {
         kindOfMoterFilter: "",
       });
     }
+    this.setState({
+      cityFilter: childData2,
+    });
   };
   render() {
     return (
@@ -53,6 +57,7 @@ export default class HomePage extends Component {
         <RoomList
           filterString={this.state.filterString}
           kindOfMoterFilter={this.state.kindOfMoterFilter}
+          cityFilter={this.state.cityFilter}
         ></RoomList>
         <Footer />
       </div>

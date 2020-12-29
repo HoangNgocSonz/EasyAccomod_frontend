@@ -16,10 +16,10 @@ export default class NavBar extends Component {
     this.props.parentCallback(document.getElementById("stringForFilter").value);
   };
   filterMotel() {
-    this.props.setKindOfMoterFilter("Nhà trọ");
+    this.props.setKindOfMoterFilter("Nhà trọ", "");
   }
   filterApartment() {
-    this.props.setKindOfMoterFilter("Căn hộ");
+    this.props.setKindOfMoterFilter("Căn hộ", "");
   }
   render() {
     return (

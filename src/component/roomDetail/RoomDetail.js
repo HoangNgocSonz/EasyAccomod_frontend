@@ -19,20 +19,26 @@ export default class RoomDetail extends Component {
       author: [],
       email: [],
       motelId: [],
+      opacity: 0.5,
+      onclick: false,
     };
   }
   componentDidMount() {
     axios
-      .get(`https://accomod.herokuapp.com/api/user/5fe846051244af0023bb6e02`)
+      .get(`https://accomod.herokuapp.com/api/user/5febb0b1a6a4c900236be686`)
       .then((res2) => {
         this.setState({
           author: (
             <div>
               <center>
-                <img
-                  className="imgAvatar"
-                  src={res2.data.data.avatar ? res2.data.data.avatar : ""}
-                ></img>
+                {res2.data.data.avatar ? (
+                  <img
+                    className="imgAvatar"
+                    src={res2.data.data.avatar ? res2.data.data.avatar : ""}
+                  ></img>
+                ) : (
+                  ""
+                )}
               </center>
               <center>
                 <div>
@@ -91,10 +97,23 @@ export default class RoomDetail extends Component {
     alert("Copied the text: " + copyText.value);
   }
   addToFavouriteList() {
+    console.log("11111");
+    if (!this.state.onclick) {
+      this.setState((prevState) => ({
+        opacity: prevState.opacity + 0.5,
+        onclick: !this.state.onclick,
+      }));
+    } else {
+      this.setState((prevState) => ({
+        opacity: 0.5,
+        onclick: !this.state.onclick,
+      }));
+    }
+
+    // console.log(JSON.parse(localStorage.user)._id);
     axios
       .put(
-        `https://accomod.herokuapp.com/api/user/${
-          JSON.parse(localStorage.user)._id
+        `https://accomod.herokuapp.com/api/user/5febb0b1a6a4c900236be686
         }`,
         {
           favourite: [`${this.state.motelId}`],
@@ -119,6 +138,7 @@ export default class RoomDetail extends Component {
 
     //sdfsdfsdsfsdf
   }
+  convertColor() {}
   render() {
     return (
       <div>
@@ -151,6 +171,7 @@ export default class RoomDetail extends Component {
                           {this.state.dataOfRoom.province}
                         </span>
                         <img
+                          style={{ opacity: this.state.opacity }}
                           src={heart}
                           onClick={this.addToFavouriteList.bind(this)}
                           className="heart"

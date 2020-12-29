@@ -112,16 +112,19 @@
 .heart {
   height: 30px;
   margin-left: 20px;
-  opacity: 0.5;
-  /* border: 1px solid green;
+  /*opacity: 0.5;
+  border: 1px solid green;
   padding: 3px;
   border-radius: 30px; */
 }
 .heart:hover {
   opacity: 1;
   cursor: pointer;
+  opacity: 1;
 }
-
+.heart::after{
+  opacity: 1;
+}
 .form-control {
   width: 80%;
   overflow: hidden;

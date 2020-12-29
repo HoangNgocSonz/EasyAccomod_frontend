@@ -9,11 +9,11 @@ import Favourite from "./component/favorite/Favourite";
 import NewsHome from "./component/newHome/new_news";
 import Dashboard from "./component/dashboard/Dashboard";
 import Admin2 from "./component/admin2/Admin2";
+import ManageUser from "./component/manageUser/ManageUser";
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Admin2></Admin2> */}
         <Router>
           <div>
             <Route exact path="/">
@@ -36,9 +36,12 @@ class App extends Component {
             <Route exact path="/dashboard">
               <Dashboard></Dashboard>
             </Route>
-            {/* <Route path="/admin">
-              <Admin />
-            </Route> */}
+            <Route exact path="/quan_ly_chu_tro">
+              <Admin2></Admin2>
+            </Route>
+            <Route exact path="/quan_ly_bai_dang">
+              <ManageUser></ManageUser>
+            </Route>
           </div>
         </Router>
       </div>
