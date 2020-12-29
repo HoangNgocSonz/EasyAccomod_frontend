@@ -2,7 +2,10 @@
   height: 50%;
   margin: auto;
 }
-
+.error_message-feedback{
+  text-align: center;
+  color: red;
+}
 .header {
   color: rgb(27, 27, 27);
   /* background-color: teal; */

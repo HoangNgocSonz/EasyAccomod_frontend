@@ -67,7 +67,20 @@
   border-radius: 50%;
   background: white;
 }
-form {
+/* form {
   width: auto;
   height: auto;
+} */
+.submitReport{
+  border: 1px solid rgb(0, 107, 107);
+  background-color: teal;
+ height: 40px;
+ margin-left: 20px;
+ margin-right: 20px;
+ margin-bottom: 20px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 550;
+  color: white;
+ width: 100%;
 }

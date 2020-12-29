@@ -275,7 +275,7 @@ export default class RoomDetail extends Component {
                   <div className="d-flex flex-row p-3">
                     {" "}
                     <img
-                      src=""
+                       src=""
                       width="40"
                       height="40"
                       className="rounded-circle mr-3"
@@ -288,7 +288,7 @@ export default class RoomDetail extends Component {
                           <span className="mr-2">Tên tài khoản</span>
                         </div>
                       </div>
-                      <p className=" comment-text ">comment</p>
+                      <p className=" comment-text ">Comment</p>
                     </div>
                   </div>
                 </div>
