@@ -6,6 +6,7 @@ import HomePage from "./component/home/HomePage";
 import RoomDetail from "./component/roomDetail/RoomDetail";
 import Admin from "./component/admin/admin";
 import Favourite from "./component/favorite/Favourite";
+import NewsHome from "./component/newHome/new_news";
 class App extends Component {
   render() {
     return (
@@ -25,6 +26,9 @@ class App extends Component {
 
             <Route exact path="/favourite">
               <Favourite></Favourite>
+            </Route>
+            <Route exact path="/postNew">
+              <NewsHome></NewsHome>
             </Route>
           </div>
           {/* <Admin /> */}

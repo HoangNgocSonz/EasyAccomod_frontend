@@ -143,13 +143,19 @@
   font-weight: 550;
   border: none;
   background-color: #f8f9fa;
-  color: rgb(48, 48, 48);
+  color: rgb(48, 48, 48) !important;
   font-size: 16.6px;
 }
 #deleteStyle:hover {
   border: unset;
-  color: teal;
+  color: teal !important;
 }
 .header1_info_right__div-login_register {
   padding: 0px 19px !important;
+}
+.postNewSubmit {
+  color: rgb(0, 0, 0);
+}
+.postNewSubmit:hover {
+  color: teal;
 }

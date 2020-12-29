@@ -4,7 +4,7 @@ import Header from "../header/header";
 import Footer from "../footer/footer";
 import Inforuser from "../newHome/infor_user/infor_user";
 import ChangePassword from "../newHome/change_password/change_password";
-import NewsHome from "../newHome/new_news/new_news";
+
 import Report from "../newHome/report_news/report_news";
 import Admin from "../admin/admin";
 import Filter from "../header/filter/filter";
@@ -13,6 +13,8 @@ import Navbar from "../menu/Navbar";
 import Feedback from "../newHome/feedback/feedback";
 import FormPost from "../user/FornPost";
 import Favourite from "../favorite/Favourite";
+import { Router } from "react-router-dom";
+
 export default class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -21,12 +23,6 @@ export default class HomePage extends Component {
       kindOfMoterFilter: "",
     };
   }
-  // try() {
-  //   console.log("rr");
-  //   // this.setState({
-  //   //   filterString: "a",
-  //   // });
-  // }
   callbackFunction = (childData) => {
     console.log(childData);
     this.setState({ filterString: childData });
@@ -60,7 +56,7 @@ export default class HomePage extends Component {
         ></RoomList>
         <Inforuser></Inforuser>
         <ChangePassword></ChangePassword>
-        <NewsHome />
+        {/* <NewsHome /> */}
         <Footer />
       </div>
     );

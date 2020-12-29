@@ -7,6 +7,7 @@ import OwnRegister from "./register/own_register";
 import axios from "axios";
 import ChangePassword from "../newHome/change_password/change_password";
 import Inforuser from "../newHome/infor_user/infor_user";
+import { Link } from "react-router-dom";
 class LoginRegister extends Component {
   logout() {
     localStorage.removeItem("user");
@@ -78,17 +79,30 @@ class LoginRegister extends Component {
           </div>
         </div>
         {/* Link đăng tin mới lên website */}
+
         <ul className="navbar-nav">
           <li className="nav-item">
-            <NavLink
-              to="/nguoi-dung/dang-tin-moi"
-              className="nav-link"
-              data-toggle="modal"
-              data-target="#modalLoginForm"
-              id="deleteStyle"
-            >
-              Đăng tin mới
-            </NavLink>
+            {!localStorage.user ? (
+              <NavLink
+                to="/nguoi-dung/dang-tin-moi"
+                className="nav-link"
+                data-toggle="modal"
+                data-target="#modalLoginForm"
+                id="deleteStyle"
+              >
+                Đăng tin mới
+              </NavLink>
+            ) : (
+              <span
+                to="/nguoi-dung/dang-tin-moi"
+                className="nav-link"
+                id="deleteStyle"
+              >
+                <Link to="postNew">
+                  <span className="postNewSubmit">Đăng tin mới</span>
+                </Link>
+              </span>
+            )}
           </li>
         </ul>
         <div>

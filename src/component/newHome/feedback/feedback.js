@@ -60,9 +60,8 @@ export default class Feedback extends Component {
               rows="3"
               class="textarea"
             ></textarea> */}
-            <div className="modal-footer-x">
-              <div className="submitFeedback"></div> Gửi đánh giá
-            </div>
+          
+          <input type="button" className=" submitFeedback" value="Gửi đánh giá" />
           </div>
         </div>
       </div>

@@ -192,21 +192,21 @@ class OwnRegister extends Component {
                     </div>
                 </div>
                 <div className="md-form mb-2 row">
-                        <div className="col-md-4 col-sm-6 col-xs-6 ">
+                        <div className="col-md-6 col-sm-6 col-xs-6 ">
                             <select className="form-control nice-select wide select_item" name="tp">
                                         <option value='0'>Tỉnh/Thành Phố</option>
                             </select>
                         </div>
-                        <div className="col-md-4 col-sm-6 col-xs-6">
+                        <div className="col-md-6 col-sm-6 col-xs-6">
                             <select className="form-control nice-select wide select_item" name="qh">
                                       <option value='0'>Quận/huyện</option>
                             </select>
                         </div>
-                        <div className="col-md-4 col-sm-6 col-xs-6">
+                        {/* <div className="col-md-4 col-sm-6 col-xs-6">
                             <select className="form-control nice-select wide select_item" name="px">
                                       <option value='0'>Phường/Xã</option>
                             </select>
-                        </div>
+                        </div> */}
                 </div>    
                 <div className="md-form mb-2 row">
                     <div className="col-md-2 col-sm-2 col-xs-3 icon_password">
