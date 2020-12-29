@@ -31,6 +31,9 @@ class OwnRegister extends Component {
         }else{
             if(password===verifypassword)
             {
+                this.setState({
+                    message: "Đăng ký thành công!!!",
+                   });
                 await axios.post('/nguoi-dung/chu-tro-dang-ky',{
                     username,password,email,phone,cmnd,firstname,lastname
                  },{headers: {'Accept': 'application/json'}})

@@ -39,6 +39,7 @@ class LoginRegister extends Component {
             </NavLink>
           </li>
         </ul>
+      
         <div className="btn-group">
           {/* Menu Website if User login success (Menu website nếu user đăng nhập thành công)*/}
           <button
@@ -48,10 +49,10 @@ class LoginRegister extends Component {
             aria-haspopup="true"
             aria-expanded="false"
             id="buttonMoreNavbar"
-          ></button>
+          > </button>
           <div className="dropdown-menu dropdown-menu-right">
             <button className="dropdown-item dropdown-menu_btn" type="button">
-              <NavLink to="/nguoi-dung/sua-thong-tin">Thông tin cơ bản</NavLink>
+              <NavLink to='/nguoi-dung/sua-thong-tin'>Thông tin cơ bản</NavLink>
             </button>
             <button
               className="dropdown-item dropdown-menu_btn"

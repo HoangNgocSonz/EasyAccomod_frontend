@@ -15,7 +15,9 @@ class Login extends Component {
     this.handleChangeField = this.handleChangeField.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleClickClose = this.handleClickClose.bind(this);
+    
   }
+  
   handleChangeField() {
     this.setState({
       username: this.refs.username.value,
@@ -44,11 +46,19 @@ class Login extends Component {
             document.getElementById("defaultForm-pass").value
           ) {
             // success
-            console.log("success");
+            //console.log("success");
+            this.setState({
+             message: "Đăng nhập thành công!!!",
+            });
+            // alert("success!")
             localStorage.user = JSON.stringify(res.data.data[0]);
           } else {
             // wrong
-            console.log("wronggg");
+            //console.log("wronggg");
+            this.setState({
+              message: "Đăng nhập không thành công!!!",
+            });
+            // alert("Fail!")
             // document.getElementById("password").classList.add("wrongPassWord");
           }
         })
