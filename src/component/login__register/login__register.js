@@ -12,6 +12,7 @@ class LoginRegister extends Component {
   logout() {
     localStorage.removeItem("user");
   }
+ 
   render() {
     return (
       <div className="navbar navbar-expand-sm header1_info_right__div-login_register">
@@ -79,6 +80,7 @@ class LoginRegister extends Component {
             </button>
           </div>
         </div>
+  
         {/* Link đăng tin mới lên website */}
 
         <ul className="navbar-nav">
@@ -132,6 +134,7 @@ class LoginRegister extends Component {
       </div>
     );
   }
+  
 }
 
 export default LoginRegister;

@@ -31,7 +31,7 @@ class App extends Component {
               <NewsHome></NewsHome>
             </Route>
           </div>
-          <Admin />
+          {/* <Admin /> */}
         </Router>
       </div>
     );
