@@ -44,9 +44,12 @@ class Register extends Component {
       });
     } else {
       if (password === verifypassword) {
-        this.setState({
+        /*this.setState({
           message: "Đăng ký thành công!!!",
-        });
+        });*/
+        const close = document.getElementById("IdRegister");
+        setTimeout(()=>{close.click()},1000*1);      
+
         axios
           .post(`https://accomod.herokuapp.com/api/user`, {
             userName: document.getElementById("userNameRegister").value,
@@ -243,6 +246,7 @@ class Register extends Component {
           </div>
           <div className="modal-footer d-flex justify-content-center bntdangnhap">
             <input
+              id = "closeregister"
               type="button"
               className="btn btn-default"
               value="Đăng ký"
