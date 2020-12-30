@@ -21,7 +21,7 @@ export default class Dashboard extends Component {
         <Navbar></Navbar>
         <Filter></Filter>
         <Inforuser></Inforuser>
-        <ChangePassword></ChangePassword>
+        {/* <ChangePassword></ChangePassword> */}
       </div>
     );
   }

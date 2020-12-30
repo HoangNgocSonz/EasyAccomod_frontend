@@ -47,8 +47,8 @@ class Login extends Component {
           ) {
             const close = document.getElementById("closelogin");
             close.click();
-            this.props.callApiGetUser();
-            this.handleClickClose();
+            // this.props.callApiGetUser();
+            // this.handleClickClose();
             // success
             //console.log("success");
             this.setState({
@@ -65,6 +65,7 @@ class Login extends Component {
             // alert("Fail!")
             // document.getElementById("password").classList.add("wrongPassWord");
           }
+          window.location.reload();
         })
         .catch((err) => console.log("errrrr: " + err));
       // axios.post('/nguoi-dung/dang-nhap',{

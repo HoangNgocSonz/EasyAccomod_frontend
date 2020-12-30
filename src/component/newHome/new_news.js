@@ -72,6 +72,7 @@ class NewsHome extends Component {
     };
   }
   postNewToDatabase() {
+    alert("Đã gửi!");
     var LinkString = document.getElementById("imagesLinkPostNew").value;
     var LinkList = LinkString.split(",");
 
@@ -87,10 +88,13 @@ class NewsHome extends Component {
         cost: document.getElementById("costPostNew").value,
         acreage: document.getElementById("acreagePostNew").value,
         phone: document.getElementById("phonePostNew").value,
+        status:"no"
       })
       .then((res) => {
         console.log("post success");
         console.log(res.data.data);
+
+        
       })
       .catch((err) => console.log("errrrrr: " + err));
   }
@@ -311,7 +315,7 @@ class NewsHome extends Component {
                           />
                         </div>
                       </div>
-                      {/* <div className="col-md-3">
+                      <div className="col-md-3">
                         <div className="form-group">
                           <label for="cost_elect">Tiền điện:</label>
                           <select id="cos_elec">
@@ -322,9 +326,9 @@ class NewsHome extends Component {
                             <option value="5">1.000 VNĐ/1 số</option>
                           </select>
                         </div>
-                      </div> */}
+                      </div>
                       <div>
-                        {/* <div className="form-group">
+                        <div className="form-group">
                           <label for="cost_water">Tiền nước</label>
                           <select id="cos_water">
                             <optgroup label="Tiền nước(theo đầu người):">
@@ -341,9 +345,9 @@ class NewsHome extends Component {
                               <option value="4">10.000 VNĐ/1 khối</option>
                             </optgroup>
                           </select>
-                        </div> */}
+                        </div>
                       </div>
-                      {/* <div className="col-md-3">
+                      <div className="col-md-3">
                         <div className="form-group">
                           <label for="cost_elect">Tiền vệ sinh</label>
                           <select id="cos_elec">
@@ -354,7 +358,7 @@ class NewsHome extends Component {
                             <option value="5">10.000 VNĐ/1 người</option>
                           </select>
                         </div>
-                      </div> */}
+                      </div>
                       <div>
                         <div className="form-group">
                           <label for="usr">SĐT Liên hệ:</label>
@@ -367,7 +371,7 @@ class NewsHome extends Component {
                           ></input>
                         </div>
                       </div>
-                      {/* <div>
+                      <div>
                         <div className="form-group">
                           <label for="num">Số lượng người ở tối đa:</label>
                           <input
@@ -378,10 +382,10 @@ class NewsHome extends Component {
                             id="num"
                           ></input>
                         </div>
-                      </div> */}
+                      </div>
                     </div>
 
-                    {/* <form>
+                    <form>
                       <div className="form-group">
                         <label for="dropdown-test">
                           Các tiện ích có trong phòng trọ:
@@ -394,8 +398,8 @@ class NewsHome extends Component {
                           placeholder="Lựa chọn tiện ích"
                         />
                       </div>
-                    </form> */}
-                    {/* <form>
+                    </form>
+                    <form>
                       <div className="form-group">
                         <label for="dropdown-test">
                           Địa điểm công cộng gần đây:
@@ -408,7 +412,7 @@ class NewsHome extends Component {
                           placeholder="Lựa chọn địa điểm công cộng gần đây"
                         />
                       </div>
-                    </form> */}
+                    </form>
                     <form>
                       <div class="form-group">
                         <label for="exampleFormControlFile1">

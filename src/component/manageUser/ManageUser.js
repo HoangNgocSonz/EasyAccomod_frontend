@@ -30,13 +30,22 @@ export default class ManageUser extends Component {
                   <Col xs={5} sm={5}>
                     <span className="contentAdmin2">{owner.title}</span>
                   </Col>
-                  <Col xs={3} sm={3}>
+                  <Col xs={1} sm={1}>
                     <span
                       className="deleteItem"
                       onClick={() => this.updateStatus(owner._id)}
                     >
                       Xóa
                     </span>
+                  </Col>
+                  <Col xs={2} sm={2}>
+                  {owner.status=="no"?<span
+                      className="deleteItem"
+                      onClick={() => this.duyetBaiDang(owner._id)}
+                    >
+                      Duyệt
+                    </span>: "Đã duyệt"}
+                    
                   </Col>
                 </Row>
               </div>
@@ -49,6 +58,17 @@ export default class ManageUser extends Component {
     console.log(id);
     axios
       .delete(`https://accomod.herokuapp.com/api/post/${id}`)
+      .then((res) => {
+        console.log(res.data.data);
+        window.location.reload();
+      })
+      .catch((err) => console.log("errrr: " + err));
+  }
+  duyetBaiDang(id2){
+    axios
+      .put(`https://accomod.herokuapp.com/api/post/${id2}`,{
+        status:"yes"
+      })
       .then((res) => {
         console.log(res.data.data);
         window.location.reload();
@@ -70,8 +90,11 @@ export default class ManageUser extends Component {
                 <Col xs={5} sm={5}>
                   Tiêu đề
                 </Col>
-                <Col xs={3} sm={3}>
+                <Col xs={1} sm={1}>
                   Trạng thái
+                </Col>
+                <Col xs={2} sm={2}>
+                  duyệt
                 </Col>
               </Row>
             </div>

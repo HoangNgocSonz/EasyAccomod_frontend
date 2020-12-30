@@ -146,6 +146,7 @@ class Filter extends Component {
                 onChange={this.setQuanHuyen.bind(this)}
                 id="cityFilter1"
               >
+                <option>Tỉnh/Thành phố</option>
                 <option>Hà Nội</option>
                 <option>Hồ Chí Minh</option>
               </select>
@@ -185,9 +186,7 @@ class Filter extends Component {
                 <option value="2">15 - 20 m2</option>
                 <option value="3">20- 25 m2</option>
                 <option value="4">25 - 30 m2</option>
-                <option value="5">30 - 35 m2</option>
-                <option value="6">35 - 40 m2</option>
-                <option value="7">40 - 50 m2</option>
+                <option value="5">30 - 50 m2</option>
                 <option value="8">50 - 60 m2</option>
                 <option value="9">60 - 80 m2</option>
                 <option value="10">80 - 100 m2</option>

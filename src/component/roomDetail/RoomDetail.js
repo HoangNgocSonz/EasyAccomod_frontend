@@ -139,6 +139,25 @@ export default class RoomDetail extends Component {
     //sdfsdfsdsfsdf
   }
   convertColor() {}
+  postComment(){
+    var a = document.getElementById("inputComment").value
+    console.log(a);
+    axios
+          .put("https://accomod.herokuapp.com/api/user/5febb0b1a6a4c900236be686", {
+            comment:[{
+              userName:"adfas",
+              commentx:"dfsdfsd",
+              avatar:"String"
+            }]
+          })
+          .then((resx) => {
+            console.log("update local");
+            console.log(resx);
+            // localStorage.user = JSON.stringify(resx.data.data[0]);
+          })
+          .catch((err) => console.log("errrrr: " + err));
+
+  }
   render() {
     return (
       <div>
@@ -241,11 +260,13 @@ export default class RoomDetail extends Component {
                       placeholder="Bình luận của bạn..."
                       rows="1"
                       className="form-control"
+                      id="inputComment"
                     ></textarea>
                     <input
                       type="button"
                       className="btn btn-default btn1"
                       value="Đăng"
+                      onClick={this.postComment}
                     />
                   </div>
 
@@ -296,7 +317,7 @@ export default class RoomDetail extends Component {
                       </p>
                     </div>
                   </div>
-                  <div className="d-flex flex-row p-3">
+                  {/* <div className="d-flex flex-row p-3">
                     {" "}
                     <img
                       src=""
@@ -313,8 +334,8 @@ export default class RoomDetail extends Component {
                         </div>
                       </div>
                       <p className=" comment-text ">Comment</p>
-                    </div>
-                  </div>
+                    </div> 
+                  </div>*/}
                 </div>
               </Col>
 

@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 class LoginRegister extends Component {
   logout() {
     localStorage.removeItem("user");
+    window.location.reload();
   }
 
   render() {
@@ -24,8 +25,8 @@ class LoginRegister extends Component {
               data-toggle="modal"
               data-target="#modalLoginForm"
               id="deleteStyle"
-            >
-              Đăng nhập
+            >{localStorage.user?JSON.parse(localStorage.user).userName:"Đăng nhập"}
+              
             </NavLink>
           </li>
           <li className="nav-item">
@@ -73,17 +74,18 @@ class LoginRegister extends Component {
             >
               Đăng xuất
             </button>
+            
             <button
               className="dropdown-item dropdown-menu_btn"
               type="button"
-              onClick={this.logout}
+              // onClick={this.logout}
             >
               <Link to="/quan_ly_chu_tro">Quản lý chủ trọ</Link>
             </button>
             <button
               className="dropdown-item dropdown-menu_btn"
               type="button"
-              onClick={this.logout}
+              // onClick={this.logout}
             >
               <Link to="/quan_ly_bai_dang">Quản lý bài đăng</Link>
             </button>
@@ -103,7 +105,16 @@ class LoginRegister extends Component {
 
         <ul className="navbar-nav">
           <li className="nav-item">
-            {!localStorage.user ? (
+          <span
+                to="/nguoi-dung/dang-tin-moi"
+                className="nav-link"
+                id="deleteStyle"
+              >
+                <Link to="postNew">
+                  <span className="postNewSubmit">Đăng tin mới</span>
+                </Link>
+              </span>
+            {/* {!localStorage.user ? (
               <NavLink
                 to="/nguoi-dung/dang-tin-moi"
                 className="nav-link"
@@ -123,7 +134,7 @@ class LoginRegister extends Component {
                   <span className="postNewSubmit">Đăng tin mới</span>
                 </Link>
               </span>
-            )}
+            )} */}
           </li>
         </ul>
         <div>
